@@ -1,0 +1,1803 @@
+Metabolite name	Metabolite name	Metabolite description	Charged Metabolite formula	Metabolite charge	Metabolite Compartment	Metabolite KeggID	Metabolite PubChemID	Metabolite CheBI ID
+10fthf[c]	10fthf	10-Formyltetrahydrofolate	C20H21N7O7	-2	cytoplasm	C00234	3533	15637
+12dgr120[c]	12dgr120	1-2-Diacyl-sn-glycerol-didodecanoyl-n-C120	C27H52O5	0	cytoplasm	C00641	3914	17815
+12dgr120[p]	12dgr120	1-2-Diacyl-sn-glycerol-didodecanoyl-n-C120	C27H52O5	0	periplasm	C00641	3914	17815
+12dgr140[c]	12dgr140	1-2-Diacyl-sn-glycerol-ditetradecanoyl-n-C140	C31H60O5	0	cytoplasm	C00641	3914	17815
+12dgr140[p]	12dgr140	1-2-Diacyl-sn-glycerol-ditetradecanoyl-n-C140	C31H60O5	0	periplasm	C00641	3914	17815
+12dgr141[c]	12dgr141	1-2-Diacyl-sn-glycerol-ditetradec-7-enoyl-n-C141	C31H56O5	0	cytoplasm	C00641	3914	17815
+12dgr141[p]	12dgr141	1-2-Diacyl-sn-glycerol-ditetradec-7-enoyl-n-C141	C31H56O5	0	periplasm	C00641	3914	17815
+12dgr160[c]	12dgr160	1-2-Diacyl-sn-glycerol-dihexadecanoyl-n-C160	C35H68O5	0	cytoplasm	C00641	3914	17815
+12dgr160[p]	12dgr160	1-2-Diacyl-sn-glycerol-dihexadecanoyl-n-C160	C35H68O5	0	periplasm	C00641	3914	17815
+12dgr161[c]	12dgr161	1-2-Diacyl-sn-glycerol-dihexadec-9-enoyl-n-C161	C35H64O5	0	cytoplasm	C00641	3914	17815
+12dgr161[p]	12dgr161	1-2-Diacyl-sn-glycerol-dihexadec-9-enoyl-n-C161	C35H64O5	0	periplasm	C00641	3914	17815
+12dgr180[c]	12dgr180	1-2-Diacyl-sn-glycerol-dioctadecanoyl-n-C180	C39H76O5	0	cytoplasm	C00641	3914	17815
+12dgr180[p]	12dgr180	1-2-Diacyl-sn-glycerol-dioctadecanoyl-n-C180	C39H76O5	0	periplasm	C00641	3914	17815
+12dgr181[c]	12dgr181	1-2-Diacyl-sn-glycerol-dioctadec-11-enoyl-n-C181	C39H72O5	0	cytoplasm	C00641	3914	17815
+12dgr181[p]	12dgr181	1-2-Diacyl-sn-glycerol-dioctadec-11-enoyl-n-C181	C39H72O5	0	periplasm	C00641	3914	17815
+12ppd-R[c]	12ppd-R	R-Propane-1-2-diol	C3H8O2	0	cytoplasm	C02912	5836	28972
+12ppd-R[e]	12ppd-R	R-Propane-1-2-diol	C3H8O2	0	extra-organism	C02912	5836	28972
+12ppd-R[p]	12ppd-R	R-Propane-1-2-diol	C3H8O2	0	periplasm	C02912	5836	28972
+12ppd-S[c]	12ppd-S	S-Propane-1-2-diol	C3H8O2	0	cytoplasm	C02917	5840	29002
+12ppd-S[e]	12ppd-S	S-Propane-1-2-diol	C3H8O2	0	extra-organism	C02917	5840	29002
+12ppd-S[p]	12ppd-S	S-Propane-1-2-diol	C3H8O2	0	periplasm	C02917	5840	29002
+13dpg[c]	13dpg	3-Phospho-D-glyceroyl-phosphate	C3H4O10P2	-4	cytoplasm	C00236	3535	16001
+14glucan[c]	14glucan	1-4-alpha-D-glucan	C36H62O31	0	cytoplasm	C00912		
+14glucan[e]	14glucan	1-4-alpha-D-glucan	C36H62O31	0	extra-organism	C00912		
+14glucan[p]	14glucan	1-4-alpha-D-glucan	C36H62O31	0	periplasm	C00912		
+15dap[c]	15dap	1-5-Diaminopentane	C5H16N2	2	cytoplasm	C01672	4816	18127
+15dap[e]	15dap	1-5-Diaminopentane	C5H16N2	2	extra-organism	C01672	4816	18127
+15dap[p]	15dap	1-5-Diaminopentane	C5H16N2	2	periplasm	C01672	4816	18127
+1agpe120[p]	1agpe120	1-Acyl-sn-glycero-3-phosphoethanolamine-n-C120	C17H36NO7P1	0	periplasm	C04438	7069	
+1agpe140[p]	1agpe140	1-Acyl-sn-glycero-3-phosphoethanolamine-n-C140	C19H40NO7P1	0	periplasm	C04438	7069	
+1agpe141[p]	1agpe141	1-Acyl-sn-glycero-3-phosphoethanolamine-n-C141	C19H38NO7P1	0	periplasm	C04438	7069	
+1agpe160[p]	1agpe160	1-Acyl-sn-glycero-3-phosphoethanolamine-n-C160	C21H44NO7P1	0	periplasm	C04438	7069	
+1agpe161[p]	1agpe161	1-Acyl-sn-glycero-3-phosphoethanolamine-n-C161	C21H42NO7P1	0	periplasm	C04438	7069	
+1agpe180[p]	1agpe180	1-Acyl-sn-glycero-3-phosphoethanolamine-n-C180	C23H48NO7P1	0	periplasm	C04438	7069	
+1agpe181[p]	1agpe181	1-Acyl-sn-glycero-3-phosphoethanolamine-n-C181	C23H46NO7P1	0	periplasm	C04438	7069	
+1agpg120[p]	1agpg120	1-Acyl-sn-glycero-3-phosphoglycerol-n-C120	C18H36O9P1	-1	periplasm			
+1agpg140[p]	1agpg140	1-Acyl-sn-glycero-3-phosphoglycerol-n-C140	C20H40O9P1	-1	periplasm			
+1agpg141[p]	1agpg141	1-Acyl-sn-glycero-3-phosphoglycerol-n-C141	C20H38O9P1	-1	periplasm			
+1agpg160[p]	1agpg160	1-Acyl-sn-glycero-3-phosphoglycerol-n-C160	C22H44O9P1	-1	periplasm			
+1agpg161[p]	1agpg161	1-Acyl-sn-glycero-3-phosphoglycerol-n-C161	C22H42O9P1	-1	periplasm			
+1agpg180[p]	1agpg180	1-Acyl-sn-glycero-3-phosphoglycerol-n-C180	C24H48O9P1	-1	periplasm			
+1agpg181[p]	1agpg181	1-Acyl-sn-glycero-3-phosphoglycerol-n-C181	C24H46O9P1	-1	periplasm			
+1ddecg3p[c]	1ddecg3p	1-dodecanoyl-sn-glycerol-3-phosphate	C15H29O7P1	-2	cytoplasm	C00681	3950	16975
+1ddecg3p[p]	1ddecg3p	1-dodecanoyl-sn-glycerol-3-phosphate	C15H29O7P1	-2	periplasm	C00681	3950	16975
+1hdec9eg3p[c]	1hdec9eg3p	1-hexadec-9-enoyl-sn-glycerol-3-phosphate	C19H35O7P1	-2	cytoplasm			
+1hdec9eg3p[p]	1hdec9eg3p	1-hexadec-9-enoyl-sn-glycerol-3-phosphate	C19H35O7P1	-2	periplasm			
+1hdecg3p[c]	1hdecg3p	1-hexadecanoyl-sn-glycerol-3-phosphate	C19H37O7P1	-2	cytoplasm	C00681	3950	16975
+1hdecg3p[p]	1hdecg3p	1-hexadecanoyl-sn-glycerol-3-phosphate	C19H37O7P1	-2	periplasm	C00681	3950	16975
+1odec11eg3p[c]	1odec11eg3p	1-octadec-11-enoyl-sn-glycerol-3-phosphate	C21H39O7P1	-2	cytoplasm			
+1odec11eg3p[p]	1odec11eg3p	1-octadec-11-enoyl-sn-glycerol-3-phosphate	C21H39O7P1	-2	periplasm			
+1odecg3p[c]	1odecg3p	1-octadecanoyl-sn-glycerol-3-phosphate	C21H41O7P1	-2	cytoplasm	C00681	3950	16975
+1odecg3p[p]	1odecg3p	1-octadecanoyl-sn-glycerol-3-phosphate	C21H41O7P1	-2	periplasm	C00681	3950	16975
+1pyr5c[c]	1pyr5c	1-Pyrroline-5-carboxylate	C5H6NO2	-1	cytoplasm	C03912	6642	371
+1tdec7eg3p[c]	1tdec7eg3p	1-tetradec-7-enoyl-sn-glycerol-3-phosphate	C17H31O7P1	-2	cytoplasm	C00681	3950	16975
+1tdec7eg3p[p]	1tdec7eg3p	1-tetradec-7-enoyl-sn-glycerol-3-phosphate	C17H31O7P1	-2	periplasm	C00681	3950	16975
+1tdecg3p[c]	1tdecg3p	1-tetradecanoyl-sn-glycerol-3-phosphate	C17H33O7P1	-2	cytoplasm	C00681	3950	16975
+1tdecg3p[p]	1tdecg3p	1-tetradecanoyl-sn-glycerol-3-phosphate	C17H33O7P1	-2	periplasm	C00681	3950	16975
+23camp[e]	23camp	2-3-Cyclic-AMP	C10H11N5O6P	-1	extra-organism	C02353	5400	
+23camp[p]	23camp	2-3-Cyclic-AMP	C10H11N5O6P	-1	periplasm	C02353	5400	
+23ccmp[e]	23ccmp	2-3-Cyclic-CMP	C9H11N3O7P	-1	extra-organism	C02354	5401	
+23ccmp[p]	23ccmp	2-3-Cyclic-CMP	C9H11N3O7P	-1	periplasm	C02354	5401	
+23cgmp[e]	23cgmp	2-3-Cyclic-GMP	C10H11N5O7P	-1	extra-organism	C06194	8444	
+23cgmp[p]	23cgmp	2-3-Cyclic-GMP	C10H11N5O7P	-1	periplasm	C06194	8444	
+23cump[e]	23cump	2-3-Cyclic-UMP	C9H10N2O8P	-1	extra-organism	C02355	5402	
+23cump[p]	23cump	2-3-Cyclic-UMP	C9H10N2O8P	-1	periplasm	C02355	5402	
+23dappa[c]	23dappa	2-3-diaminopropionate	C3H9N2O2	1	cytoplasm	C06393	8629	18383
+23dappa[e]	23dappa	2-3-diaminopropionate	C3H9N2O2	1	extra-organism	C06393	8629	18383
+23dappa[p]	23dappa	2-3-diaminopropionate	C3H9N2O2	1	periplasm	C06393	8629	18383
+23ddhb[c]	23ddhb	2-3-Dihydro-2-3-dihydroxybenzoate	C7H7O4	-1	cytoplasm	C04171	6852	15941
+23dhb[c]	23dhb	2-3-Dihydroxybenzoate	C7H5O4	-1	cytoplasm	C00196	3496	18026
+23dhba[c]	23dhba	2-3-Dihydroxybenzoyl-adenylate	C17H17N5O10P	-1	cytoplasm	C04030	6734	
+23dhbzs[c]	23dhbzs	2-3-dihydroxybenzoylserine	C10H11NO6	-1	cytoplasm	C04204		
+23dhdp[c]	23dhdp	2-3-Dihydrodipicolinate	C7H5NO4	-2	cytoplasm	C03340	6183	18042
+23dhmb[c]	23dhmb	R-2-3-Dihydroxy-3-methylbutanoate	C5H9O4	-1	cytoplasm	C04272	6935	 15684 49072
+23dhmp[c]	23dhmp	R-2-3-Dihydroxy-3-methylpentanoate	C6H11O4	-1	cytoplasm	C06007	8280	 27512 49258
+23doguln[c]	23doguln	2-3-Dioxo-L-gulonate	C6H7O7	-1	cytoplasm	C04575	7176	15622
+25aics[c]	25aics	S-2-5-Amino-1-5-phospho-D-ribosyl-imidazole-4-carboxamidosuccinate	C13H15N4O12P	-4	cytoplasm	C04823	7384	18319
+25dkglcn[c]	25dkglcn	2-5-diketo-D-gluconate	C6H7O7	-1	cytoplasm	C02780	5731	18281
+25drapp[c]	25drapp	2-5-Diamino-6-ribosylamino-4-3H-pyrimidinone-5-phosphate	C9H14N5O8P	-2	cytoplasm			
+26dap-LL[c]	26dap-LL	LL-2-6-Diaminoheptanedioate	C7H14N2O4	0	cytoplasm	C00666	3935	16026
+26dap-M[c]	26dap-M	meso-2-6-Diaminoheptanedioate	C7H14N2O4	0	cytoplasm	C00680	3949	 16488 30308
+26dap-M[e]	26dap-M	meso-2-6-Diaminoheptanedioate	C7H14N2O4	0	extra-organism	C00680	3949	 16488 30308
+26dap-M[p]	26dap-M	meso-2-6-Diaminoheptanedioate	C7H14N2O4	0	periplasm	C00680	3949	 16488 30308
+2agpe120[c]	2agpe120	2-Acyl-sn-glycero-3-phosphoethanolamine-n-C120	C17H36NO7P1	0	cytoplasm	C05973	8253	
+2agpe120[p]	2agpe120	2-Acyl-sn-glycero-3-phosphoethanolamine-n-C120	C17H36NO7P1	0	periplasm	C05973	8253	
+2agpe140[c]	2agpe140	2-Acyl-sn-glycero-3-phosphoethanolamine-n-C140	C19H40NO7P1	0	cytoplasm	C05973	8253	
+2agpe140[p]	2agpe140	2-Acyl-sn-glycero-3-phosphoethanolamine-n-C140	C19H40NO7P1	0	periplasm	C05973	8253	
+2agpe141[c]	2agpe141	2-Acyl-sn-glycero-3-phosphoethanolamine-n-C141	C19H38NO7P1	0	cytoplasm	C05973	8253	
+2agpe141[p]	2agpe141	2-Acyl-sn-glycero-3-phosphoethanolamine-n-C141	C19H38NO7P1	0	periplasm	C05973	8253	
+2agpe160[c]	2agpe160	2-Acyl-sn-glycero-3-phosphoethanolamine-n-C160	C21H44NO7P1	0	cytoplasm	C05973	8253	
+2agpe160[p]	2agpe160	2-Acyl-sn-glycero-3-phosphoethanolamine-n-C160	C21H44NO7P1	0	periplasm	C05973	8253	
+2agpe161[c]	2agpe161	2-Acyl-sn-glycero-3-phosphoethanolamine-n-C161	C21H42NO7P1	0	cytoplasm	C05973	8253	
+2agpe161[p]	2agpe161	2-Acyl-sn-glycero-3-phosphoethanolamine-n-C161	C21H42NO7P1	0	periplasm	C05973	8253	
+2agpe180[c]	2agpe180	2-Acyl-sn-glycero-3-phosphoethanolamine-n-C180	C23H48NO7P1	0	cytoplasm	C05973	8253	
+2agpe180[p]	2agpe180	2-Acyl-sn-glycero-3-phosphoethanolamine-n-C180	C23H48NO7P1	0	periplasm	C05973	8253	
+2agpe181[c]	2agpe181	2-Acyl-sn-glycero-3-phosphoethanolamine-n-C181	C23H46NO7P1	0	cytoplasm	C05973	8253	
+2agpe181[p]	2agpe181	2-Acyl-sn-glycero-3-phosphoethanolamine-n-C181	C23H46NO7P1	0	periplasm	C05973	8253	
+2agpg120[c]	2agpg120	2-Acyl-sn-glycero-3-phosphoglycerol-n-C120	C18H36O9P1	-1	cytoplasm			
+2agpg120[p]	2agpg120	2-Acyl-sn-glycero-3-phosphoglycerol-n-C120	C18H36O9P1	-1	periplasm			
+2agpg140[c]	2agpg140	2-Acyl-sn-glycero-3-phosphoglycerol-n-C140	C20H40O9P1	-1	cytoplasm			
+2agpg140[p]	2agpg140	2-Acyl-sn-glycero-3-phosphoglycerol-n-C140	C20H40O9P1	-1	periplasm			
+2agpg141[c]	2agpg141	2-Acyl-sn-glycero-3-phosphoglycerol-n-C141	C20H38O9P1	-1	cytoplasm			
+2agpg141[p]	2agpg141	2-Acyl-sn-glycero-3-phosphoglycerol-n-C141	C20H38O9P1	-1	periplasm			
+2agpg160[c]	2agpg160	2-Acyl-sn-glycero-3-phosphoglycerol-n-C160	C22H44O9P1	-1	cytoplasm			
+2agpg160[p]	2agpg160	2-Acyl-sn-glycero-3-phosphoglycerol-n-C160	C22H44O9P1	-1	periplasm			
+2agpg161[c]	2agpg161	2-Acyl-sn-glycero-3-phosphoglycerol-n-C161	C22H42O9P1	-1	cytoplasm			
+2agpg161[p]	2agpg161	2-Acyl-sn-glycero-3-phosphoglycerol-n-C161	C22H42O9P1	-1	periplasm			
+2agpg180[c]	2agpg180	2-Acyl-sn-glycero-3-phosphoglycerol-n-C180	C24H48O9P1	-1	cytoplasm			
+2agpg180[p]	2agpg180	2-Acyl-sn-glycero-3-phosphoglycerol-n-C180	C24H48O9P1	-1	periplasm			
+2agpg181[c]	2agpg181	2-Acyl-sn-glycero-3-phosphoglycerol-n-C181	C24H46O9P1	-1	cytoplasm			
+2agpg181[p]	2agpg181	2-Acyl-sn-glycero-3-phosphoglycerol-n-C181	C24H46O9P1	-1	periplasm			
+2ahbut[c]	2ahbut	S-2-Aceto-2-hydroxybutanoate	C6H9O4	-1	cytoplasm	C06006	8279	 27681 49256
+2amsa[c]	2amsa	2-Aminomalonate-semialdehyde	C3H5NO3	0	cytoplasm	C11822	13986	37012
+2aobut[c]	2aobut	L-2-Amino-3-oxobutanoate	C4H7NO3	0	cytoplasm	C03508	6318	16944
+2cpr5p[c]	2cpr5p	1-2-Carboxyphenylamino-1-deoxy-D-ribulose-5-phosphate	C12H13NO9P	-3	cytoplasm	C01302	4520	29112
+2dda7p[c]	2dda7p	2-Dehydro-3-deoxy-D-arabino-heptonate-7-phosphate	C7H10O10P	-3	cytoplasm	C04691	7271	18150
+2ddecg3p[c]	2ddecg3p	2-dodecanoyl-sn-glycerol-3-phosphate	C15H30O7P1	-1	cytoplasm	C03974	6693	
+2ddecg3p[p]	2ddecg3p	2-dodecanoyl-sn-glycerol-3-phosphate	C15H30O7P1	-1	periplasm	C03974	6693	
+2ddg6p[c]	2ddg6p	2-Dehydro-3-deoxy-D-gluconate-6-phosphate	C6H8O9P	-3	cytoplasm	C04442	7071	15925
+2ddglcn[c]	2ddglcn	2-Dehydro-3-deoxy-D-gluconate	C6H9O6	-1	cytoplasm	C00204	3504	17032
+2ddglcn[e]	2ddglcn	2-Dehydro-3-deoxy-D-gluconate	C6H9O6	-1	extra-organism	C00204	3504	17032
+2ddglcn[p]	2ddglcn	2-Dehydro-3-deoxy-D-gluconate	C6H9O6	-1	periplasm	C00204	3504	17032
+2dh3dgal6p[c]	2dh3dgal6p	2-Dehydro-3-deoxy-D-galactonate-6-phosphate	C6H8O9P	-3	cytoplasm	C01286	4505	17860
+2dh3dgal[c]	2dh3dgal	2-Dehydro-3-deoxy-D-galactonate	C6H9O6	-1	cytoplasm	C01216	4438	17028
+2dhglcn[c]	2dhglcn	2-Dehydro-D-gluconate	C6H9O7	-1	cytoplasm	C00629	3902	16808
+2dhguln[c]	2dhguln	2-Dehydro-L-gulonate	C6H9O7	-1	cytoplasm		3458	30769
+2dhp[c]	2dhp	2-Dehydropantoate	C6H9O4	-1	cytoplasm	C00966	4217	 11561 17094
+2dmmq8[c]	2dmmq8	2-Demethylmenaquinone-8	C50H70O2	0	cytoplasm	C05818	8113	28192
+2dmmql8[c]	2dmmql8	2-Demethylmenaquinol-8	C50H72O2	0	cytoplasm			
+2dr1p[c]	2dr1p	2-Deoxy-D-ribose-1-phosphate	C5H9O7P	-2	cytoplasm	C00672	3941	28542
+2dr5p[c]	2dr5p	2-Deoxy-D-ribose-5-phosphate	C5H9O7P	-2	cytoplasm	C00673	3942	16132
+2h3oppan[c]	2h3oppan	2-Hydroxy-3-oxopropanoate	C3H3O4	-1	cytoplasm	C01146	4376	16992
+2h5cmmusa[c]	2h5cmmusa	2-Hydroxy-5-carboxymethylmuconate-Semialdehyde	C8H6O6	-2	cytoplasm	C04642	7231	17142
+2hdec9eg3p[c]	2hdec9eg3p	2-hexadec-9-enoyl-sn-glycerol-3-phosphate	C19H36O7P1	-1	cytoplasm	C03974	6693	
+2hdec9eg3p[p]	2hdec9eg3p	2-hexadec-9-enoyl-sn-glycerol-3-phosphate	C19H36O7P1	-1	periplasm	C03974	6693	
+2hdecg3p[c]	2hdecg3p	2-hexadecanoyl-sn-glycerol-3-phosphate	C19H38O7P1	-1	cytoplasm	C03974	6693	
+2hdecg3p[p]	2hdecg3p	2-hexadecanoyl-sn-glycerol-3-phosphate	C19H38O7P1	-1	periplasm	C03974	6693	
+2hh24dd[c]	2hh24dd	2-Hydroxyhepta-2-4-dienedioate	C7H6O5	-2	cytoplasm	C05600	7923	
+2ippm[c]	2ippm	2-Isopropylmaleate	C7H8O4	-2	cytoplasm	C02631	5611	17275
+2kmb[c]	2kmb	2-keto-4-methylthiobutyrate	C5H7O3S	-1	cytoplasm	C01180	5611	17275
+2mahmp[c]	2mahmp	2-Methyl-4-amino-5-hydroxymethylpyrimidine-diphosphate	C6H8N3O7P2	-3	cytoplasm	C04752	7322	16629
+2mcacn[c]	2mcacn	cis-2-Methylaconitate	C7H5O6	-3	cytoplasm	C04225	6896	16717
+2mcit[c]	2mcit	2-Methylcitrate	C7H7O7	-3	cytoplasm	C02225	5290	 10860 30836
+2me4p[c]	2me4p	2-C-methyl-D-erythritol-4-phosphate	C5H11O7P	-2	cytoplasm	C11434	13606	17764
+2mecdp[c]	2mecdp	2-C-methyl-D-erythritol-2-4-cyclodiphosphate	C5H10O9P2	-2	cytoplasm	C11453	13625	18425
+2obut[c]	2obut	2-Oxobutanoate	C4H5O3	-1	cytoplasm	C00109	3409	30831
+2odec11eg3p[c]	2odec11eg3p	2-octadec-11-enoyl-sn-glycerol-3-phosphate	C21H40O7P1	-1	cytoplasm	C03974	6693	
+2odec11eg3p[p]	2odec11eg3p	2-octadec-11-enoyl-sn-glycerol-3-phosphate	C21H40O7P1	-1	periplasm	C03974	6693	
+2odecg3p[c]	2odecg3p	2-octadecanoyl-sn-glycerol-3-phosphate	C21H42O7P1	-1	cytoplasm	C03974	6693	
+2odecg3p[p]	2odecg3p	2-octadecanoyl-sn-glycerol-3-phosphate	C21H42O7P1	-1	periplasm	C03974	6693	
+2ohph[c]	2ohph	2-Octaprenyl-6-hydroxyphenol	C46H70O2	0	cytoplasm	C05811	8106	1233
+2ombzl[c]	2ombzl	2-Octaprenyl-6-methoxy-1-4-benzoquinol	C47H72O3	0	cytoplasm		958 ??5650	17551
+2omhmbl[c]	2omhmbl	2-Octaprenyl-3-methyl-5-hydroxy-6-methoxy-1-4-benzoquinol	C48H74O4	0	cytoplasm	C05815	8110	27688
+2ommbl[c]	2ommbl	2-Octaprenyl-3-methyl-6-methoxy-1-4-benzoquinol	C48H74O3	0	cytoplasm	C05814	8109	28636
+2omph[c]	2omph	2-Octaprenyl-6-methoxyphenol	C47H72O2	0	cytoplasm	C05812	8107	1235
+2oph[c]	2oph	2-Octaprenylphenol	C46H70O	0	cytoplasm	C05810	8105	40407
+2p4c2me[c]	2p4c2me	2-phospho-4-cytidine-5-diphospho-2-C-methyl-D-erythritol	C14H22N3O17P3	-4	cytoplasm	C11436	13608	16840
+2pg[c]	2pg	D-Glycerate-2-phosphate	C3H4O7P	-3	cytoplasm	C00631	3904	17835
+2pg[e]	2pg	D-Glycerate-2-phosphate	C3H4O7P	-3	extra-organism	C00631	3904	17835
+2pg[p]	2pg	D-Glycerate-2-phosphate	C3H4O7P	-3	periplasm	C00631	3904	17835
+2pglyc[c]	2pglyc	2-Phosphoglycolate	C2H2O6P	-3	cytoplasm	C00988	4234	17150
+2shchc[c]	2shchc	2-Succinyl-6-hydroxy-2-4-cyclohexadiene-1-carboxylate	C11H10O6	-2	cytoplasm	C05817	8112	1277
+2tdec7eg3p[c]	2tdec7eg3p	2-tetradec-7-enoyl-sn-glycerol-3-phosphate	C17H32O7P1	-1	cytoplasm	C03974	6693	
+2tdec7eg3p[p]	2tdec7eg3p	2-tetradec-7-enoyl-sn-glycerol-3-phosphate	C17H32O7P1	-1	periplasm	C03974	6693	
+2tdecg3p[c]	2tdecg3p	2-tetradecanoyl-sn-glycerol-3-phosphate	C17H34O7P1	-1	cytoplasm	C03974	6693	
+2tdecg3p[p]	2tdecg3p	2-tetradecanoyl-sn-glycerol-3-phosphate	C17H34O7P1	-1	periplasm	C03974	6693	
+2tpr3dpcoa[c]	2tpr3dpcoa	2-5-triphosphoribosyl-3-dephospho-CoA	C26H40N7O26P5S	-6	cytoplasm			
+34dhpacet[c]	34dhpacet	3-4-Dihydroxyphenylacetate	C8H7O4	-1	cytoplasm	C01161	4388	17612
+34dhpac[e]	34dhpac	3-4-Dihydroxyphenylacetaldehyde	C8H8O3	0	extra-organism	C04043	6744	
+34dhpac[p]	34dhpac	3-4-Dihydroxyphenylacetaldehyde	C8H8O3	0	periplasm	C04043	6744	
+34hpp[c]	34hpp	3-4-Hydroxyphenyl-pyruvate	C9H7O4	-1	cytoplasm	C01179	4406	15999
+3amp[e]	3amp	3-AMP	C10H12N5O7P	-2	extra-organism	C01367	4566	28931
+3amp[p]	3amp	3-AMP	C10H12N5O7P	-2	periplasm	C01367	4566	28931
+3c2hmp[c]	3c2hmp	3-Carboxy-2-hydroxy-4-methylpentanoate	C7H10O5	-2	cytoplasm	C04411	7045	35121
+3c3hmp[c]	3c3hmp	3-Carboxy-3-hydroxy-4-methylpentanoate	C7H10O5	-2	cytoplasm	C02504	5516	 1178 35128
+3c4mop[c]	3c4mop	3-Carboxy-4-methyl-2-oxopentanoate	C7H8O5	-2	cytoplasm	C04236	6905	1467
+3cmp[e]	3cmp	3-cmp	C9H12N3O8P	-2	extra-organism	C05822	8117	
+3cmp[p]	3cmp	3-cmp	C9H12N3O8P	-2	periplasm	C05822	8117	
+3dhguln[c]	3dhguln	3-Dehydro-L-gulonate	C6H9O7	-1	cytoplasm	C00618	3892	16142
+3dhgulnp[c]	3dhgulnp	3-keto-L-gulonate-6-phosphate	C6H8O10P	-3	cytoplasm	C14899		
+3dhq[c]	3dhq	3-Dehydroquinate	C7H9O6	-1	cytoplasm	C00944	4196	 17947 32364
+3dhsk[c]	3dhsk	3-Dehydroshikimate	C7H7O5	-1	cytoplasm	C02637	5617	30918
+3gmp[e]	3gmp	3-GMP	C10H12N5O8P	-2	extra-organism	C06193	8443	
+3gmp[p]	3gmp	3-GMP	C10H12N5O8P	-2	periplasm	C06193	8443	
+3haACP[c]	3haACP	3R-3-Hydroxyacyl-acyl-carrier-protein	C388H609O144N96P1S3	-1	cytoplasm	C01271	4490	
+3hbcoa[c]	3hbcoa	S-3-Hydroxybutanoyl-CoA	C25H38N7O18P3S	-4	cytoplasm	C01144	4375	15453
+3hcddec5eACP[c]	3hcddec5eACP	R-3-hydroxy-cis-dodec-5-enoyl-acyl-carrier-protein	C396H623O144N96P1S3	-1	cytoplasm			
+3hcinnm[e]	3hcinnm	3-hydroxycinnamic-acid	C9H7O3	-1	extra-organism			
+3hcinnm[p]	3hcinnm	3-hydroxycinnamic-acid	C9H7O3	-1	periplasm			
+3hcmrs7eACP[c]	3hcmrs7eACP	R-3-hydroxy-cis-myristol-7-eoyl-acyl-carrier-protein	C398H627O144N96P1S3	-1	cytoplasm			
+3hcpalm9eACP[c]	3hcpalm9eACP	R-3-hydroxy-cis-palm-9-eoyl-acyl-carrier-protein	C400H631O144N96P1S3	-1	cytoplasm			
+3hcvac11eACP[c]	3hcvac11eACP	R-3-hydroxy-cis-vacc-11-enoyl-acyl-carrier-protein	C402H635O144N96P1S3	-1	cytoplasm			
+3hdcoa[c]	3hdcoa	S-3-Hydroxydecanoyl-CoA	C31H50N7O18P3S	-4	cytoplasm	C05264	7651	28325
+3hddcoa[c]	3hddcoa	S-3-Hydroxydodecanoyl-CoA	C33H54N7O18P3S	-4	cytoplasm	C05262	7649	27668
+3hddecACP[c]	3hddecACP	R-3-Hydroxydodecanoyl-acyl-carrier-protein	C396H625O144N96P1S3	-1	cytoplasm	C05757	8052	
+3hdecACP[c]	3hdecACP	R-3-Hydroxydecanoyl-acyl-carrier-protein	C394H621O144N96P1S3	-1	cytoplasm	C04619	7209	
+3hhcoa[c]	3hhcoa	S-3-Hydroxyhexanoyl-CoA	C27H42N7O18P3S	-4	cytoplasm	C05268	7655	28276
+3hhdcoa[c]	3hhdcoa	S-3-Hydroxyhexadecanoyl-CoA	C37H62N7O18P3S	-4	cytoplasm	C05258	7645	27402
+3hhexACP[c]	3hhexACP	R-3-Hydroxyhexanoyl-acyl-carrier-protein	C390H613O144N96P1S3	-1	cytoplasm	C05747	8042	
+3hmrsACP[c]	3hmrsACP	R-3-Hydroxytetradecanoyl-acyl-carrier-protein	C398H629O144N96P1S3	-1	cytoplasm	C04688	7269	
+3hocoa[c]	3hocoa	S-3-Hydroxyoctanoyl-CoA	C29H46N7O18P3S	-4	cytoplasm	C05266	7653	28632
+3hoctACP[c]	3hoctACP	R-3-Hydroxyoctanoyl-acyl-carrier-protein	C392H617O144N96P1S3	-1	cytoplasm	C04620	7210	
+3hoctaACP[c]	3hoctaACP	R-3-Hydroxyoctadecanoyl-acyl-carrier-protein	C402H637O144N96P1S3	-1	cytoplasm			
+3hodcoa[c]	3hodcoa	S-3-Hydroxyoctadecanoyl-CoA	C39H66N7O18P3S	-4	cytoplasm			
+3hpalmACP[c]	3hpalmACP	R-3-hydroxypalmitoyl-acyl-carrier-protein	C400H633O144N96P1S3	-1	cytoplasm	C04633	7222	
+3hpppn[e]	3hpppn	3-3-hydroxy-phenyl-propionate	C9H9O3	-1	extra-organism			
+3hpppn[p]	3hpppn	3-3-hydroxy-phenyl-propionate	C9H9O3	-1	periplasm			
+3htdcoa[c]	3htdcoa	S-3-Hydroxytetradecanoyl-CoA	C35H58N7O18P3S	-4	cytoplasm	C05260	7647	27466
+3ig3p[c]	3ig3p	C-3-Indolyl-glycerol-3-phosphate	C11H12NO6P	-2	cytoplasm	C03506	6317	18299
+3mob[c]	3mob	3-Methyl-2-oxobutanoate	C5H7O3	-1	cytoplasm	C00141	3441	 11851 16530
+3mop[c]	3mop	S-3-Methyl-2-oxopentanoate	C6H9O3	-1	cytoplasm	C00671	3940	15614
+3ocddec5eACP[c]	3ocddec5eACP	3-oxo-cis-dodec-5-enoyl-acyl-carrier-protein	C396H621O144N96P1S3	-1	cytoplasm			
+3ocmrs7eACP[c]	3ocmrs7eACP	3-oxo-cis-myristol-7-eoyl-acyl-carrier-protein	C398H625O144N96P1S3	-1	cytoplasm			
+3ocpalm9eACP[c]	3ocpalm9eACP	3-oxo-cis-palm-9-eoyl-acyl-carrier-protein	C400H629O144N96P1S3	-1	cytoplasm			
+3ocvac11eACP[c]	3ocvac11eACP	3-oxo-cis-vacc-11-enoyl-acyl-carrier-protein	C402H633O144N96P1S3	-1	cytoplasm			
+3odcoa[c]	3odcoa	3-Oxodecanoyl-CoA	C31H48N7O18P3S	-4	cytoplasm	C05265	7652	28528
+3oddcoa[c]	3oddcoa	3-Oxododecanoyl-CoA	C33H52N7O18P3S	-4	cytoplasm	C05263	7650	27868
+3oddecACP[c]	3oddecACP	3-Oxododecanoyl-acyl-carrier-protein	C396H623O144N96P1S3	-1	cytoplasm	C05756	8051	
+3odecACP[c]	3odecACP	3-Oxodecanoyl-acyl-carrier-protein	C394H619O144N96P1S3	-1	cytoplasm	C05753	8048	
+3ohcoa[c]	3ohcoa	3-Oxohexanoyl-CoA	C27H40N7O18P3S	-4	cytoplasm	C05269	7656	27648
+3ohdcoa[c]	3ohdcoa	3-Oxohexadecanoyl-CoA	C37H60N7O18P3S	-4	cytoplasm	C05259	7646	15491
+3ohexACP[c]	3ohexACP	3-Oxohexanoyl-acyl-carrier-protein	C390H611O144N96P1S3	-1	cytoplasm	C05746	8041	
+3omrsACP[c]	3omrsACP	3-Oxotetradecanoyl-acyl-carrier-protein	C398H627O144N96P1S3	-1	cytoplasm	C05759	8054	
+3oocoa[c]	3oocoa	3-Oxooctanoyl-CoA	C29H44N7O18P3S	-4	cytoplasm	C05267	7654	28264
+3ooctACP[c]	3ooctACP	3-Oxooctanoyl-acyl-carrier-protein	C392H615O144N96P1S3	-1	cytoplasm	C05750	8045	
+3ooctdACP[c]	3ooctdACP	3-Oxooctadecanoyl-acyl-carrier-protein	C402H635O144N96P1S3	-1	cytoplasm			
+3oodcoa[c]	3oodcoa	3-Oxooctadecanoyl-CoA	C39H64N7O18P3S	-4	cytoplasm	C16216	47205524	
+3opalmACP[c]	3opalmACP	3-Oxohexadecanoyl-acyl-carrier-protein	C400H631O144N96P1S3	-1	cytoplasm	C05762	8057	
+3ophb[c]	3ophb	3-Octaprenyl-4-hydroxybenzoate	C47H69O3	-1	cytoplasm	C05809	8104	 1617 50116
+3otdcoa[c]	3otdcoa	3-Oxotetradecanoyl-CoA	C35H56N7O18P3S	-4	cytoplasm	C05261	7648	28726
+3pg[c]	3pg	3-Phospho-D-glycerate	C3H4O7P	-3	cytoplasm	C00197	3497	17794
+3pg[e]	3pg	3-Phospho-D-glycerate	C3H4O7P	-3	extra-organism	C00197	3497	17794
+3pg[p]	3pg	3-Phospho-D-glycerate	C3H4O7P	-3	periplasm	C00197	3497	17794
+3php[c]	3php	3-Phosphohydroxypyruvate	C3H2O7P	-3	cytoplasm	C03232	6103	30933
+3psme[c]	3psme	5-O-1-Carboxyvinyl-3-phosphoshikimate	C10H9O10P	-4	cytoplasm	C01269	4488	16257
+3sala[c]	3sala	3-Sulfino-L-alanine	C3H5NO4S	-2	cytoplasm	C00606	3881	16345
+3ump[e]	3ump	3-UMP	C9H11N2O9P	-2	extra-organism	C01368	4567	28895
+3ump[p]	3ump	3-UMP	C9H11N2O9P	-2	periplasm	C01368	4567	28895
+4abut[c]	4abut	4-Aminobutanoate	C4H9NO2	0	cytoplasm	C00334	3628	16865
+4abut[e]	4abut	4-Aminobutanoate	C4H9NO2	0	extra-organism	C00334	3628	16865
+4abut[p]	4abut	4-Aminobutanoate	C4H9NO2	0	periplasm	C00334	3628	16865
+4abutn[c]	4abutn	4-Aminobutanal	C4H10NO	1	cytoplasm	C00555	3835	17769
+4abz[c]	4abz	4-Aminobenzoate	C7H6NO2	-1	cytoplasm	C00568	3847	30753
+4abz[e]	4abz	4-Aminobenzoate	C7H6NO2	-1	extra-organism	C00568	3847	30753
+4adcho[c]	4adcho	4-amino-4-deoxychorismate	C10H10NO5	-1	cytoplasm	C11355	13530	 18198 35181
+4ahmmp[c]	4ahmmp	4-Amino-5-hydroxymethyl-2-methylpyrimidine	C6H9N3O	0	cytoplasm	C01279	4498	16892
+4ampm[c]	4ampm	4-Amino-2-methyl-5-phosphomethylpyrimidine	C6H8N3O4P	-2	cytoplasm	C04556	7161	18032
+4c2me[c]	4c2me	4-cytidine-5-diphospho-2-C-methyl-D-erythritol	C14H23N3O14P2	-2	cytoplasm	C11435	13607	16578
+4h2kpi[c]	4h2kpi	4-Hydroxy-2-ketopimelate	C7H8O6	-2	cytoplasm	C05601	7924	
+4hba[c]	4hba	4-Hydroxy-benzyl-alcohol	C7H8O2	0	cytoplasm		125??3480	30746
+4hbz[c]	4hbz	4-Hydroxybenzoate	C7H5O3	-1	cytoplasm	C00156	3456	30763
+4hoxpacd[e]	4hoxpacd	4-Hydroxyphenylacetaldehyde	C8H8O2	0	extra-organism	C03765	6521	15621
+4hoxpacd[p]	4hoxpacd	4-Hydroxyphenylacetaldehyde	C8H8O2	0	periplasm	C03765	6521	15621
+4hoxpac[c]	4hoxpac	4-Hydroxyphenylacetate	C8H7O3	-1	cytoplasm	C00642	3915	18101
+4hoxpac[e]	4hoxpac	4-Hydroxyphenylacetate	C8H7O3	-1	extra-organism	C00642	3915	18101
+4hoxpac[p]	4hoxpac	4-Hydroxyphenylacetate	C8H7O3	-1	periplasm	C00642	3915	18101
+4hthr[c]	4hthr	4-Hydroxy-L-threonine	C4H9NO4	0	cytoplasm	C06056	8326	
+4iz5pp[c]	4iz5pp	4-Imidazolone-5-propanoate	C6H7N2O3	-1	cytoplasm	C03680	6455	
+4mhetz[c]	4mhetz	4-Methyl-5-2-hydroxyethyl-thiazole	C6H9NOS	0	cytoplasm	C04294	6954	17957
+4mop[c]	4mop	4-Methyl-2-oxopentanoate	C6H9O3	-1	cytoplasm	C00233	3532	48430
+4mpetz[c]	4mpetz	4-Methyl-5-2-phosphoethyl-thiazole	C6H8NO4PS	-2	cytoplasm	C04327	6980	17857
+4pasp[c]	4pasp	4-Phospho-L-aspartate	C4H6NO7P	-2	cytoplasm	C03082	5980	15836
+4per[c]	4per	4-Phospho-D-erythronate	C4H6O8P	-3	cytoplasm	C03393	6224	49003
+4ppan[c]	4ppan	D-4-Phosphopantothenate	C9H15NO8P	-3	cytoplasm	C03492	6304	15905
+4ppcys[c]	4ppcys	N-R-4-Phosphopantothenoyl-L-cysteine	C12H20N2O9PS	-3	cytoplasm	C04352	7001	15769
+4r5au[c]	4r5au	4-1-D-Ribitylamino-5-aminouracil	C9H16N4O6	0	cytoplasm	C04732	7303	15934
+5aizc[c]	5aizc	5-amino-1-5-phospho-D-ribosyl-imidazole-4-carboxylate	C9H11N3O9P	-3	cytoplasm	C04751	7321	28413
+5aop[c]	5aop	5-Amino-4-oxopentanoate	C5H9NO3	0	cytoplasm	C00430	3719	17549
+5aprbu[c]	5aprbu	5-Amino-6-5-phosphoribitylamino-uracil	C9H15N4O9P	-2	cytoplasm	C04454	7081	18247
+5apru[c]	5apru	5-Amino-6-5-phosphoribosylamino-uracil	C9H13N4O9P	-2	cytoplasm	C01268	4487	18337
+5c2o3ed[c]	5c2o3ed	5-Carboxy-2-oxohept-3-enedioate	C8H5O7	-3	cytoplasm	C04052	6753	15924
+5caiz[c]	5caiz	5-phosphoribosyl-5-carboxyaminoimidazole	C9H11N3O9P	-3	cytoplasm	C04751	7321	28413
+5cm2hmu[c]	5cm2hmu	5-Carboxymethyl-2-hydroxymuconate	C8H5O7	-3	cytoplasm	C04186	6862	2040
+5dglcn[c]	5dglcn	5-Dehydro-D-gluconate	C6H9O7	-1	cytoplasm	C01062	4301	17426
+5dglcn[e]	5dglcn	5-Dehydro-D-gluconate	C6H9O7	-1	extra-organism	C01062	4301	17426
+5dglcn[p]	5dglcn	5-Dehydro-D-gluconate	C6H9O7	-1	periplasm	C01062	4301	17426
+5dh4dglc[c]	5dh4dglc	5-Dehydro-4-deoxy-D-glucarate	C6H6O7	-2	cytoplasm	C00679	3948	42819
+5drib[c]	5drib	5-deoxyribose	C5H10O4	0	cytoplasm		3449	30797
+5mdr1p[c]	5mdr1p	5-Methylthio-5-deoxy-D-ribose-1-phosphate	C6H11O7PS	-2	cytoplasm	C04188	6864	
+5mdru1p[c]	5mdru1p	5-Methylthio-5-deoxy-D-ribulose-1-phosphate	C6H11O7PS	-2	cytoplasm	C04582	7183	28096
+5mta[c]	5mta	5-Methylthioadenosine	C11H15N5O3S	0	cytoplasm	C00170	3470	17509
+5mthf[c]	5mthf	5-Methyltetrahydrofolate	C20H24N7O6	-1	cytoplasm	C00440	3729	15641
+5mtr[c]	5mtr	5-Methylthio-D-ribose	C6H12O4S	0	cytoplasm	C03089	5987	16895
+5prdmbz[c]	5prdmbz	N1-5-Phospho-alpha-D-ribosyl-5-6-dimethylbenzimidazole	C14H17N2O7P	-2	cytoplasm	C04778	7342	16837
+6hmhpt[c]	6hmhpt	6-hydroxymethyl-dihydropterin	C7H9N5O2	0	cytoplasm			
+6hmhptpp[c]	6hmhptpp	6-hydroxymethyl-dihydropterin-pyrophosphate	C7H8N5O8P2	-3	cytoplasm			
+6pgc[c]	6pgc	6-Phospho-D-gluconate	C6H10O10P	-3	cytoplasm	C00345	3638	48928
+6pgl[c]	6pgl	6-phospho-D-glucono-1-5-lactone	C6H9O9P	-2	cytoplasm	C01236	4457	16938
+8aonn[c]	8aonn	8-Amino-7-oxononanoate	C9H17NO3	0	cytoplasm	C01092	4327	 12266 15830
+ACP[c]	ACP	apoprotein-acyl-carrier-protein	C384H603N96O142P1S3	-1	cytoplasm	C00229	3528	
+LalaDgluMdapDala[c]	LalaDgluMdapDala	L-alanine-D-glutamate-meso-2-6-diaminoheptanedioate-D-alanine	C18H30N5O9	-1	cytoplasm			
+LalaDgluMdapDala[e]	LalaDgluMdapDala	L-alanine-D-glutamate-meso-2-6-diaminoheptanedioate-D-alanine	C18H30N5O9	-1	extra-organism			
+LalaDgluMdapDala[p]	LalaDgluMdapDala	L-alanine-D-glutamate-meso-2-6-diaminoheptanedioate-D-alanine	C18H30N5O9	-1	periplasm			
+LalaDgluMdap[c]	LalaDgluMdap	L-alanine-D-glutamate-meso-2-6-diaminoheptanedioate	C15H25N4O8	-1	cytoplasm			
+LalaDgluMdap[e]	LalaDgluMdap	L-alanine-D-glutamate-meso-2-6-diaminoheptanedioate	C15H25N4O8	-1	extra-organism			
+LalaDgluMdap[p]	LalaDgluMdap	L-alanine-D-glutamate-meso-2-6-diaminoheptanedioate	C15H25N4O8	-1	periplasm			
+LalaDglu[c]	LalaDglu	L-alanine-D-glutamate	C8H13N2O5	-1	cytoplasm			
+LalaLglu[c]	LalaLglu	L-alanine-L-glutamate	C8H13N2O5	-1	cytoplasm			
+N1aspmd[c]	N1aspmd	N1-Acetylspermidine	C9H23N3O	2	cytoplasm	C00612	3886	17927
+Nmtrp[c]	Nmtrp	N-Methyltryptophan	C12H14N2O2	0	cytoplasm	C02983	5892	15334
+Sfglutth[c]	Sfglutth	S-Formylglutathione	C11H16N3O7S	-1	cytoplasm	C01031	4274	16225
+aacoa[c]	aacoa	Acetoacetyl-CoA	C25H36N7O18P3S	-4	cytoplasm	C00332	3626	15345
+aact[c]	aact	Aminoacetone	C3H8NO	1	cytoplasm	C01888	5001	17906
+acACP[c]	acACP	Acetyl-ACP	C386H605O143N96P1S3	-1	cytoplasm	C03939	6663	
+ac[c]	ac	Acetate	C2H3O2	-1	cytoplasm	C00033	3335	15366
+ac[e]	ac	Acetate	C2H3O2	-1	extra-organism	C00033	3335	15366
+ac[p]	ac	Acetate	C2H3O2	-1	periplasm	C00033	3335	15366
+acac[e]	acac	Acetoacetate	C4H5O3	-1	extra-organism	C00164	3464	
+acac[p]	acac	Acetoacetate	C4H5O3	-1	periplasm	C00164	3464	
+acald[c]	acald	Acetaldehyde	C2H4O	0	cytoplasm	C00084	3384	15343
+acald[e]	acald	Acetaldehyde	C2H4O	0	extra-organism	C00084	3384	15343
+acald[p]	acald	Acetaldehyde	C2H4O	0	periplasm	C00084	3384	15343
+acanth[c]	acanth	N-Acetylanthranilate	C9H8NO3	-1	cytoplasm	C06332	8568	16803
+accoa[c]	accoa	Acetyl-CoA	C23H34N7O17P3S	-4	cytoplasm	C00024	3326	15351
+acetol[c]	acetol	Acetol	C3H6O2	0	cytoplasm	C05235	7630	27957
+acg5p[c]	acg5p	N-Acetyl-L-glutamyl-5-phosphate	C7H9NO8P	-3	cytoplasm	C04133	6819	16878
+acg5sa[c]	acg5sa	N-Acetyl-L-glutamate-5-semialdehyde	C7H10NO4	-1	cytoplasm	C01250	4470	 16319 29123
+acgal1p[e]	acgal1p	N-Acetyl-D-galactosamine-1-phosphate	C8H14NO9P	-2	extra-organism			
+acgal1p[p]	acgal1p	N-Acetyl-D-galactosamine-1-phosphate	C8H14NO9P	-2	periplasm			
+acgal[e]	acgal	N-Acetyl-D-galactosamine	C8H15NO6	0	extra-organism	C01132	4363	28037
+acgal[p]	acgal	N-Acetyl-D-galactosamine	C8H15NO6	0	periplasm	C01132	4363	28037
+acgam1p[c]	acgam1p	N-Acetyl-D-glucosamine-1-phosphate	C8H14NO9P	-2	cytoplasm	C04256	6921	7125
+acgam1p[e]	acgam1p	N-Acetyl-D-glucosamine-1-phosphate	C8H14NO9P	-2	extra-organism	C04256	6921	7125
+acgam1p[p]	acgam1p	N-Acetyl-D-glucosamine-1-phosphate	C8H14NO9P	-2	periplasm	C04256	6921	7125
+acgam6p[c]	acgam6p	N-Acetyl-D-glucosamine-6-phosphate	C8H14NO9P	-2	cytoplasm	C00357	3650	15784
+acgam[c]	acgam	N-Acetyl-D-glucosamine	C8H15NO6	0	cytoplasm	C00140	3440	17411
+acgam[e]	acgam	N-Acetyl-D-glucosamine	C8H15NO6	0	extra-organism	C00140	3440	17411
+acgam[p]	acgam	N-Acetyl-D-glucosamine	C8H15NO6	0	periplasm	C00140	3440	17411
+acglc-D[c]	acglc-D	6-Acetyl-D-glucose	C8H14O7	0	cytoplasm	C02655	5628	17901
+acglu[c]	acglu	N-Acetyl-L-glutamate	C7H9NO5	-2	cytoplasm	C00624	3897	 17533 44337
+acmalt[c]	acmalt	Acetyl-maltose	C14H24O12	0	cytoplasm	C02130	5209	2411
+acmana[c]	acmana	N-Acetyl-D-mannosamine	C8H15NO6	0	cytoplasm	C00645	3918	17122
+acmana[e]	acmana	N-Acetyl-D-mannosamine	C8H15NO6	0	extra-organism	C00645	3918	17122
+acmana[p]	acmana	N-Acetyl-D-mannosamine	C8H15NO6	0	periplasm	C00645	3918	17122
+acmanap[c]	acmanap	N-Acetyl-D-mannosamine-6-phosphate	C8H14NO9P	-2	cytoplasm	C04257	6922	28273
+acmum6p[c]	acmum6p	N-acetylmuramate-6-phosphate	C11H17NO11P	-3	cytoplasm			
+acmum[e]	acmum	N-Acetylmuramate	C11H18NO8	-1	extra-organism	C02713	5676	
+acmum[p]	acmum	N-Acetylmuramate	C11H18NO8	-1	periplasm	C02713	5676	
+acnam[c]	acnam	N-Acetylneuraminate	C11H18NO9	-1	cytoplasm	C00270	3568	17012
+acnam[e]	acnam	N-Acetylneuraminate	C11H18NO9	-1	extra-organism	C00270	3568	17012
+acnam[p]	acnam	N-Acetylneuraminate	C11H18NO9	-1	periplasm	C00270	3568	17012
+acolipa[e]	acolipa	4-Amino-4-deoxy-L-arabinose-modified-core-oligosaccharide-lipid-A	C181H314N3O103P4	-9	extra-organism			
+acolipa[p]	acolipa	4-Amino-4-deoxy-L-arabinose-modified-core-oligosaccharide-lipid-A	C181H314N3O103P4	-9	periplasm			
+acon-C[c]	acon-C	cis-Aconitate	C6H3O6	-3	cytoplasm	C00417	3707	32805
+acon-C[e]	acon-C	cis-Aconitate	C6H3O6	-3	extra-organism	C00417	3707	32805
+acon-C[p]	acon-C	cis-Aconitate	C6H3O6	-3	periplasm	C00417	3707	32805
+acon-T[c]	acon-T	trans-Aconitate	C6H3O6	-3	cytoplasm	C02341	5390	32806
+acorn[c]	acorn	N2-Acetyl-L-ornithine	C7H14N2O3	0	cytoplasm	C00437	3726	16543
+acser[c]	acser	O-Acetyl-L-serine	C5H9NO4	0	cytoplasm	C00979	4228	17981
+acser[e]	acser	O-Acetyl-L-serine	C5H9NO4	0	extra-organism	C00979	4228	17981
+acser[p]	acser	O-Acetyl-L-serine	C5H9NO4	0	periplasm	C00979	4228	17981
+actACP[c]	actACP	Acetoacetyl-ACP	C388H607O144N96P1S3	-1	cytoplasm	C05744	8039	
+actp[c]	actp	Acetyl-phosphate	C2H3O5P	-2	cytoplasm	C00227	3527	15350
+adcob1nda[c]	adcob1nda	Adenosyl-cobyrinate-a-c-diamide	C55H68CoN11O15	-4	cytoplasm	C06506	8737	2482
+adcobn[c]	adcobn	Adenosylcobyric-acid	C55H76CoN15O11	0	cytoplasm	C06507	8738	2483
+ade[c]	ade	Adenine	C5H5N5	0	cytoplasm	C00147	3447	16708
+ade[e]	ade	Adenine	C5H5N5	0	extra-organism	C00147	3447	16708
+ade[p]	ade	Adenine	C5H5N5	0	periplasm	C00147	3447	16708
+adn[c]	adn	Adenosine	C10H13N5O4	0	cytoplasm	C00212	3512	16335
+adn[e]	adn	Adenosine	C10H13N5O4	0	extra-organism	C00212	3512	16335
+adn[p]	adn	Adenosine	C10H13N5O4	0	periplasm	C00212	3512	16335
+adocbi[c]	adocbi	Adenosyl-cobinamide	C58H84CoN16O11	1	cytoplasm	C06508	8739	2480
+adocbip[c]	adocbip	Adenosyl-cobinamide-phosphate	C58H83CoN16O14P	-1	cytoplasm	C06509	8740	2481
+adocbl[c]	adocbl	Adenosylcobalamin	C72H100CoN18O17P	0	cytoplasm	C00194	3494	18408
+adocbl[e]	adocbl	Adenosylcobalamin	C72H100CoN18O17P	0	extra-organism	C00194	3494	18408
+adocbl[p]	adocbl	Adenosylcobalamin	C72H100CoN18O17P	0	periplasm	C00194	3494	18408
+adocblp[c]	adocblp	Adenosylcobalamin-phosphate	C72H99CoN18O20P2	-2	cytoplasm	phosphorylated version of C00194		
+adp[c]	adp	ADP	C10H12N5O10P2	-3	cytoplasm	C00008	3310	16761
+adpglc[c]	adpglc	ADPglucose	C16H23N5O15P2	-2	cytoplasm	C00498	3781	15751
+adphep-DD[c]	adphep-DD	ADP-D-glycero-D-manno-heptose	C17H25N5O16P2	-2	cytoplasm	C06397	8633	16693
+adphep-LD[c]	adphep-LD	ADP-L-glycero-D-manno-heptose	C17H25N5O16P2	-2	cytoplasm	C06398	8634	15915
+adprib[c]	adprib	ADPribose	C15H21N5O14P2	-2	cytoplasm	C00301	3595	16960
+AEP[c]	AEP	2-Aminoethylphosphonate	C2H7N1O3P1	-1	cytoplasm	C03557	6353	15573
+AEP[e]	AEP	2-Aminoethylphosphonate	C2H7N1O3P1	-1	extra-organism	C03557	6353	15573
+AEP[p]	AEP	2-Aminoethylphosphonate	C2H7N1O3P1	-1	periplasm	C03557	6353	15573
+ag[e]	ag	silver	Ag	1	extra-organism	C06710	8935	9141
+agdpcbi[c]	agdpcbi	Adenosine-GDP-cobinamide	C68H95CoN21O21P2	-1	cytoplasm	C06510	8741	
+agm[c]	agm	Agmatine	C5H16N4	2	cytoplasm	C00179	3479	17431
+agm[e]	agm	Agmatine	C5H16N4	2	extra-organism	C00179	3479	17431
+agm[p]	agm	Agmatine	C5H16N4	2	periplasm	C00179	3479	17431
+ahcys[c]	ahcys	S-Adenosyl-L-homocysteine	C14H20N6O5S	0	cytoplasm	C00021	3323	16680
+ahdt[c]	ahdt	2-Amino-4-hydroxy-6-erythro-1-2-3-trihydroxypropyl-dihydropteridine-triphosphate	C9H12N5O13P3	-4	cytoplasm	C04895	7446	18372
+aicar[c]	aicar	5-Amino-1-5-Phospho-D-ribosyl-imidazole-4-carboxamide	C9H13N4O8P	-2	cytoplasm	C04677	7258	18406
+air[c]	air	5-amino-1-5-phospho-D-ribosyl-imidazole	C8H12N3O7P	-2	cytoplasm	C03373	6208	28843
+airs[c]	airs	Aminoimidazole-riboside	C8H13N3O4	0	cytoplasm	phosphorylated version of C03373		
+airs[e]	airs	Aminoimidazole-riboside	C8H13N3O4	0	extra-organism	phosphorylated version of C03373		
+airs[p]	airs	Aminoimidazole-riboside	C8H13N3O4	0	periplasm	phosphorylated version of C03373		
+akg[c]	akg	2-Oxoglutarate	C5H4O5	-2	cytoplasm	C00026	3328	30915
+akg[e]	akg	2-Oxoglutarate	C5H4O5	-2	extra-organism	C00026	3328	30915
+akg[p]	akg	2-Oxoglutarate	C5H4O5	-2	periplasm	C00026	3328	30915
+ala-B[c]	ala-B	beta-Alanine	C3H7NO2	0	cytoplasm	C00099	3399	16958
+ala-B[e]	ala-B	beta-Alanine	C3H7NO2	0	extra-organism	C00099	3399	16958
+ala-B[p]	ala-B	beta-Alanine	C3H7NO2	0	periplasm	C00099	3399	16958
+ala-D[c]	ala-D	D-Alanine	C3H7NO2	0	cytoplasm	C00133	3433	15570
+ala-D[e]	ala-D	D-Alanine	C3H7NO2	0	extra-organism	C00133	3433	15570
+ala-D[p]	ala-D	D-Alanine	C3H7NO2	0	periplasm	C00133	3433	15570
+ala-L[c]	ala-L	L-Alanine	C3H7NO2	0	cytoplasm	C00041	3343	16977
+ala-L[e]	ala-L	L-Alanine	C3H7NO2	0	extra-organism	C00041	3343	16977
+ala-L[p]	ala-L	L-Alanine	C3H7NO2	0	periplasm	C00041	3343	16977
+alaala[c]	alaala	D-Alanyl-D-alanine	C6H12N2O3	0	cytoplasm	C00993	4239	16576
+alaala[e]	alaala	D-Alanyl-D-alanine	C6H12N2O3	0	extra-organism	C00993	4239	16576
+alaala[p]	alaala	D-Alanyl-D-alanine	C6H12N2O3	0	periplasm	C00993	4239	16576
+alac-S[c]	alac-S	S-2-Acetolactate	C5H7O4	-1	cytoplasm	C06010	8282	18409
+alatrna[c]	alatrna	L-Alanyl-tRNA-Ala	C3H6NOR	1	cytoplasm	C00886	4142	17732
+all-D[e]	all-D	D-Allose	C6H12O6	0	extra-organism	C01487	4657	4093
+all-D[p]	all-D	D-Allose	C6H12O6	0	periplasm	C01487	4657	4093
+alltn[c]	alltn	Allantoin	C4H6N4O3	0	cytoplasm	C01551	4709	15676
+alltn[e]	alltn	Allantoin	C4H6N4O3	0	extra-organism	C01551	4709	15676
+alltn[p]	alltn	Allantoin	C4H6N4O3	0	periplasm	C01551	4709	15676
+alltt[c]	alltt	Allantoate	C4H7N4O4	-1	cytoplasm	C00499	3782	30837
+amet[c]	amet	S-Adenosyl-L-methionine	C15H23N6O5S	1	cytoplasm	C00019	3321	15414
+ametam[c]	ametam	S-Adenosylmethioninamine	C14H24N6O3S	2	cytoplasm	C01137	4368	15625
+amob[c]	amob	S-Adenosyl-4-methylthio-2-oxobutanoate	C15H19N5O6S	0	cytoplasm	C04425	7057	16490
+amp[c]	amp	AMP	C10H12N5O7P	-2	cytoplasm	C00020	3322	16027
+amp[e]	amp	AMP	C10H12N5O7P	-2	extra-organism	C00020	3322	16027
+amp[p]	amp	AMP	C10H12N5O7P	-2	periplasm	C00020	3322	16027
+anhgm3p[c]	anhgm3p	N-Acetyl-D-glucosamine-anhydrous-N-Acetylmuramyl-tripeptide	C34H52N6O19	-2	cytoplasm			
+anhgm3p[p]	anhgm3p	N-Acetyl-D-glucosamine-anhydrous-N-Acetylmuramyl-tripeptide	C34H52N6O19	-2	periplasm			
+anhgm4p[c]	anhgm4p	N-Acetyl-D-glucosamine-anhydrous-N-Acetylmuramyl-tetrapeptide	C37H57N7O20	-2	cytoplasm			
+anhgm4p[p]	anhgm4p	N-Acetyl-D-glucosamine-anhydrous-N-Acetylmuramyl-tetrapeptide	C37H57N7O20	-2	periplasm			
+anhgm[c]	anhgm	N-Acetyl-D-glucosamine-anhydrous-N-Acetylmuramic-acid	C19H29N2O12	-1	cytoplasm			
+anhgm[e]	anhgm	N-Acetyl-D-glucosamine-anhydrous-N-Acetylmuramic-acid	C19H29N2O12	-1	extra-organism			
+anhgm[p]	anhgm	N-Acetyl-D-glucosamine-anhydrous-N-Acetylmuramic-acid	C19H29N2O12	-1	periplasm			
+anhm3p[c]	anhm3p	1-6-anhydrous-N-Acetylmuramyl-tripeptide	C26H39N5O14	-2	cytoplasm			
+anhm4p[c]	anhm4p	1-6-anhydrous-N-Acetylmuramyl-tetrapeptide	C29H44N6O15	-2	cytoplasm			
+anhm[c]	anhm	1-6-anhydrous-N-Acetylmuramate	C11H16NO7	-1	cytoplasm			
+anth[c]	anth	Anthranilate	C7H6NO2	-1	cytoplasm	C00108	3408	30754
+ap4a[c]	ap4a	P1-P4-Bis-5-adenosyl-tetraphosphate	C20H24N10O19P4	-4	cytoplasm	C01260	4479	17422
+ap5a[c]	ap5a	P1-P5-Bis-5-adenosyl-pentaphosphate	C20H24N10O22P5	-5	cytoplasm	C04058	6757	
+apg120[c]	apg120	acyl-phosphatidylglycerol-n-C120	C42H80O11P	-1	cytoplasm			
+apg140[c]	apg140	acyl-phosphatidylglycerol-n-C140	C48H92O11P	-1	cytoplasm			
+apg141[c]	apg141	acyl-phosphatidylglycerol-n-C141	C48H86O11P	-1	cytoplasm			
+apg160[c]	apg160	acyl-phosphatidylglycerol-n-C160	C54H104O11P	-1	cytoplasm			
+apg161[c]	apg161	acyl-phosphatidylglycerol-n-C161	C54H98O11P	-1	cytoplasm			
+apg180[c]	apg180	acyl-phosphatidylglycerol-n-C180	C60H116O11P	-1	cytoplasm			
+apg181[c]	apg181	acyl-phosphatidylglycerol-n-C181	C60H110O11P	-1	cytoplasm			
+apoACP[c]	apoACP	apoprotein-acyl-carrier-protein	C373H583N94O136S2	0	cytoplasm	C03688	6463	
+app[c]	app	R-1-Amino-2-propanol	C3H9NO	0	cytoplasm	C03194	6071	15675
+appp[c]	appp	D-1-Aminopropan-2-ol-O-phosphate	C3H9NO4P	-1	cytoplasm	C04122	6809	28390
+aps[c]	aps	Adenosine-5-phosphosulfate	C10H12N5O10PS	-2	cytoplasm	C00224	3524	17709
+ara5p[c]	ara5p	D-Arabinose-5-phosphate	C5H9O8P	-2	cytoplasm	C01112	4344	16241
+arab-L[c]	arab-L	L-Arabinose	C5H10O5	0	cytoplasm	C00259	3558	17535
+arab-L[e]	arab-L	L-Arabinose	C5H10O5	0	extra-organism	C00259	3558	17535
+arab-L[p]	arab-L	L-Arabinose	C5H10O5	0	periplasm	C00259	3558	17535
+arbt6p[c]	arbt6p	Arbutin-6-phosphate	C12H15O10P	-2	cytoplasm	C06187	8438	
+arbtn[c]	arbtn	aerobactin-minus-Fe3	C22H33N4O13	-3	cytoplasm			
+arbtn[e]	arbtn	aerobactin-minus-Fe3	C22H33N4O13	-3	extra-organism			
+arbtn-fe3[c]	arbtn-fe3	Aerobactin	C22H33FeN4O13	0	cytoplasm	C05554	7887	18157
+arbtn-fe3[e]	arbtn-fe3	Aerobactin	C22H33FeN4O13	0	extra-organism	C05554	7887	18157
+arbtn-fe3[p]	arbtn-fe3	Aerobactin	C22H33FeN4O13	0	periplasm	C05554	7887	18157
+arbtn[p]	arbtn	aerobactin-minus-Fe3	C22H33N4O13	-3	periplasm			
+arg-L[c]	arg-L	L-Arginine	C6H15N4O2	1	cytoplasm	C00062	3362	16467
+arg-L[e]	arg-L	L-Arginine	C6H15N4O2	1	extra-organism	C00062	3362	16467
+arg-L[p]	arg-L	L-Arginine	C6H15N4O2	1	periplasm	C00062	3362	16467
+argsuc[c]	argsuc	N-omega-L-Arginino-succinate	C10H17N4O6	-1	cytoplasm	C03406	6235	15682
+argtrna[c]	argtrna	L-Arginyl-tRNA-Arg	C6H14N4OR	2	cytoplasm	C02163	5239	18366
+ascb6p[c]	ascb6p	L-ascorbate-6-phosphate	C6H7O9P	-2	cytoplasm		656479???3385	15946
+ascb-L[e]	ascb-L	L-Ascorbate	C6H8O6	0	extra-organism	C00072	3372	 29073 38290
+ascb-L[p]	ascb-L	L-Ascorbate	C6H8O6	0	periplasm	C00072	3372	 29073 38290
+asn-L[c]	asn-L	L-Asparagine	C4H8N2O3	0	cytoplasm	C00152	3452	17196
+asn-L[e]	asn-L	L-Asparagine	C4H8N2O3	0	extra-organism	C00152	3452	17196
+asn-L[p]	asn-L	L-Asparagine	C4H8N2O3	0	periplasm	C00152	3452	17196
+asntrna[c]	asntrna	L-Asparaginyl-tRNA-Asn	C14H23N2O12PR2	1	cytoplasm	C03402	6232	29265
+aso3[e]	aso3	arsenite	AsO3	-3	extra-organism	C06697	8922	29866
+aso3[p]	aso3	arsenite	AsO3	-3	periplasm	C06697	8922	29866
+asp-L[c]	asp-L	L-Aspartate	C4H6NO4	-1	cytoplasm	C00049	3351	17053
+asp-L[e]	asp-L	L-Aspartate	C4H6NO4	-1	extra-organism	C00049	3351	17053
+asp-L[p]	asp-L	L-Aspartate	C4H6NO4	-1	periplasm	C00049	3351	17053
+aspsa[c]	aspsa	L-Aspartate-4-semialdehyde	C4H7NO3	0	cytoplasm	C00441	3730	 13086 18051
+asptrna[c]	asptrna	L-Aspartyl-tRNA-Asp	C4H5NO3R	0	cytoplasm	C02984	5893	29158
+athr-L[c]	athr-L	L-Allo-threonine	C4H9NO3	0	cytoplasm	C05519	7864	28718
+atp[c]	atp	ATP	C10H12N5O13P3	-4	cytoplasm	C00002	3304	15422
+au[c]	au	Gold-Au	Au	1	cytoplasm			29287
+au[p]	au	Gold-Au	Au	1	periplasm			29287
+b2coa[c]	b2coa	Crotonoyl-CoA	C25H36N7O17P3S	-4	cytoplasm	C00877	4133	
+bbtcoa[c]	bbtcoa	gamma-butyrobetainyl-CoA	C28H46N8O17P3S	-3	cytoplasm		726??6196	28684
+bglycogen[c]	bglycogen	branching-glycogen	C6H10O5	0	cytoplasm			
+btcoa[c]	btcoa	Butanoyl-CoA	C25H38N7O17P3S	-4	cytoplasm	C00136	3436	15517
+btn[c]	btn	Biotin	C10H15N2O3S	-1	cytoplasm	C00120	3420	15956
+btnso[c]	btnso	d-biotin-d-sulfoxide	C10H15N2O4S	-1	cytoplasm			
+but2eACP[c]	but2eACP	But-2-enoyl-acyl-carrier-protein	C388H607O143N96P1S3	-1	cytoplasm	C04246	6911	
+butACP[c]	butACP	Butyryl-ACP-n-C40ACP	C388H609O143N96P1S3	-1	cytoplasm	C05745	8040	
+but[e]	but	Butyrate-n-C40	C4H7O2	-1	extra-organism	C00246	3545	30772
+but[p]	but	Butyrate-n-C40	C4H7O2	-1	periplasm	C00246	3545	30772
+butso3[e]	butso3	butanesulfonate	C4H9O3S	-1	extra-organism			
+butso3[p]	butso3	butanesulfonate	C4H9O3S	-1	periplasm			
+ca2[c]	ca2	Calcium	Ca	2	cytoplasm	C00076	3376	29108
+ca2[e]	ca2	Calcium	Ca	2	extra-organism	C00076	3376	29108
+ca2[p]	ca2	Calcium	Ca	2	periplasm	C00076	3376	29108
+camp[c]	camp	cAMP	C10H11N5O6P	-1	cytoplasm	C00575	3854	17489
+cbasp[c]	cbasp	N-Carbamoyl-L-aspartate	C5H6N2O5	-2	cytoplasm	C00438	3727	15859
+cbi[c]	cbi	Cobinamide	C48H72CoN11O8	0	cytoplasm	C05774	8069	28956
+cbi[e]	cbi	Cobinamide	C48H72CoN11O8	0	extra-organism	C05774	8069	28956
+cbi[p]	cbi	Cobinamide	C48H72CoN11O8	0	periplasm	C05774	8069	28956
+cbl1[c]	cbl1	Cob-I-alamin	C62H88CoN13O14P	-1	cytoplasm	C00853	4110	15982
+cbl1[e]	cbl1	Cob-I-alamin	C62H88CoN13O14P	-1	extra-organism	C00853	4110	15982
+cbl1[p]	cbl1	Cob-I-alamin	C62H88CoN13O14P	-1	periplasm	C00853	4110	15982
+cbp[c]	cbp	Carbamoyl-phosphate	CH2NO5P	-2	cytoplasm	C00169	3469	17672
+cd2[c]	cd2	Cadmium	Cd	2	cytoplasm	C01413	4601	48775
+cd2[e]	cd2	Cadmium	Cd	2	extra-organism	C01413	4601	48775
+cd2[p]	cd2	Cadmium	Cd	2	periplasm	C01413	4601	48775
+cddec5eACP[c]	cddec5eACP	cis-dodec-5-enoyl-acyl-carrier-protein-n-C121	C396H623O143N96P1S3	-1	cytoplasm			
+cdec3eACP[c]	cdec3eACP	cis-dec-3-enoyl-acyl-carrier-protein-n-C101	C394H619O143N96P1S3	-1	cytoplasm			
+cdp[c]	cdp	CDP	C9H12N3O11P2	-3	cytoplasm	C00112	3412	17239
+cdp4dh36ddglc[c]	cdp4dh36ddglc	CDP-4-dehydro-3-6-dideoxy-D-glucose	C15H21N3O14P2	-2	cytoplasm	C04297	6956	17817
+cdp4dh6doglc[c]	cdp4dh6doglc	CDP-4-dehydro-6-deoxy-D-glucose	C15H21N3O15P2	-2	cytoplasm	C01219	4441	17494
+cdpabeq[c]	cdpabeq	CDP-abequose	C15H23N3O14P2	-2	cytoplasm	C01788	4916	16049
+cdpdddecg[c]	cdpdddecg	CDP-1-2-didodecanoylglycerol	C36H63N3O15P2	-2	cytoplasm	C00269	3567	
+cdpglc[c]	cdpglc	CDP-glucose	C15H23N3O16P2	-2	cytoplasm	C00501	3784	
+cdpdhdec9eg[c]	cdpdhdec9eg	CDP-1-2-dihexadec-9-enoylglycerol	C44H75N3O15P2	-2	cytoplasm	C00269	3567	
+cdpdhdecg[c]	cdpdhdecg	CDP-1-2-dihexadecanoylglycerol	C44H79N3O15P2	-2	cytoplasm	C00269	3567	
+cdpdodec11eg[c]	cdpdodec11eg	CDP-1-2-dioctadec-11-enoylglycerol	C48H83N3O15P2	-2	cytoplasm	C00269	3567	
+cdpdodecg[c]	cdpdodecg	CDP-1-2-dioctadecanoylglycerol	C48H87N3O15P2	-2	cytoplasm	C00269	3567	
+cdpdtdec7eg[c]	cdpdtdec7eg	CDP-1-2-ditetradec-7-enoylglycerol	C40H67N3O15P2	-2	cytoplasm	C00269	3567	
+cdpdtdecg[c]	cdpdtdecg	CDP-1-2-ditetradecanoylglycerol	C40H71N3O15P2	-2	cytoplasm	C00269	3567	
+cgly[c]	cgly	Cys-Gly	C5H10N2O3S	0	cytoplasm	C01419	4606	4047
+cgly[e]	cgly	Cys-Gly	C5H10N2O3S	0	extra-organism	C01419	4606	4047
+cgly[p]	cgly	Cys-Gly	C5H10N2O3S	0	periplasm	C01419	4606	4047
+chol[c]	chol	Choline	C5H14NO	1	cytoplasm	C00114	3414	15354
+chol[e]	chol	Choline	C5H14NO	1	extra-organism	C00114	3414	15354
+chol[p]	chol	Choline	C5H14NO	1	periplasm	C00114	3414	15354
+chor[c]	chor	chorismate	C10H8O6	-2	cytoplasm	C00251	3550	17333
+cit[c]	cit	Citrate	C6H5O7	-3	cytoplasm	C00158	3458	30769
+cit[e]	cit	Citrate	C6H5O7	-3	extra-organism	C00158	3458	30769
+cit[p]	cit	Citrate	C6H5O7	-3	periplasm	C00158	3458	30769
+citr-L[c]	citr-L	L-Citrulline	C6H13N3O3	0	cytoplasm	C00327	3621	16349
+ckdo[c]	ckdo	CMP-3-deoxy-D-manno-octulosonate	C17H24N3O15P	-2	cytoplasm	C04121	6808	
+cl[c]	cl	Chloride	Cl	-1	cytoplasm	C00115	3415	17996
+cl[e]	cl	Chloride	Cl	-1	extra-organism	C00115	3415	17996
+cl[p]	cl	Chloride	Cl	-1	periplasm	C00115	3415	17996
+clpn120[p]	clpn120	cardiolipin-tetradodecanoyl-n-C120	C57H108O17P2	-2	periplasm	C05980	8259	
+clpn140[p]	clpn140	cardiolipin-tetratetradecanoyl-n-C140	C65H124O17P2	-2	periplasm	C05980	8259	
+clpn141[p]	clpn141	cardiolipin-tetratetradec-7-enoyl-n-C141	C65H116O17P2	-2	periplasm	C05980	8259	
+clpn160[p]	clpn160	cardiolipin-tetrahexadecanoyl-n-C160	C73H140O17P2	-2	periplasm	C05980	8259	
+clpn161[p]	clpn161	cardiolipin-tetrahexadec-9-enoyl-n-C161	C73H132O17P2	-2	periplasm	C05980	8259	
+clpn180[p]	clpn180	cardiolipin-tetraoctadecanoyl-n-C180	C81H156O17P2	-2	periplasm	C05980	8259	
+clpn181[p]	clpn181	cardiolipin-tetraoctadec-11-enoyl-n-C181	C81H148O17P2	-2	periplasm	C05980	8259	
+cmp[c]	cmp	CMP	C9H12N3O8P	-2	cytoplasm	C00055	3357	17361
+cmp[e]	cmp	CMP	C9H12N3O8P	-2	extra-organism	C00055	3357	17361
+cmp[p]	cmp	CMP	C9H12N3O8P	-2	periplasm	C00055	3357	17361
+co2[c]	co2	CO2	CO2	0	cytoplasm	C00011	3313	16526
+co2[e]	co2	CO2	CO2	0	extra-organism	C00011	3313	16526
+co2[p]	co2	CO2	CO2	0	periplasm	C00011	3313	16526
+coa[c]	coa	Coenzyme-A	C21H32N7O16P3S	-4	cytoplasm	C00010	3312	15346
+cob1nda[c]	cob1nda	Cob-I-yrinate-a-c-diamide	C45H56CoN6O12	-5	cytoplasm	C06505	8736	28531
+cob2nda[c]	cob2nda	Cob-II-yrinate-a-c-diamide	C45H56CoN6O12	-4	cytoplasm	C06504	8735	27937
+cobalt2[c]	cobalt2	Co2	Co	2	cytoplasm	C00175	3475	27638
+cobalt2[e]	cobalt2	Co2	Co	2	extra-organism	C00175	3475	27638
+cobalt2[p]	cobalt2	Co2	Co	2	periplasm	C00175	3475	27638
+cobn[c]	cobn	Cobyrinate	C45H52CoN4O14	-6	cytoplasm	C05773	8068	33907
+codscl2[c]	codscl2	Cobalt-precorrin-2	C42H39CoN4O16	-7	cytoplasm	C11538	13705	
+codscl3[c]	codscl3	Cobalt-precorrin-3	C43H41CoN4O16	-7	cytoplasm	C11539	13706	
+codscl4[c]	codscl4	Cobalt-precorrin-4	C44H44CoN4O16	-6	cytoplasm	C11540	13707	
+codscl5a[c]	codscl5a	Cobalt-precorrin-5a	C45H46CoN4O16	-6	cytoplasm	C16242		
+codscl5b[c]	codscl5b	Cobalt-precorrin-5b	C43H43CoN4O16	-7	cytoplasm	C16243		
+codscl6a[c]	codscl6a	Cobalt-precorrin-6a	C44H45CoN4O16	-7	cytoplasm	C11542	13709	
+codscl6b[c]	codscl6b	Cobalt-precorrin-6b	C44H47CoN4O16	-7	cytoplasm	C11543	13710	
+codscl7[c]	codscl7	Cobalt-precorrin-7	C45H49CoN4O16	-7	cytoplasm	C16244		
+codscl8x[c]	codscl8x	Cobalt-precorrin-8x	C45H52CoN4O14	-6	cytoplasm	C11545	13712	
+colipa[c]	colipa	core-oligosaccharide-lipid-A	C176H303N2O100P4	-11	cytoplasm			
+colipa[e]	colipa	core-oligosaccharide-lipid-A	C176H303N2O100P4	-11	extra-organism			
+colipa[p]	colipa	core-oligosaccharide-lipid-A	C176H303N2O100P4	-11	periplasm			
+colipa20Oag[e]	colipa20Oag	O-antigen-x20-core-oligosaccharide-lipid-A	C656H1103N2O440P4	-11	extra-organism			
+colipa20Oag[p]	colipa20Oag	O-antigen-x20-core-oligosaccharide-lipid-A	C656H1103N2O440P4	-11	periplasm			
+cpe160[c]	cpe160	cyclopropane-phosphatidylethanolamine-dihexadec-9-10-cyclo-anoyl-n-C160-cyclo	C39H74N1O8P1	0	cytoplasm			
+cpe180[c]	cpe180	cyclopropane-phosphatidylethanolamine-dioctadec-11-12-cyclo-anoyl-n-C180-cyclo	C43H82N1O8P1	0	cytoplasm			
+cpg160[c]	cpg160	cyclopropane-phosphatidylglycerol-dihexadec-9-10-cyclo-anoyl-n-C160-cyclo	C40H74O10P1	-1	cytoplasm			
+cpg180[c]	cpg180	cyclopropane-phosphatidylglycerol-dioctadec-11-12-cyclo-anoyl-n-C180-cyclo	C44H82O10P1	-1	cytoplasm			
+cpgn[c]	cpgn	coprogen	C35H52N6O13Fe	-1	cytoplasm			
+cpgn[e]	cpgn	coprogen	C35H52N6O13Fe	-1	extra-organism			
+cpgn[p]	cpgn	coprogen	C35H52N6O13Fe	-1	periplasm			
+cpgn-un[c]	cpgn-un	coprogen-unloaded-no-Fe-III	C35H52N6O13	-4	cytoplasm			
+cpgn-un[e]	cpgn-un	coprogen-unloaded-no-Fe-III	C35H52N6O13	-4	extra-organism			
+cpgn-un[p]	cpgn-un	coprogen-unloaded-no-Fe-III	C35H52N6O13	-4	periplasm			
+cpppg3[c]	cpppg3	Coproporphyrinogen-III	C36H40N4O8	-4	cytoplasm	C03263	6127	15439
+crnDcoa[c]	crnDcoa	D-carnitinyl-CoA	C28H46N8O18P3S	-3	cytoplasm		605	
+crn-D[c]	crn-D	D-Carnitine	C7H15NO3	0	cytoplasm	C00487	3770	3424
+crn-D[p]	crn-D	D-Carnitine	C7H15NO3	0	periplasm	C00487	3770	3424
+crn[c]	crn	L-Carnitine	C7H15NO3	0	cytoplasm	C00318	3612	16347
+crn[e]	crn	L-Carnitine	C7H15NO3	0	extra-organism	C00318	3612	16347
+crn[p]	crn	L-Carnitine	C7H15NO3	0	periplasm	C00318	3612	16347
+crncoa[c]	crncoa	L-Carnitinyl-CoA	C28H46N8O18P3S	-3	cytoplasm			
+csn[c]	csn	Cytosine	C4H5N3O	0	cytoplasm	C00380	3670	16040
+csn[e]	csn	Cytosine	C4H5N3O	0	extra-organism	C00380	3670	16040
+csn[p]	csn	Cytosine	C4H5N3O	0	periplasm	C00380	3670	16040
+ctbt[c]	ctbt	crotonobetaine	C7H13NO2	0	cytoplasm	C04114	6803	1774
+ctbt[p]	ctbt	crotonobetaine	C7H13NO2	0	periplasm	C04114	6803	1774
+ctbtcoa[c]	ctbtcoa	crotonobetainyl-CoA	C28H44N8O17P3S	-3	cytoplasm		591??6196	28684
+ctp[c]	ctp	CTP	C9H12N3O14P3	-4	cytoplasm	C00063	3363	17677
+cu2[c]	cu2	Cu2	Cu	2	cytoplasm	C00070	3370	28694
+cu2[e]	cu2	Cu2	Cu	2	extra-organism	C00070	3370	28694
+cu2[p]	cu2	Cu2	Cu	2	periplasm	C00070	3370	28694
+cu[c]	cu	Cu	Cu	1	cytoplasm			49552
+cu[e]	cu	Cu	Cu	1	extra-organism			49552
+cu[p]	cu	Cu	Cu	1	periplasm			49552
+cyan[c]	cyan	Hydrogen-cyanide	CHN	0	cytoplasm	C01326	4537	18407
+cyan[e]	cyan	Hydrogen-cyanide	CHN	0	extra-organism	C01326	4537	18407
+cyan[p]	cyan	Hydrogen-cyanide	CHN	0	periplasm	C01326	4537	18407
+cynt[e]	cynt	Cyanate	CNO	-1	extra-organism	C01417	4604	28024
+cynt[p]	cynt	Cyanate	CNO	-1	periplasm	C01417	4604	28024
+cys-D[e]	cys-D	D-Cysteine	C3H7NO2S	0	extra-organism	C00793	4051	16375
+cys-D[p]	cys-D	D-Cysteine	C3H7NO2S	0	periplasm	C00793	4051	16375
+cys-L[c]	cys-L	L-Cysteine	C3H7NO2S	0	cytoplasm	C00097	3397	17561
+cys-L[e]	cys-L	L-Cysteine	C3H7NO2S	0	extra-organism	C00097	3397	17561
+cys-L[p]	cys-L	L-Cysteine	C3H7NO2S	0	periplasm	C00097	3397	17561
+cysi-L[c]	cysi-L	L-Cystine	C6H12N2O4S2	0	cytoplasm	C00491	3774	16283
+cysi-L[e]	cysi-L	L-Cystine	C6H12N2O4S2	0	extra-organism	C00491	3774	16283
+cysi-L[p]	cysi-L	L-Cystine	C6H12N2O4S2	0	periplasm	C00491	3774	16283
+cyst-L[c]	cyst-L	L-Cystathionine	C7H14N2O4S	0	cytoplasm	C02291	5347	17482
+cystrna[c]	cystrna	L-Cysteinyl-tRNA-Cys	C3H6NOSR	1	cytoplasm	C03125	6018	29152
+cytd[c]	cytd	Cytidine	C9H13N3O5	0	cytoplasm	C00475	3758	17562
+cytd[e]	cytd	Cytidine	C9H13N3O5	0	extra-organism	C00475	3758	17562
+cytd[p]	cytd	Cytidine	C9H13N3O5	0	periplasm	C00475	3758	17562
+dad-2[c]	dad-2	Deoxyadenosine	C10H13N5O3	0	cytoplasm	C00559	3839	17256
+dad-2[e]	dad-2	Deoxyadenosine	C10H13N5O3	0	extra-organism	C00559	3839	17256
+dad-2[p]	dad-2	Deoxyadenosine	C10H13N5O3	0	periplasm	C00559	3839	17256
+dad-5[c]	dad-5	5-Deoxyadenosine	C10H13N5O3	0	cytoplasm	C05198	7603	17319
+dadp[c]	dadp	dADP	C10H12N5O9P2	-3	cytoplasm	C00206	3506	16174
+damp[c]	damp	dAMP	C10H12N5O6P	-2	cytoplasm	C00360	3651	17713
+damp[e]	damp	dAMP	C10H12N5O6P	-2	extra-organism	C00360	3651	17713
+damp[p]	damp	dAMP	C10H12N5O6P	-2	periplasm	C00360	3651	17713
+dann[c]	dann	7-8-Diaminononanoate	C9H21N2O2	1	cytoplasm	C01037	4280	2247
+datp[c]	datp	dATP	C10H12N5O12P3	-4	cytoplasm	C00131	3431	16284
+db4p[c]	db4p	3-4-dihydroxy-2-butanone-4-phosphate	C4H7O6P	-2	cytoplasm	C15556	17396548	
+dc2coa[c]	dc2coa	trans-Dec-2-enoyl-CoA	C31H48N7O17P3S	-4	cytoplasm	C05275	7662	10723
+dcaACP[c]	dcaACP	Decanoyl-ACP-n-C100ACP	C394H621O143N96P1S3	-1	cytoplasm	C05755	8050	
+dca[c]	dca	Decanoate-n-C100	C10H19O2	-1	cytoplasm	C01571	4728	30813
+dca[e]	dca	Decanoate-n-C100	C10H19O2	-1	extra-organism	C01571	4728	30813
+dca[p]	dca	Decanoate-n-C100	C10H19O2	-1	periplasm	C01571	4728	30813
+dcacoa[c]	dcacoa	Decanoyl-CoA-n-C100CoA	C31H50N7O17P3S	-4	cytoplasm	C05274	7661	28493
+dcamp[c]	dcamp	N6-1-2-Dicarboxyethyl-AMP	C14H14N5O11P	-4	cytoplasm	C03794	6543	15919
+dcdp[c]	dcdp	dCDP	C9H12N3O10P2	-3	cytoplasm	C00705	3972	
+dcmp[c]	dcmp	dCMP	C9H12N3O7P	-2	cytoplasm	C00239	3538	15918
+dcmp[e]	dcmp	dCMP	C9H12N3O7P	-2	extra-organism	C00239	3538	15918
+dcmp[p]	dcmp	dCMP	C9H12N3O7P	-2	periplasm	C00239	3538	15918
+dctp[c]	dctp	dCTP	C9H12N3O13P3	-4	cytoplasm	C00458	3742	16311
+dcyt[c]	dcyt	Deoxycytidine	C9H13N3O4	0	cytoplasm	C00881	4137	15698
+dcyt[e]	dcyt	Deoxycytidine	C9H13N3O4	0	extra-organism	C00881	4137	15698
+dcyt[p]	dcyt	Deoxycytidine	C9H13N3O4	0	periplasm	C00881	4137	15698
+dd2coa[c]	dd2coa	trans-Dodec-2-enoyl-CoA	C33H52N7O17P3S	-4	cytoplasm	C03221	6094	15471
+ddcaACP[c]	ddcaACP	Dodecanoyl-ACP-n-C120ACP	C396H625O143N96P1S3	-1	cytoplasm	C05223	7620	
+ddca[c]	ddca	Dodecanoate-n-C120	C12H23O2	-1	cytoplasm	C02679	5649	30805
+ddca[e]	ddca	Dodecanoate-n-C120	C12H23O2	-1	extra-organism	C02679	5649	30805
+ddca[p]	ddca	Dodecanoate-n-C120	C12H23O2	-1	periplasm	C02679	5649	30805
+ddcacoa[c]	ddcacoa	Dodecanoyl-CoA-n-C120CoA	C33H54N7O17P3S	-4	cytoplasm	C01832	4951	15521
+dgdp[c]	dgdp	dGDP	C10H12N5O10P2	-3	cytoplasm	C00361	3652	28862
+dgmp[c]	dgmp	dGMP	C10H12N5O7P	-2	cytoplasm	C00362	3653	16192
+dgmp[e]	dgmp	dGMP	C10H12N5O7P	-2	extra-organism	C00362	3653	16192
+dgmp[p]	dgmp	dGMP	C10H12N5O7P	-2	periplasm	C00362	3653	16192
+dgsn[c]	dgsn	Deoxyguanosine	C10H13N5O4	0	cytoplasm	C00330	3624	17172
+dgsn[e]	dgsn	Deoxyguanosine	C10H13N5O4	0	extra-organism	C00330	3624	17172
+dgsn[p]	dgsn	Deoxyguanosine	C10H13N5O4	0	periplasm	C00330	3624	17172
+dgtp[c]	dgtp	dGTP	C10H12N5O13P3	-4	cytoplasm	C00286	3581	16497
+dha[c]	dha	Dihydroxyacetone	C3H6O3	0	cytoplasm	C00184	3484	16016
+dha[e]	dha	Dihydroxyacetone	C3H6O3	0	extra-organism	C00184	3484	16016
+dha[p]	dha	Dihydroxyacetone	C3H6O3	0	periplasm	C00184	3484	16016
+dhap[c]	dhap	Dihydroxyacetone-phosphate	C3H5O6P	-2	cytoplasm	C00111	3411	16108
+dhf[c]	dhf	7-8-Dihydrofolate	C19H19N7O6	-2	cytoplasm	C00415	3705	15633
+dhna[c]	dhna	1-4-Dihydroxy-2-naphthoate	C11H7O4	-1	cytoplasm	C03657	6435	18094
+dhnpt[c]	dhnpt	Dihydroneopterin	C9H13N5O4	0	cytoplasm	C04874	7426	17001
+dhor-S[c]	dhor-S	S-Dihydroorotate	C5H5N2O4	-1	cytoplasm	C00337	3630	17025
+dhpmp[c]	dhpmp	Dihydroneopterin-monophosphate	C9H12N5O7P	-2	cytoplasm	C05925	8213	48954
+dhpt[c]	dhpt	Dihydropteroate	C14H13N6O3	-1	cytoplasm	C00921	4175	4581
+dhptd[c]	dhptd	4-5-dihydroxy-2-3-pentanedione	C5H8O4	0	cytoplasm	C11838	14000	
+didp[c]	didp	dIDP	C10H11N4O10P2	-3	cytoplasm	C01344	4549	
+dimp[c]	dimp	dIMP	C10H11N4O7P	-2	cytoplasm	C06196	8446	28806
+dimp[e]	dimp	dIMP	C10H11N4O7P	-2	extra-organism	C06196	8446	28806
+dimp[p]	dimp	dIMP	C10H11N4O7P	-2	periplasm	C06196	8446	28806
+din[c]	din	Deoxyinosine	C10H12N4O4	0	cytoplasm	C05512	7859	28997
+din[e]	din	Deoxyinosine	C10H12N4O4	0	extra-organism	C05512	7859	28997
+din[p]	din	Deoxyinosine	C10H12N4O4	0	periplasm	C05512	7859	28997
+ditp[c]	ditp	dITP	C10H11N4O13P3	-4	cytoplasm	C01345	4550	
+dkmpp[c]	dkmpp	2-3-diketo-5-methylthio-1-phosphopentane	C6H9O6PS	-2	cytoplasm	C15650	17396640	
+dmbzid[c]	dmbzid	5-6-Dimethylbenzimidazole	C9H10N2	0	cytoplasm	C03114	6009	15890
+dmlz[c]	dmlz	6-7-Dimethyl-8-1-D-ribityl-lumazine	C13H18N4O6	0	cytoplasm	C04332	6983	17601
+dmpp[c]	dmpp	Dimethylallyl-diphosphate	C5H9O7P2	-3	cytoplasm	C00235	3534	16057
+dms[e]	dms	Dimethyl-sulfide	C2H6S	0	extra-organism	C00580	3859	17437
+dms[p]	dms	Dimethyl-sulfide	C2H6S	0	periplasm	C00580	3859	17437
+dmso[e]	dmso	Dimethyl-sulfoxide	C2H6OS	0	extra-organism	C11143	13325	28262
+dmso[p]	dmso	Dimethyl-sulfoxide	C2H6OS	0	periplasm	C11143	13325	28262
+dnad[c]	dnad	Deamino-NAD	C21H24N6O15P2	-2	cytoplasm	C00857	4114	18304
+dopa[e]	dopa	Dopamine	C8H12NO2	1	extra-organism	C03758	6517	18243
+dopa[p]	dopa	Dopamine	C8H12NO2	1	periplasm	C03758	6517	18243
+dpcoa[c]	dpcoa	Dephospho-CoA	C21H33N7O13P2S	-2	cytoplasm	C00882	4138	15468
+dsbaox[p]	dsbaox	periplasmic-protein-disulfide-isomerase-I-oxidized	X	0	periplasm			
+dsbard[p]	dsbard	periplasmic-protein-disulfide-isomerase-I-reduced	XH2	0	periplasm			
+dsbcox[p]	dsbcox	protein-disulfide-isomerase-II-oxidized	X	0	periplasm			
+dsbcrd[p]	dsbcrd	protein-disulfide-isomerase-II-reduced	XH2	0	periplasm			
+dsbdox[c]	dsbdox	fused-thioldisulfide-interchange-protein-oxidized	X	0	cytoplasm			
+dsbdrd[c]	dsbdrd	fused-thioldisulfide-interchange-protein-reduced	XH2	0	cytoplasm			
+dsbgox[p]	dsbgox	periplasmic-disulfide-isomerasethiol-disulphide-oxidase-oxidized	X	0	periplasm			
+dsbgrd[p]	dsbgrd	periplasmic-disulfide-isomerasethiol-disulphide-oxidase-reduced	XH2	0	periplasm			
+dscl[c]	dscl	dihydrosirohydrochlorin	C42H41N4O16	-7	cytoplasm	C02463	5480	
+dtbt[c]	dtbt	Dethiobiotin	C10H17N2O3	-1	cytoplasm	C01909	5017	16691
+dtdp4aaddg[c]	dtdp4aaddg	dTDP-4-acetamido-4-6-dideoxy-D-galactose	C18H27N3O15P2	-2	cytoplasm		8290	28294
+dtdp4addg[c]	dtdp4addg	dTDP-4-amino-4-6-dideoxy-D-galactose	C16H26N3O14P2	-1	cytoplasm	C04268	6932	15952
+dtdp4d6dg[c]	dtdp4d6dg	dTDP-4-dehydro-6-deoxy-D-glucose	C16H22N2O15P2	-2	cytoplasm	C00687	3956	16128
+dtdp4d6dm[c]	dtdp4d6dm	dTDP-4-dehydro-6-deoxy-L-mannose	C16H22N2O15P2	-2	cytoplasm	C00688	3957	15744
+dtdp[c]	dtdp	dTDP	C10H13N2O11P2	-3	cytoplasm	C00363	3654	18075
+dtdpglu[c]	dtdpglu	dTDPglucose	C16H24N2O16P2	-2	cytoplasm	C00842	4099	15700
+dtdprmn[c]	dtdprmn	dTDP-L-rhamnose	C16H24N2O15P2	-2	cytoplasm	C03319	6171	15774
+dtmp[c]	dtmp	dTMP	C10H13N2O8P	-2	cytoplasm	C00364	3655	17013
+dtmp[e]	dtmp	dTMP	C10H13N2O8P	-2	extra-organism	C00364	3655	17013
+dtmp[p]	dtmp	dTMP	C10H13N2O8P	-2	periplasm	C00364	3655	17013
+dttp[c]	dttp	dTTP	C10H13N2O14P3	-4	cytoplasm	C00459	3743	18077
+dudp[c]	dudp	dUDP	C9H11N2O11P2	-3	cytoplasm	C01346	4551	28850
+dump[c]	dump	dUMP	C9H11N2O8P	-2	cytoplasm	C00365	3656	17622
+dump[e]	dump	dUMP	C9H11N2O8P	-2	extra-organism	C00365	3656	17622
+dump[p]	dump	dUMP	C9H11N2O8P	-2	periplasm	C00365	3656	17622
+duri[c]	duri	Deoxyuridine	C9H12N2O5	0	cytoplasm	C00526	3809	16450
+duri[e]	duri	Deoxyuridine	C9H12N2O5	0	extra-organism	C00526	3809	16450
+duri[p]	duri	Deoxyuridine	C9H12N2O5	0	periplasm	C00526	3809	16450
+dutp[c]	dutp	dUTP	C9H11N2O14P3	-4	cytoplasm	C00460	3744	17625
+dxyl5p[c]	dxyl5p	1-deoxy-D-xylulose-5-phosphate	C5H9O7P	-2	cytoplasm	C11437	13609	16493
+dxyl[c]	dxyl	1-deoxy-D-xylulose	C5H10O4	0	cytoplasm	C06257	8496	28354
+e4p[c]	e4p	D-Erythrose-4-phosphate	C4H7O7P	-2	cytoplasm	C00279	3574	48153
+eca2und[p]	eca2und	enterobacterial-common-antigen-x2-undecaprenyl-diphosphate	C103H162N6O37P2	-4	periplasm			
+eca3und[p]	eca3und	enterobacterial-common-antigen-x3-undecaprenyl-diphosphate	C127H198N9O52P2	-5	periplasm			
+eca4colipa[e]	eca4colipa	enterobacterial-common-antigen-x4-core-oligosaccharide-lipid-A	C272H447N14O160P4	-15	extra-organism			
+eca4colipa[p]	eca4colipa	enterobacterial-common-antigen-x4-core-oligosaccharide-lipid-A	C272H447N14O160P4	-15	periplasm			
+eca4und[p]	eca4und	enterobacterial-common-antigen-x4-undecaprenyl-diphosphate	C151H234N12O67P2	-6	periplasm			
+eig3p[c]	eig3p	D-erythro-1-Imidazol-4-yl-glycerol-3-phosphate	C6H9N2O6P	-2	cytoplasm	C04666	7249	17805
+enlipa[e]	enlipa	phosphoethanolamine-KDO-2-lipid-A	C112H202N3O42P3	-6	extra-organism			
+enlipa[p]	enlipa	phosphoethanolamine-KDO-2-lipid-A	C112H202N3O42P3	-6	periplasm			
+enter[c]	enter	Enterochelin	C30H27N3O15	0	cytoplasm	C05821	8116	28855
+enter[e]	enter	Enterochelin	C30H27N3O15	0	extra-organism	C05821	8116	28855
+enter[p]	enter	Enterochelin	C30H27N3O15	0	periplasm	C05821	8116	28855
+etha[c]	etha	Ethanolamine	C2H8NO	1	cytoplasm	C00189	3489	16000
+etha[e]	etha	Ethanolamine	C2H8NO	1	extra-organism	C00189	3489	16000
+etha[p]	etha	Ethanolamine	C2H8NO	1	periplasm	C00189	3489	16000
+ethso3[e]	ethso3	ethanesulfonate	C2H5O3S	-1	extra-organism			
+ethso3[p]	ethso3	ethanesulfonate	C2H5O3S	-1	periplasm			
+etoh[c]	etoh	Ethanol	C2H6O	0	cytoplasm	C00469	3752	16236
+etoh[e]	etoh	Ethanol	C2H6O	0	extra-organism	C00469	3752	16236
+etoh[p]	etoh	Ethanol	C2H6O	0	periplasm	C00469	3752	16236
+f1p[c]	f1p	D-Fructose-1-phosphate	C6H11O9P	-2	cytoplasm	C02976	5887	
+f6p[c]	f6p	D-Fructose-6-phosphate	C6H11O9P	-2	cytoplasm	C00085	3385	15946
+f6p[e]	f6p	D-Fructose-6-phosphate	C6H11O9P	-2	extra-organism	C00085	3385	15946
+f6p[p]	f6p	D-Fructose-6-phosphate	C6H11O9P	-2	periplasm	C00085	3385	15946
+fad[c]	fad	Flavin-adenine-dinucleotide-oxidized	C27H31N9O15P2	-2	cytoplasm	C00016	3318	16238
+fadh2[c]	fadh2	Flavin-adenine-dinucleotide-reduced	C27H33N9O15P2	-2	cytoplasm	C01352	4556	17877
+fald[c]	fald	Formaldehyde	CH2O	0	cytoplasm	C00067	3367	16842
+fald[e]	fald	Formaldehyde	CH2O	0	extra-organism	C00067	3367	16842
+fald[p]	fald	Formaldehyde	CH2O	0	periplasm	C00067	3367	16842
+fc1p[c]	fc1p	L-Fuculose-1-phosphate	C6H11O8P	-2	cytoplasm	C01099	4333	6220
+fcl-L[c]	fcl-L	L-fuculose	C6H12O5	0	cytoplasm	C01721	4858	17617
+fdp[c]	fdp	D-Fructose-1-6-bisphosphate	C6H10O12P2	-4	cytoplasm	C00354	3647	16905
+fe2[c]	fe2	Fe2	Fe	2	cytoplasm	C00023	3325	18248
+fe2[e]	fe2	Fe2	Fe	2	extra-organism	C00023	3325	18248
+fe2[p]	fe2	Fe2	Fe	2	periplasm	C00023	3325	18248
+fe3[c]	fe3	Fe3	Fe	3	cytoplasm			14819
+fe3[e]	fe3	Fe3	Fe	3	extra-organism			14819
+fe3[p]	fe3	Fe3	Fe	3	periplasm			14819
+fe3dcit[e]	fe3dcit	Fe-III-dicitrate	C12H10FeO14	-3	extra-organism	C06229	8472	
+fe3dhbzs[c]	fe3dhbzs	2-3-dihydroxybenzoylserine-Fe-III	C10FeH11NO6	2	cytoplasm			
+fe3dhbzs[e]	fe3dhbzs	2-3-dihydroxybenzoylserine-Fe-III	C10FeH11NO6	2	extra-organism			
+fe3dhbzs[p]	fe3dhbzs	2-3-dihydroxybenzoylserine-Fe-III	C10FeH11NO6	2	periplasm			
+fe3hox[c]	fe3hox	Fe-III-hydroxamate	C9H18O6N3Fe	0	cytoplasm	C06227	8470	
+fe3hox[e]	fe3hox	Fe-III-hydroxamate	C9H18O6N3Fe	0	extra-organism	C06227	8470	
+fe3hox[p]	fe3hox	Fe-III-hydroxamate	C9H18O6N3Fe	0	periplasm	C06227	8470	
+fe3hox-un[c]	fe3hox-un	Fe-III-hydoxamate-unloaded	C9H18O6N3	-3	cytoplasm			
+fe3hox-un[e]	fe3hox-un	Fe-III-hydoxamate-unloaded	C9H18O6N3	-3	extra-organism			
+fe3hox-un[p]	fe3hox-un	Fe-III-hydoxamate-unloaded	C9H18O6N3	-3	periplasm			
+fecrm[c]	fecrm	Ferrichrome	C27H42FeN9O12	0	cytoplasm	C06228	8471	
+fecrm[e]	fecrm	Ferrichrome	C27H42FeN9O12	0	extra-organism	C06228	8471	
+fecrm[p]	fecrm	Ferrichrome	C27H42FeN9O12	0	periplasm	C06228	8471	
+fecrm-un[c]	fecrm-un	Ferrichrome-minus-Fe-III	C27H42N9O12	-3	cytoplasm			
+fecrm-un[e]	fecrm-un	Ferrichrome-minus-Fe-III	C27H42N9O12	-3	extra-organism			
+fecrm-un[p]	fecrm-un	Ferrichrome-minus-Fe-III	C27H42N9O12	-3	periplasm			
+feenter[c]	feenter	Fe-enterobactin	C30H27FeN3O15	3	cytoplasm	C06230	8473	28199
+feenter[e]	feenter	Fe-enterobactin	C30H27FeN3O15	3	extra-organism	C06230	8473	28199
+feenter[p]	feenter	Fe-enterobactin	C30H27FeN3O15	3	periplasm	C06230	8473	28199
+feoxam[c]	feoxam	Generic ferrioxamine-Fe-III	C25FeH46N6O8	1	cytoplasm	C07597	9799	
+feoxam[e]	feoxam	Generic ferrioxamine-Fe-III	C25FeH46N6O8	1	extra-organism	C07597	9799	
+feoxam[p]	feoxam	Generic ferrioxamine-Fe-III	C25FeH46N6O8	1	periplasm	C07597	9799	
+feoxam-un[c]	feoxam-un	Generic ferrioxamine	C25H46N6O8	-2	cytoplasm			
+feoxam-un[e]	feoxam-un	Generic ferrioxamine	C25H46N6O8	-2	extra-organism			
+feoxam-un[p]	feoxam-un	Generic ferrioxamine	C25H46N6O8	-2	periplasm			
+feroxB[c]	feroxB	Ferrioxamine-B	C25H45N6O8	1	cytoplasm		123851	
+feroxB[e]	feroxB	Ferrioxamine-B	C25H45N6O8	1	extra-organism		123851	
+feroxB[p]	feroxB	Ferrioxamine-B	C25H45N6O8	1	periplasm		123851	
+feroxBfe[c]	feroxBfe	Ferrioxamine-B-fe	C25H45FeN6O8	1	cytoplasm		123851	
+feroxBfe[e]	feroxBfe	Ferrioxamine-B-fe	C25H45FeN6O8	1	extra-organism		123851	
+feroxBfe[p]	feroxBfe	Ferrioxamine-B-fe	C25H45FeN6O8	1	periplasm		123851	
+feroxE[c]	feroxE	Ferrioxamine-E	C27H45N6O9	0	cytoplasm		167864	
+feroxE[e]	feroxE	Ferrioxamine-E	C27H45N6O9	0	extra-organism		167864	
+feroxE[p]	feroxE	Ferrioxamine-E	C27H45N6O9	0	periplasm		167864	
+feroxEfe[c]	feroxEfe	Ferrioxamine-E-fe	C27H45FeN6O9	0	cytoplasm		167864	
+feroxEfe[e]	feroxEfe	Ferrioxamine-E-fe	C27H45FeN6O9	0	extra-organism		167864	
+feroxEfe[p]	feroxEfe	Ferrioxamine-E-fe	C27H45FeN6O9	0	periplasm		167864	
+feroxG[c]	feroxG	Ferrioxamine-G	C27H46N6O10	0	cytoplasm			
+feroxG[e]	feroxG	Ferrioxamine-G	C27H46N6O10	0	extra-organism			
+feroxG[p]	feroxG	Ferrioxamine-G	C27H46N6O10	0	periplasm			
+feroxGfe[c]	feroxGfe	Ferrioxamine-G-fe	C27H46FeN6O10	0	cytoplasm			
+feroxGfe[e]	feroxGfe	Ferrioxamine-G-fe	C27H46FeN6O10	0	extra-organism			
+feroxGfe[p]	feroxGfe	Ferrioxamine-G-fe	C27H46FeN6O10	0	periplasm			
+fgam[c]	fgam	N2-Formyl-N1-5-phospho-D-ribosyl-glycinamide	C8H13N2O9P	-2	cytoplasm	C04376	7017	18272
+fldox[c]	fldox	flavodoxin-oxidized	X	0	cytoplasm	C02869	5805	
+fldrd[c]	fldrd	flavodoxin-reduced	XH2	0	cytoplasm	C02745	5705	
+fmettrna[c]	fmettrna	N-Formylmethionyl-tRNA	C6H9NO2SR	0	cytoplasm	C03294	6151	17119
+fmn[c]	fmn	FMN	C17H19N4O9P	-2	cytoplasm	C00061	3361	17621
+fmnh2[c]	fmnh2	Reduced-FMN	C17H21N4O9P	-2	cytoplasm			
+foam[c]	foam	Formamide	CH3NO	0	cytoplasm	C00488	3771	16397
+foam[e]	foam	Formamide	CH3NO	0	extra-organism	C00488	3771	16397
+foam[p]	foam	Formamide	CH3NO	0	periplasm	C00488	3771	16397
+for[c]	for	Formate	CH1O2	-1	cytoplasm	C00058	3358	30751
+for[e]	for	Formate	CH1O2	-1	extra-organism	C00058	3358	30751
+for[p]	for	Formate	CH1O2	-1	periplasm	C00058	3358	30751
+fpram[c]	fpram	2-Formamido-N1-5-phospho-D-ribosyl-acetamidine	C8H15N3O8P	-1	cytoplasm	C04640	7229	18413
+fprica[c]	fprica	5-Formamido-1-5-phospho-D-ribosyl-imidazole-4-carboxamide	C10H13N4O9P	-2	cytoplasm	C04734	7305	18381
+frdp[c]	frdp	Farnesyl-diphosphate	C15H25O7P2	-3	cytoplasm	C00448	3736	17407
+fru[c]	fru	D-Fructose	C6H12O6	0	cytoplasm	C00095	3395	15824
+fru[e]	fru	D-Fructose	C6H12O6	0	extra-organism	C00095	3395	15824
+fru[p]	fru	D-Fructose	C6H12O6	0	periplasm	C00095	3395	15824
+frulys[e]	frulys	fructoselysine	C12H25N2O7	1	extra-organism	C16488	47205784	
+frulys[p]	frulys	fructoselysine	C12H25N2O7	1	periplasm	C16488	47205784	
+fruur[c]	fruur	D-Fructuronate	C6H9O7	-1	cytoplasm	C00905	4160	4126
+fruur[e]	fruur	D-Fructuronate	C6H9O7	-1	extra-organism	C00905	4160	4126
+fruur[p]	fruur	D-Fructuronate	C6H9O7	-1	periplasm	C00905	4160	4126
+fuc-L[c]	fuc-L	L-Fucose	C6H12O5	0	cytoplasm	C01019	4264	2181
+fuc-L[e]	fuc-L	L-Fucose	C6H12O5	0	extra-organism	C01019	4264	2181
+fuc-L[p]	fuc-L	L-Fucose	C6H12O5	0	periplasm	C01019	4264	2181
+fum[c]	fum	Fumarate	C4H2O4	-2	cytoplasm	C00122	3422	18012
+fum[e]	fum	Fumarate	C4H2O4	-2	extra-organism	C00122	3422	18012
+fum[p]	fum	Fumarate	C4H2O4	-2	periplasm	C00122	3422	18012
+g1p[c]	g1p	D-Glucose-1-phosphate	C6H11O9P	-2	cytoplasm	C00103	3403	 16077 29042
+g1p[e]	g1p	D-Glucose-1-phosphate	C6H11O9P	-2	extra-organism	C00103	3403	 16077 29042
+g1p[p]	g1p	D-Glucose-1-phosphate	C6H11O9P	-2	periplasm	C00103	3403	 16077 29042
+g3p[c]	g3p	Glyceraldehyde-3-phosphate	C3H5O6P	-2	cytoplasm	C00661	3930	17138
+g3pc[c]	g3pc	sn-Glycero-3-phosphocholine	C8H20NO6P	0	cytoplasm	C00670	3939	16870
+g3pc[e]	g3pc	sn-Glycero-3-phosphocholine	C8H20NO6P	0	extra-organism	C00670	3939	16870
+g3pc[p]	g3pc	sn-Glycero-3-phosphocholine	C8H20NO6P	0	periplasm	C00670	3939	16870
+g3pe[c]	g3pe	sn-Glycero-3-phosphoethanolamine	C5H14NO6P	0	cytoplasm	C01233	4454	
+g3pe[e]	g3pe	sn-Glycero-3-phosphoethanolamine	C5H14NO6P	0	extra-organism	C01233	4454	
+g3pe[p]	g3pe	sn-Glycero-3-phosphoethanolamine	C5H14NO6P	0	periplasm	C01233	4454	
+g3pg[c]	g3pg	Glycerophosphoglycerol	C6H14O8P	-1	cytoplasm	C03274	6135	
+g3pg[e]	g3pg	Glycerophosphoglycerol	C6H14O8P	-1	extra-organism	C03274	6135	
+g3pg[p]	g3pg	Glycerophosphoglycerol	C6H14O8P	-1	periplasm	C03274	6135	
+g3pi[c]	g3pi	sn-Glycero-3-phospho-1-inositol	C9H18O11P	-1	cytoplasm	C01225	4447	18321
+g3pi[e]	g3pi	sn-Glycero-3-phospho-1-inositol	C9H18O11P	-1	extra-organism	C01225	4447	18321
+g3pi[p]	g3pi	sn-Glycero-3-phospho-1-inositol	C9H18O11P	-1	periplasm	C01225	4447	18321
+g3ps[c]	g3ps	Glycerophosphoserine	C6H13NO8P	-1	cytoplasm		3081457	
+g3ps[e]	g3ps	Glycerophosphoserine	C6H13NO8P	-1	extra-organism		3081457	
+g3ps[p]	g3ps	Glycerophosphoserine	C6H13NO8P	-1	periplasm		3081457	
+g6p[c]	g6p	D-Glucose-6-phosphate	C6H11O9P	-2	cytoplasm	C00092	3392	4170
+g6p[e]	g6p	D-Glucose-6-phosphate	C6H11O9P	-2	extra-organism	C00092	3392	4170
+g6p[p]	g6p	D-Glucose-6-phosphate	C6H11O9P	-2	periplasm	C00092	3392	4170
+gagicolipa[c]	gagicolipa	galactosyl-glucosyl-inner-core-oligosaccharide-lipid-A	C157H271N2O84P4	-11	cytoplasm			
+gal1p[c]	gal1p	alpha-D-Galactose-1-phosphate	C6H11O9P	-2	cytoplasm	C00446	3734	17973
+gal1p[e]	gal1p	alpha-D-Galactose-1-phosphate	C6H11O9P	-2	extra-organism	C00446	3734	17973
+gal1p[p]	gal1p	alpha-D-Galactose-1-phosphate	C6H11O9P	-2	periplasm	C00446	3734	17973
+gal-bD[e]	gal-bD	beta-D-Galactose	C6H12O6	0	extra-organism	C01582	4738	28260
+gal-bD[p]	gal-bD	beta-D-Galactose	C6H12O6	0	periplasm	C01582	4738	28260
+gal[c]	gal	D-Galactose	C6H12O6	0	cytoplasm	C00124	3424	4139
+gal[e]	gal	D-Galactose	C6H12O6	0	extra-organism	C00124	3424	4139
+gal[p]	gal	D-Galactose	C6H12O6	0	periplasm	C00124	3424	4139
+galct-D[c]	galct-D	D-Galactarate	C6H8O8	-2	cytoplasm	C00879	4135	
+galct-D[e]	galct-D	D-Galactarate	C6H8O8	-2	extra-organism	C00879	4135	
+galct-D[p]	galct-D	D-Galactarate	C6H8O8	-2	periplasm	C00879	4135	
+galctn-D[c]	galctn-D	D-Galactonate	C6H11O7	-1	cytoplasm	C00880	4136	 12931 16534
+galctn-D[e]	galctn-D	D-Galactonate	C6H11O7	-1	extra-organism	C00880	4136	 12931 16534
+galctn-D[p]	galctn-D	D-Galactonate	C6H11O7	-1	periplasm	C00880	4136	 12931 16534
+galctn-L[e]	galctn-L	L-Galactonate	C6H11O7	-1	extra-organism	C15930	47205248	
+galctn-L[p]	galctn-L	L-Galactonate	C6H11O7	-1	periplasm	C15930	47205248	
+galt1p[c]	galt1p	Galactitol-1-phosphate	C6H13O9P	-2	cytoplasm	C06311	8547	28663
+galt[e]	galt	Galactitol	C6H14O6	0	extra-organism	C01697	4837	16813
+galt[p]	galt	Galactitol	C6H14O6	0	periplasm	C01697	4837	16813
+galur[c]	galur	D-Galacturonate	C6H9O7	-1	cytoplasm	C00333	3627	
+galur[e]	galur	D-Galacturonate	C6H9O7	-1	extra-organism	C00333	3627	
+galur[p]	galur	D-Galacturonate	C6H9O7	-1	periplasm	C00333	3627	
+gam1p[c]	gam1p	D-Glucosamine-1-phosphate	C6H13NO8P	-1	cytoplasm	C06156	8412	27625
+gam6p[c]	gam6p	D-Glucosamine-6-phosphate	C6H13NO8P	-1	cytoplasm	C00352	3645	15873
+gam6p[e]	gam6p	D-Glucosamine-6-phosphate	C6H13NO8P	-1	extra-organism	C00352	3645	15873
+gam6p[p]	gam6p	D-Glucosamine-6-phosphate	C6H13NO8P	-1	periplasm	C00352	3645	15873
+gam[e]	gam	D-Glucosamine	C6H14NO5	1	extra-organism	C00329	3623	47977
+gam[p]	gam	D-Glucosamine	C6H14NO5	1	periplasm	C00329	3623	47977
+gar[c]	gar	N1-5-Phospho-D-ribosyl-glycinamide	C7H14N2O8P	-1	cytoplasm	C03838	6578	18349
+gbbtn[c]	gbbtn	gamma-butyrobetaine	C7H15NO2	0	cytoplasm	C01181	4408	1941
+gbbtn[e]	gbbtn	gamma-butyrobetaine	C7H15NO2	0	extra-organism	C01181	4408	1941
+gbbtn[p]	gbbtn	gamma-butyrobetaine	C7H15NO2	0	periplasm	C01181	4408	1941
+gcald[c]	gcald	Glycolaldehyde	C2H4O2	0	cytoplasm	C00266	3564	17071
+gdp[c]	gdp	GDP	C10H12N5O11P2	-3	cytoplasm	C00035	3337	17552
+gdp[e]	gdp	GDP	C10H12N5O11P2	-3	extra-organism	C00035	3337	17552
+gdp[p]	gdp	GDP	C10H12N5O11P2	-3	periplasm	C00035	3337	17552
+gdpddman[c]	gdpddman	GDP-4-dehydro-6-deoxy-D-mannose	C16H21N5O15P2	-2	cytoplasm	C01222	4444	16955
+gdpfuc[c]	gdpfuc	GDP-L-fucose	C16H23N5O15P2	-2	cytoplasm	C00325	3619	17009
+gdpmann[c]	gdpmann	GDP-D-mannose	C16H23N5O16P2	-2	cytoplasm	C00096	3396	15820
+gdpofuc[c]	gdpofuc	GDP-4-oxo-L-fucose	C16H21N5O15P2	-2	cytoplasm		16760491	
+gdptp[c]	gdptp	Guanosine-3-diphosphate-5-triphosphate	C10H11N5O20P5	-7	cytoplasm	C04494	7111	
+ggagicolipa[c]	ggagicolipa	glucosyl-galactosyl-glucosyl-inner-core-oligosaccharide-lipid-A	C163H281N2O89P4	-11	cytoplasm			
+gggagicolipa[c]	gggagicolipa	glucosyl-glucosyl-galactosyl-glucosyl-inner-core-oligosaccharide-lipid-A	C169H291N2O94P4	-11	cytoplasm			
+gicolipa[c]	gicolipa	glucosyl-inner-core-oligosaccharide-lipid-A	C151H261N2O79P4	-11	cytoplasm			
+glc-D[c]	glc-D	D-Glucose	C6H12O6	0	cytoplasm	C00031	3333	4167
+glc-D[e]	glc-D	D-Glucose	C6H12O6	0	extra-organism	C00031	3333	4167
+glc-D[p]	glc-D	D-Glucose	C6H12O6	0	periplasm	C00031	3333	4167
+glcn[c]	glcn	D-Gluconate	C6H11O7	-1	cytoplasm	C00257	3556	33198
+glcn[e]	glcn	D-Gluconate	C6H11O7	-1	extra-organism	C00257	3556	33198
+glcn[p]	glcn	D-Gluconate	C6H11O7	-1	periplasm	C00257	3556	33198
+glcr[c]	glcr	D-Glucarate	C6H8O8	-2	cytoplasm	C00818	4076	16002
+glcr[e]	glcr	D-Glucarate	C6H8O8	-2	extra-organism	C00818	4076	16002
+glcr[p]	glcr	D-Glucarate	C6H8O8	-2	periplasm	C00818	4076	16002
+glcur1p[e]	glcur1p	D-Glucuronate-1-phosphate	C6H8O10P	-3	extra-organism	C05385	7759	28547
+glcur1p[p]	glcur1p	D-Glucuronate-1-phosphate	C6H8O10P	-3	periplasm	C05385	7759	28547
+glcur[c]	glcur	D-Glucuronate	C6H9O7	-1	cytoplasm	C00191	3491	 4178 47952
+glcur[e]	glcur	D-Glucuronate	C6H9O7	-1	extra-organism	C00191	3491	 4178 47952
+glcur[p]	glcur	D-Glucuronate	C6H9O7	-1	periplasm	C00191	3491	 4178 47952
+gln-L[c]	gln-L	L-Glutamine	C5H10N2O3	0	cytoplasm	C00064	3364	18050
+gln-L[e]	gln-L	L-Glutamine	C5H10N2O3	0	extra-organism	C00064	3364	18050
+gln-L[p]	gln-L	L-Glutamine	C5H10N2O3	0	periplasm	C00064	3364	18050
+glntrna[c]	glntrna	L-Glutaminyl-tRNA-Gln	C5H9N2O2R	1	cytoplasm	C02282	5339	29166
+glu1sa[c]	glu1sa	L-Glutamate-1-semialdehyde	C5H9NO3	0	cytoplasm	C03741	6504	15757
+glu5p[c]	glu5p	L-Glutamate-5-phosphate	C5H8NO7P	-2	cytoplasm	C03287	6144	17798
+glu5sa[c]	glu5sa	L-Glutamate-5-semialdehyde	C5H9NO3	0	cytoplasm	C01165	4392	17232
+glu-D[c]	glu-D	D-Glutamate	C5H8NO4	-1	cytoplasm	C00217	3517	15966
+glu-L[c]	glu-L	L-Glutamate	C5H8NO4	-1	cytoplasm	C00025	3327	16015
+glu-L[e]	glu-L	L-Glutamate	C5H8NO4	-1	extra-organism	C00025	3327	16015
+glu-L[p]	glu-L	L-Glutamate	C5H8NO4	-1	periplasm	C00025	3327	16015
+glucys[c]	glucys	gamma-L-Glutamyl-L-cysteine	C8H13N2O5S	-1	cytoplasm	C00669	3938	17515
+glutrna[c]	glutrna	L-Glutamyl-tRNA-Glu	C5H7NO3R	0	cytoplasm	C02987	5896	29157
+glx[c]	glx	Glyoxylate	C2H1O3	-1	cytoplasm	C00048	3350	16891
+gly[c]	gly	Glycine	C2H5NO2	0	cytoplasm	C00037	3339	15428
+gly[e]	gly	Glycine	C2H5NO2	0	extra-organism	C00037	3339	15428
+gly[p]	gly	Glycine	C2H5NO2	0	periplasm	C00037	3339	15428
+glyald[c]	glyald	D-Glyceraldehyde	C3H6O3	0	cytoplasm	C00577	3856	17378
+glyald[e]	glyald	D-Glyceraldehyde	C3H6O3	0	extra-organism	C00577	3856	17378
+glyald[p]	glyald	D-Glyceraldehyde	C3H6O3	0	periplasm	C00577	3856	17378
+glyb[c]	glyb	Glycine-betaine	C5H11NO2	0	cytoplasm	C00719	3985	17750
+glyb[e]	glyb	Glycine-betaine	C5H11NO2	0	extra-organism	C00719	3985	17750
+glyb[p]	glyb	Glycine-betaine	C5H11NO2	0	periplasm	C00719	3985	17750
+glyc2p[e]	glyc2p	Glycerol-2-phosphate	C3H7O6P	-2	extra-organism	C02979	5889	17270
+glyc2p[p]	glyc2p	Glycerol-2-phosphate	C3H7O6P	-2	periplasm	C02979	5889	17270
+glyc3p[c]	glyc3p	Glycerol-3-phosphate	C3H7O6P	-2	cytoplasm	C00093	3393	15978
+glyc3p[e]	glyc3p	Glycerol-3-phosphate	C3H7O6P	-2	extra-organism	C00093	3393	15978
+glyc3p[p]	glyc3p	Glycerol-3-phosphate	C3H7O6P	-2	periplasm	C00093	3393	15978
+glyc-R[c]	glyc-R	R-Glycerate	C3H5O4	-1	cytoplasm	C00258	3557	32398
+glyc-R[e]	glyc-R	R-Glycerate	C3H5O4	-1	extra-organism	C00258	3557	32398
+glyc-R[p]	glyc-R	R-Glycerate	C3H5O4	-1	periplasm	C00258	3557	32398
+glyc[c]	glyc	Glycerol	C3H8O3	0	cytoplasm	C00116	3416	17754
+glyc[e]	glyc	Glycerol	C3H8O3	0	extra-organism	C00116	3416	17754
+glyc[p]	glyc	Glycerol	C3H8O3	0	periplasm	C00116	3416	17754
+glyclt[c]	glyclt	Glycolate	C2H3O3	-1	cytoplasm	C00160	3460	17497
+glyclt[e]	glyclt	Glycolate	C2H3O3	-1	extra-organism	C00160	3460	17497
+glyclt[p]	glyclt	Glycolate	C2H3O3	-1	periplasm	C00160	3460	17497
+glycogen[c]	glycogen	glycogen	C6H10O5	0	cytoplasm	C00182	3482	28087
+glytrna[c]	glytrna	Glycyl-tRNA-Gly	C2H4NOR	1	cytoplasm	C02412	5445	29156
+gmhep17bp[c]	gmhep17bp	D-Glycero-D-manno-heptose-1-7-bisphosphate	C7H12O13P2	-4	cytoplasm	C11472	13642	
+gmhep1p[c]	gmhep1p	D-Glycero-D-manno-heptose-1-phosphate	C7H13O10P	-2	cytoplasm	C07838	10040	28137
+gmhep7p[c]	gmhep7p	D-Glycero-D-manno-heptose-7-phosphate	C7H13O10P	-2	cytoplasm	C07836	10038	28723
+gmp[c]	gmp	GMP	C10H12N5O8P	-2	cytoplasm	C00144	3444	17345
+gmp[e]	gmp	GMP	C10H12N5O8P	-2	extra-organism	C00144	3444	17345
+gmp[p]	gmp	GMP	C10H12N5O8P	-2	periplasm	C00144	3444	17345
+grdp[c]	grdp	Geranyl-diphosphate	C10H17O7P2	-3	cytoplasm	C00341	3634	17211
+grxox[c]	grxox	glutaredoxin-oxidized	X	0	cytoplasm			
+grxrd[c]	grxrd	glutaredoxin-reduced	XH2	0	cytoplasm			
+gsn[c]	gsn	Guanosine	C10H13N5O5	0	cytoplasm	C00387	3677	16750
+gsn[e]	gsn	Guanosine	C10H13N5O5	0	extra-organism	C00387	3677	16750
+gsn[p]	gsn	Guanosine	C10H13N5O5	0	periplasm	C00387	3677	16750
+gthox[c]	gthox	Oxidized-glutathione	C20H30N6O12S2	-2	cytoplasm	C00127	3427	17858
+gthox[e]	gthox	Oxidized-glutathione	C20H30N6O12S2	-2	extra-organism	C00127	3427	17858
+gthox[p]	gthox	Oxidized-glutathione	C20H30N6O12S2	-2	periplasm	C00127	3427	17858
+gthrd[c]	gthrd	Reduced-glutathione	C10H16N3O6S	-1	cytoplasm	C00051	3353	16856
+gthrd[e]	gthrd	Reduced-glutathione	C10H16N3O6S	-1	extra-organism	C00051	3353	16856
+gthrd[p]	gthrd	Reduced-glutathione	C10H16N3O6S	-1	periplasm	C00051	3353	16856
+gtp[c]	gtp	GTP	C10H12N5O14P3	-4	cytoplasm	C00044	3346	15996
+gtp[e]	gtp	GTP	C10H12N5O14P3	-4	extra-organism	C00044	3346	15996
+gtp[p]	gtp	GTP	C10H12N5O14P3	-4	periplasm	C00044	3346	15996
+gtspmd[c]	gtspmd	Glutathionylspermidine	C17H36N6O5S	2	cytoplasm	C05730	8032	16613
+gua[c]	gua	Guanine	C5H5N5O	0	cytoplasm	C00242	3541	16235
+gua[e]	gua	Guanine	C5H5N5O	0	extra-organism	C00242	3541	16235
+gua[p]	gua	Guanine	C5H5N5O	0	periplasm	C00242	3541	16235
+h2[c]	h2	H2	H2	0	cytoplasm	C00282	3577	18276
+h2[e]	h2	H2	H2	0	extra-organism	C00282	3577	18276
+h2[p]	h2	H2	H2	0	periplasm	C00282	3577	18276
+h2mb4p[c]	h2mb4p	1-hydroxy-2-methyl-2-E-butenyl-4-diphosphate	C5H9O8P2	-3	cytoplasm	C11811	13975	15664
+h2o2[c]	h2o2	Hydrogen-peroxide	H2O2	0	cytoplasm	C00027	3329	16240
+h2o2[e]	h2o2	Hydrogen-peroxide	H2O2	0	extra-organism	C00027	3329	16240
+h2o2[p]	h2o2	Hydrogen-peroxide	H2O2	0	periplasm	C00027	3329	16240
+h2o[c]	h2o	H2O	H2O	0	cytoplasm	C00001	3303	15377
+h2o[e]	h2o	H2O	H2O	0	extra-organism	C00001	3303	15377
+h2o[p]	h2o	H2O	H2O	0	periplasm	C00001	3303	15377
+h2s[c]	h2s	Hydrogen-sulfide	H2S	0	cytoplasm	C00283	3578	16136
+h2s[e]	h2s	Hydrogen-sulfide	H2S	0	extra-organism	C00283	3578	16136
+h2s[p]	h2s	Hydrogen-sulfide	H2S	0	periplasm	C00283	3578	16136
+h[c]	h	H	H	1	cytoplasm	C00080	3380	15378
+h[e]	h	H	H	1	extra-organism	C00080	3380	15378
+h[p]	h	H	H	1	periplasm	C00080	3380	15378
+hacolipa[e]	hacolipa	hepta-acylated-core-oligosaccharide-lipid-A-E-coli	C192H333N2O101P4	-11	extra-organism			
+halipa[e]	halipa	hepta-acylated-KDO-2-lipid-A	C126H226N2O40P2	-6	extra-organism			
+hco3[c]	hco3	Bicarbonate	CHO3	-1	cytoplasm	C00288	3583	17544
+hcys-L[c]	hcys-L	L-Homocysteine	C4H9NO2S	0	cytoplasm	C00155	3455	17588
+hdca[c]	hdca	Hexadecanoate-n-C160	C16H31O2	-1	cytoplasm	C00249	3548	15756
+hdca[e]	hdca	Hexadecanoate-n-C160	C16H31O2	-1	extra-organism	C00249	3548	15756
+hdca[p]	hdca	Hexadecanoate-n-C160	C16H31O2	-1	periplasm	C00249	3548	15756
+hdcea[c]	hdcea	Hexadecenoate-n-C161	C16H29O2	-1	cytoplasm	C00249	3548	15756
+hdcea[e]	hdcea	Hexadecenoate-n-C161	C16H29O2	-1	extra-organism	C00249	3548	15756
+hdcea[p]	hdcea	Hexadecenoate-n-C161	C16H29O2	-1	periplasm	C00249	3548	15756
+hdcoa[c]	hdcoa	Hexadecenoyl-CoA-n-C161CoA	C37H60N7O17P3S	-4	cytoplasm			
+hdd2coa[c]	hdd2coa	trans-Hexadec-2-enoyl-CoA	C37H60N7O17P3S	-4	cytoplasm	C05272	7659	28935
+hdeACP[c]	hdeACP	cis-hexadec-9-enoyl-acyl-carrier-protein-n-C161	C400H631O143N96P1S3	-1	cytoplasm			
+hemeO[c]	hemeO	Heme-O	C49H56FeN4O5	-2	cytoplasm	C15672	47204998	
+hexACP[c]	hexACP	Hexanoyl-ACP-n-C60ACP	C390H613O143N96P1S3	-1	cytoplasm	C05749	8044	
+hg2[c]	hg2	Hg2	Hg	2	cytoplasm	C00703	3970	16793
+hg2[e]	hg2	Hg2	Hg	2	extra-organism	C00703	3970	16793
+hg2[p]	hg2	Hg2	Hg	2	periplasm	C00703	3970	16793
+hhlipa[c]	hhlipa	heptosyl-heptosyl-kdo2-lipidA	C124H220N2O51P2	-6	cytoplasm			
+his-L[c]	his-L	L-Histidine	C6H9N3O2	0	cytoplasm	C00135	3435	15971
+his-L[e]	his-L	L-Histidine	C6H9N3O2	0	extra-organism	C00135	3435	15971
+his-L[p]	his-L	L-Histidine	C6H9N3O2	0	periplasm	C00135	3435	15971
+hisp[c]	hisp	L-Histidinol-phosphate	C6H11N3O4P	-1	cytoplasm	C01100	4334	16996
+histd[c]	histd	L-Histidinol	C6H12N3O	1	cytoplasm	C00860	4117	16255
+histrna[c]	histrna	L-Histidyl-tRNA-His	C6H8N3OR	1	cytoplasm	C02988	5897	29155
+hlipa[c]	hlipa	heptosyl-kdo2-lipidA	C117H208N2O45P2	-6	cytoplasm			
+hmbil[c]	hmbil	Hydroxymethylbilane	C40H38N4O17	-8	cytoplasm	C01024	4269	16645
+hmfurn[c]	hmfurn	4-hydroxy-5-methyl-3-2H-furanone	C5H6O3	0	cytoplasm		4564493??3441	 11851 16530
+hmgth[c]	hmgth	hydroxymethylglutathione	C11H18N3O7S	-1	cytoplasm		1082	
+hom-L[c]	hom-L	L-Homoserine	C4H9NO3	0	cytoplasm	C00263	3561	15699
+hom-L[e]	hom-L	L-Homoserine	C4H9NO3	0	extra-organism	C00263	3561	15699
+hom-L[p]	hom-L	L-Homoserine	C4H9NO3	0	periplasm	C00263	3561	15699
+hphhlipa[c]	hphhlipa	heptosyl-phospho-heptosyl-heptosyl-kdo2-lipidA	C131H231N2O60P3	-8	cytoplasm			
+hpyr[c]	hpyr	Hydroxypyruvate	C3H3O4	-1	cytoplasm	C00168	3468	30841
+hqn[c]	hqn	Hydroquinone	C6H6O2	0	cytoplasm	C00530	3812	17594
+hx2coa[c]	hx2coa	trans-Hex-2-enoyl-CoA	C27H40N7O17P3S	-4	cytoplasm	C05271	7658	28706
+hxa[c]	hxa	Hexanoate-n-C60	C6H11O2	-1	cytoplasm	C01585	4740	30776
+hxa[e]	hxa	Hexanoate-n-C60	C6H11O2	-1	extra-organism	C01585	4740	30776
+hxa[p]	hxa	Hexanoate-n-C60	C6H11O2	-1	periplasm	C01585	4740	30776
+hxan[c]	hxan	Hypoxanthine	C5H4N4O	0	cytoplasm	C00262	3560	17368
+hxan[e]	hxan	Hypoxanthine	C5H4N4O	0	extra-organism	C00262	3560	17368
+hxan[p]	hxan	Hypoxanthine	C5H4N4O	0	periplasm	C00262	3560	17368
+hxcoa[c]	hxcoa	Hexanoyl-CoA-n-C60CoA	C27H42N7O17P3S	-4	cytoplasm	C05270	7657	27540
+iasp[c]	iasp	Iminoaspartate	C4H3NO4	-2	cytoplasm	C05840	8133	
+ichor[c]	ichor	Isochorismate	C10H8O6	-2	cytoplasm	C00885	4141	 17582 29780
+icit[c]	icit	Isocitrate	C6H5O7	-3	cytoplasm	C00311	3605	30887
+icit[e]	icit	Isocitrate	C6H5O7	-3	extra-organism	C00311	3605	30887
+icit[p]	icit	Isocitrate	C6H5O7	-3	periplasm	C00311	3605	30887
+icolipa[c]	icolipa	inner-core-oligosaccharide-lipid-A-E-coli	C145H251N2O74P4	-11	cytoplasm			
+idon-L[c]	idon-L	L-Idonate	C6H11O7	-1	cytoplasm	C00770	4032	17796
+idon-L[e]	idon-L	L-Idonate	C6H11O7	-1	extra-organism	C00770	4032	17796
+idon-L[p]	idon-L	L-Idonate	C6H11O7	-1	periplasm	C00770	4032	17796
+idp[c]	idp	IDP	C10H11N4O11P2	-3	cytoplasm	C00104	3404	17808
+ile-L[c]	ile-L	L-Isoleucine	C6H13NO2	0	cytoplasm	C00407	3697	17191
+ile-L[e]	ile-L	L-Isoleucine	C6H13NO2	0	extra-organism	C00407	3697	17191
+ile-L[p]	ile-L	L-Isoleucine	C6H13NO2	0	periplasm	C00407	3697	17191
+iletrna[c]	iletrna	L-Isoleucyl-tRNA-Ile	C6H12NOR	1	cytoplasm	C03127	6020	29160
+imacp[c]	imacp	3-Imidazol-4-yl-2-oxopropyl-phosphate	C6H7N2O5P	-2	cytoplasm	C01267	4486	16426
+imp[c]	imp	IMP	C10H11N4O8P	-2	cytoplasm	C00130	3430	17202
+imp[e]	imp	IMP	C10H11N4O8P	-2	extra-organism	C00130	3430	17202
+imp[p]	imp	IMP	C10H11N4O8P	-2	periplasm	C00130	3430	17202
+indole[c]	indole	Indole	C8H7N	0	cytoplasm	C00463	3747	16881
+indole[e]	indole	Indole	C8H7N	0	extra-organism	C00463	3747	16881
+indole[p]	indole	Indole	C8H7N	0	periplasm	C00463	3747	16881
+inost[c]	inost	myo-Inositol	C6H12O6	0	cytoplasm	C00137	3437	17268
+inost[e]	inost	myo-Inositol	C6H12O6	0	extra-organism	C00137	3437	17268
+inost[p]	inost	myo-Inositol	C6H12O6	0	periplasm	C00137	3437	17268
+ins[c]	ins	Inosine	C10H12N4O5	0	cytoplasm	C00294	3588	17596
+ins[e]	ins	Inosine	C10H12N4O5	0	extra-organism	C00294	3588	17596
+ins[p]	ins	Inosine	C10H12N4O5	0	periplasm	C00294	3588	17596
+ipdp[c]	ipdp	Isopentenyl-diphosphate	C5H9O7P2	-3	cytoplasm	C00129	3429	16584
+isetac[e]	isetac	Isethionic-acid	C2H5O4S	-1	extra-organism	C05123	7545	
+isetac[p]	isetac	Isethionic-acid	C2H5O4S	-1	periplasm	C05123	7545	
+itp[c]	itp	ITP	C10H11N4O14P3	-4	cytoplasm	C00081	3381	16039
+k[c]	k	potassium	K	1	cytoplasm	C00238	3537	29103
+k[e]	k	potassium	K	1	extra-organism	C00238	3537	29103
+k[p]	k	potassium	K	1	periplasm	C00238	3537	29103
+kdo2lipid4L[c]	kdo2lipid4L	KDO-2-lipid-IV-A-with-laurate	C96H170N2O38P2	-6	cytoplasm	C06251	8490	
+kdo2lipid4[c]	kdo2lipid4	KDO-2-lipid-IV-A	C84H148N2O37P2	-6	cytoplasm	C06025	8297	
+kdo2lipid4[e]	kdo2lipid4	KDO-2-lipid-IV-A	C84H148N2O37P2	-6	extra-organism	C06025	8297	
+kdo2lipid4[p]	kdo2lipid4	KDO-2-lipid-IV-A	C84H148N2O37P2	-6	periplasm	C06025	8297	
+kdo2lipid4p[c]	kdo2lipid4p	KDO-2-lipid-IV-A-with-palmitoleoyl	C100H176N2O38P2	-6	cytoplasm			
+kdo8p[c]	kdo8p	3-Deoxy-D-manno-octulosonate-8-phosphate	C8H12O11P	-3	cytoplasm	C04478	7098	18069
+kdo[c]	kdo	3-Deoxy-D-manno-2-octulosonate	C8H13O8	-1	cytoplasm	C01187	4413	32817
+kdolipid4[c]	kdolipid4	KDO-lipid-IV-A	C76H137N2O30P2	-5	cytoplasm	C06024	8296	
+kphphhlipa[c]	kphphhlipa	kdo-phospho-heptosyl-phospho-heptosyl-heptosyl-kdo2-lipidA	C139H241N2O70P4	-11	cytoplasm			
+lac-D[c]	lac-D	D-Lactate	C3H5O3	-1	cytoplasm	C00256	3555	42111
+lac-D[e]	lac-D	D-Lactate	C3H5O3	-1	extra-organism	C00256	3555	42111
+lac-D[p]	lac-D	D-Lactate	C3H5O3	-1	periplasm	C00256	3555	42111
+lac-L[c]	lac-L	L-Lactate	C3H5O3	-1	cytoplasm	C00186	3486	422
+lac-L[e]	lac-L	L-Lactate	C3H5O3	-1	extra-organism	C00186	3486	422
+lac-L[p]	lac-L	L-Lactate	C3H5O3	-1	periplasm	C00186	3486	422
+lald-D[c]	lald-D	D-Lactaldehyde	C3H6O2	0	cytoplasm	C00937	4189	17167
+lald-L[c]	lald-L	L-Lactaldehyde	C3H6O2	0	cytoplasm	C00424	3714	18041
+lcts[e]	lcts	Lactose	C12H22O11	0	extra-organism	C00243	3542	36219
+lcts[p]	lcts	Lactose	C12H22O11	0	periplasm	C00243	3542	36219
+leu-L[c]	leu-L	L-Leucine	C6H13NO2	0	cytoplasm	C00123	3423	15603
+leu-L[e]	leu-L	L-Leucine	C6H13NO2	0	extra-organism	C00123	3423	15603
+leu-L[p]	leu-L	L-Leucine	C6H13NO2	0	periplasm	C00123	3423	15603
+leutrna[c]	leutrna	L-Leucyl-tRNA-Leu	C6H12NOR	1	cytoplasm	C02047	5136	16624
+lgt-S[c]	lgt-S	R-S-Lactoylglutathione	C13H20N3O8S	-1	cytoplasm	C03451	6272	15694
+lipa[c]	lipa	KDO-2-lipid-A	C110H196N2O39P2	-6	cytoplasm	C06026	8298	27963
+lipa-cold[c]	lipa-cold	cold-adapted-KDO-2-lipid-A	C114H202N2O39P2	-6	cytoplasm			
+lipa-cold[e]	lipa-cold	cold-adapted-KDO-2-lipid-A	C114H202N2O39P2	-6	extra-organism			
+lipa-cold[p]	lipa-cold	cold-adapted-KDO-2-lipid-A	C114H202N2O39P2	-6	periplasm			
+lipa[e]	lipa	KDO-2-lipid-A	C110H196N2O39P2	-6	extra-organism	C06026	8298	27963
+lipa[p]	lipa	KDO-2-lipid-A	C110H196N2O39P2	-6	periplasm	C06026	8298	27963
+lipidA[c]	lipidA	2-3-2-3-Tetrakis-beta-hydroxymyristoyl-D-glucosaminyl-1-6-beta-D-glucosamine-1-4-bisphosphate	C68H126N2O23P2	-4	cytoplasm	C04932	7476	18380
+lipidAds[c]	lipidAds	Lipid-A-Disaccharide	C68H127N2O20P	-2	cytoplasm	C04932	7476	18380
+lipidX[c]	lipidX	2-3-Bis-3-hydroxytetradecanoyl-beta-D-glucosaminyl-1-phosphate	C34H64NO12P	-2	cytoplasm	C04824	7385	16942
+lpp[p]	lpp	Braun lipoprotein	C308H528O99N87S2	0	periplasm	C01834	4953	6495
+lys-L[c]	lys-L	L-Lysine	C6H15N2O2	1	cytoplasm	C00047	3349	18019
+lys-L[e]	lys-L	L-Lysine	C6H15N2O2	1	extra-organism	C00047	3349	18019
+lys-L[p]	lys-L	L-Lysine	C6H15N2O2	1	periplasm	C00047	3349	18019
+lystrna[c]	lystrna	L-Lysine-tRNA-Lys	C6H14N2OR	2	cytoplasm	C01931	5037	16047
+lyx-L[c]	lyx-L	L-Lyxose	C5H10O5	0	cytoplasm	C01508	4676	28480
+lyx-L[e]	lyx-L	L-Lyxose	C5H10O5	0	extra-organism	C01508	4676	28480
+lyx-L[p]	lyx-L	L-Lyxose	C5H10O5	0	periplasm	C01508	4676	28480
+malACP[c]	malACP	Malonyl-acyl-carrier-protein	C387H604O145N96P1S3	-2	cytoplasm	C01209	4431	
+mal-D[c]	mal-D	D-Malate	C4H4O5	-2	cytoplasm	C00497	3780	30796
+mal-D[e]	mal-D	D-Malate	C4H4O5	-2	extra-organism	C00497	3780	30796
+mal-D[p]	mal-D	D-Malate	C4H4O5	-2	periplasm	C00497	3780	30796
+mal-L[c]	mal-L	L-Malate	C4H4O5	-2	cytoplasm	C00149	3449	30797
+mal-L[e]	mal-L	L-Malate	C4H4O5	-2	extra-organism	C00149	3449	30797
+mal-L[p]	mal-L	L-Malate	C4H4O5	-2	periplasm	C00149	3449	30797
+malcoa[c]	malcoa	Malonyl-CoA	C24H33N7O19P3S	-5	cytoplasm	C00083	3383	15531
+malt6p[c]	malt6p	Maltose-6-phosphate	C12H21O14P	-2	cytoplasm	C02995	5904	15703
+malt[c]	malt	Maltose	C12H22O11	0	cytoplasm	C00208	3508	17306
+malt[e]	malt	Maltose	C12H22O11	0	extra-organism	C00208	3508	17306
+malt[p]	malt	Maltose	C12H22O11	0	periplasm	C00208	3508	17306
+malthp[c]	malthp	Maltoheptaose	C42H72O36	0	cytoplasm		3037125??8462	
+malthx[c]	malthx	Maltohexaose	C36H62O31	0	cytoplasm	C01936	5041	
+malthx[e]	malthx	Maltohexaose	C36H62O31	0	extra-organism	C01936	5041	
+malthx[p]	malthx	Maltohexaose	C36H62O31	0	periplasm	C01936	5041	
+maltpt[c]	maltpt	Maltopentaose	C30H52O26	0	cytoplasm		124005??3611	28057
+maltpt[e]	maltpt	Maltopentaose	C30H52O26	0	extra-organism		124005??3611	28057
+maltpt[p]	maltpt	Maltopentaose	C30H52O26	0	periplasm		124005??3611	28057
+malttr[c]	malttr	Maltotriose	C18H32O16	0	cytoplasm	C01835	4954	27931
+malttr[e]	malttr	Maltotriose	C18H32O16	0	extra-organism	C01835	4954	27931
+malttr[p]	malttr	Maltotriose	C18H32O16	0	periplasm	C01835	4954	27931
+maltttr[c]	maltttr	Maltotetraose	C24H42O21	0	cytoplasm	C02052	5141	
+maltttr[e]	maltttr	Maltotetraose	C24H42O21	0	extra-organism	C02052	5141	
+maltttr[p]	maltttr	Maltotetraose	C24H42O21	0	periplasm	C02052	5141	
+man1p[c]	man1p	D-Mannose-1-phosphate	C6H11O9P	-2	cytoplasm	C03812		
+man6p[c]	man6p	D-Mannose-6-phosphate	C6H11O9P	-2	cytoplasm	C00275	3572	17369
+man6p[e]	man6p	D-Mannose-6-phosphate	C6H11O9P	-2	extra-organism	C00275	3572	17369
+man6p[p]	man6p	D-Mannose-6-phosphate	C6H11O9P	-2	periplasm	C00275	3572	17369
+man[c]	man	D-Mannose	C6H12O6	0	cytoplasm	C00159	3459	4208
+man[e]	man	D-Mannose	C6H12O6	0	extra-organism	C00159	3459	4208
+man[p]	man	D-Mannose	C6H12O6	0	periplasm	C00159	3459	4208
+mana[c]	mana	D-Mannonate	C6H11O7	-1	cytoplasm	C00514	3797	 17767 33076
+manglyc[e]	manglyc	2-alpha-D-Mannosyl-D-glycerate	C9H15O9	-1	extra-organism	C11544	13711	15847
+manglyc[p]	manglyc	2-alpha-D-Mannosyl-D-glycerate	C9H15O9	-1	periplasm	C11544	13711	15847
+melib[c]	melib	Melibiose	C12H22O11	0	cytoplasm	C05402	7769	28053
+melib[e]	melib	Melibiose	C12H22O11	0	extra-organism	C05402	7769	28053
+melib[p]	melib	Melibiose	C12H22O11	0	periplasm	C05402	7769	28053
+mercppyr[c]	mercppyr	Mercaptopyruvate	C3H3O3S	-1	cytoplasm	C00957	4208	16208
+met-D[c]	met-D	D-Methionine	C5H10NO2S	0	cytoplasm	C00855	4112	16867
+met-D[e]	met-D	D-Methionine	C5H10NO2S	0	extra-organism	C00855	4112	16867
+met-D[p]	met-D	D-Methionine	C5H10NO2S	0	periplasm	C00855	4112	16867
+met-L[c]	met-L	L-Methionine	C5H11NO2S	0	cytoplasm	C00073	3373	16643
+met-L[e]	met-L	L-Methionine	C5H11NO2S	0	extra-organism	C00073	3373	16643
+met-L[p]	met-L	L-Methionine	C5H11NO2S	0	periplasm	C00073	3373	16643
+methf[c]	methf	5-10-Methenyltetrahydrofolate	C20H20N7O6	-1	cytoplasm	C00445	3733	15638
+metsox-R-L[c]	metsox-R-L	L-methionine-R-sulfoxide	C5H11NO3S	0	cytoplasm		847	
+metsox-R-L[e]	metsox-R-L	L-methionine-R-sulfoxide	C5H11NO3S	0	extra-organism		847	
+metsox-R-L[p]	metsox-R-L	L-methionine-R-sulfoxide	C5H11NO3S	0	periplasm		847	
+metsox-S-L[c]	metsox-S-L	L-Methionine-Sulfoxide	C5H11NO3S	0	cytoplasm	C02989	5898	17016
+metsox-S-L[e]	metsox-S-L	L-Methionine-Sulfoxide	C5H11NO3S	0	extra-organism	C02989	5898	17016
+metsox-S-L[p]	metsox-S-L	L-Methionine-Sulfoxide	C5H11NO3S	0	periplasm	C02989	5898	17016
+mettrna[c]	mettrna	L-Methionyl-tRNA-Met	C5H10NOSR	1	cytoplasm	C02430	5457	16635
+mg2[c]	mg2	magnesium	Mg	2	cytoplasm	C00305	3599	18420
+mg2[e]	mg2	magnesium	Mg	2	extra-organism	C00305	3599	18420
+mg2[p]	mg2	magnesium	Mg	2	periplasm	C00305	3599	18420
+mi1p-D[c]	mi1p-D	1D-myo-Inositol-1-phosphate	C6H11O9P	-2	cytoplasm	C01177	4404	18297
+micit[c]	micit	methylisocitrate	C7H7O7	-3	cytoplasm	C04593	7191	15607
+minohp[e]	minohp	myo-Inositol-hexakisphosphate	C6H6O24P6	-12	extra-organism	C01204	4428	17401
+minohp[p]	minohp	myo-Inositol-hexakisphosphate	C6H6O24P6	-12	periplasm	C01204	4428	17401
+mlthf[c]	mlthf	5-10-Methylenetetrahydrofolate	C20H21N7O6	-2	cytoplasm	C00143	3443	1989
+mmcoa-R[c]	mmcoa-R	R-Methylmalonyl-CoA	C25H35N7O19P3S	-5	cytoplasm	C01213	4435	15465
+mmcoa-S[c]	mmcoa-S	S-Methylmalonyl-CoA	C25H35N7O19P3S	-5	cytoplasm	C00683	3952	15466
+mmet[e]	mmet	S-Methyl-L-methionine	C6H14NO2S	1	extra-organism	C03172	6054	17728
+mmet[p]	mmet	S-Methyl-L-methionine	C6H14NO2S	1	periplasm	C03172	6054	17728
+mn2[c]	mn2	Mn2	Mn	2	cytoplasm	C00034	3336	18291
+mn2[e]	mn2	Mn2	Mn	2	extra-organism	C00034	3336	18291
+mn2[p]	mn2	Mn2	Mn	2	periplasm	C00034	3336	18291
+mnl1p[c]	mnl1p	D-Mannitol-1-phosphate	C6H13O9P	-2	cytoplasm	C00644	3917	16298
+mnl[e]	mnl	D-Mannitol	C6H14O6	0	extra-organism	C00392	3682	16899
+mnl[p]	mnl	D-Mannitol	C6H14O6	0	periplasm	C00392	3682	16899
+mobd[c]	mobd	Molybdate-MoO4	MoO4	-2	cytoplasm	C06232	8475	36264
+mobd[e]	mobd	Molybdate-MoO4	MoO4	-2	extra-organism	C06232	8475	36264
+mobd[p]	mobd	Molybdate-MoO4	MoO4	-2	periplasm	C06232	8475	36264
+mql8[c]	mql8	Menaquinol-8	C51H74O2	0	cytoplasm	C05819	8114	
+mqn8[c]	mqn8	Menaquinone-8	C51H72O2	0	cytoplasm	C00828	4086	
+mso3[e]	mso3	methanesulfonate	CH3O3S	-1	extra-organism		49991312	25224
+mso3[p]	mso3	methanesulfonate	CH3O3S	-1	periplasm		49991312	25224
+mthgxl[c]	mthgxl	Methylglyoxal	C3H4O2	0	cytoplasm	C00546	3827	17158
+murein3p3p[p]	murein3p3p	two-linked-disacharide-tripeptide-murein-units-uncrosslinked-middle-of-chain	C68H104N12O38	-4	periplasm			
+murein3px3p[p]	murein3px3p	two-disacharide-linked-murein-units-tripeptide-crosslinked-tripeptide-A2pm-A2pm-middle-of-chain	C68H102N12O37	-4	periplasm			
+murein3px4p[p]	murein3px4p	two-disacharide-linked-murein-units-tripeptide-crosslinked-tetrapeptide-A2pm-D-ala-middle-of-chain	C71H107N13O38	-4	periplasm			
+murein4p3p[p]	murein4p3p	two-linked-disacharide-tetrapeptide-and-tripeptide-murein-units-uncrosslinked-middle-of-chain	C71H109N13O39	-4	periplasm			
+murein4p4p[p]	murein4p4p	two-linked-disacharide-tetrapeptide-murein-units-uncrosslinked-middle-of-chain	C74H114N14O40	-4	periplasm			
+murein4px4p4p[p]	murein4px4p4p	three-disacharide-linked-murein-units-tetrapeptide-crosslinked-tetrapeptide-A2pm-D-ala-one-uncrosslinked-tetrapaptide-middle-of-chain	C111H169N21O59	-6	periplasm			
+murein4px4p[p]	murein4px4p	two-disacharide-linked-murein-units-tetrapeptide-corsslinked-tetrapeptide-A2pm-D-ala-middle-of-chain	C74H112N14O39	-4	periplasm			
+murein4px4px4p[p]	murein4px4px4p	three-disacharide-linked-murein-units-tetrapeptide-crosslinked-tetrapeptide-A2pm-D-ala-tetrapeptide-corsslinked-tetrapeptide-A2pm-D-ala-middle-of-chain	C111H167N21O58	-6	periplasm			
+murein5p3p[p]	murein5p3p	two-linked-disacharide-pentapeptide-and-tripeptide-murein-units-uncrosslinked-middle-of-chain	C74H114N14O40	-4	periplasm			
+murein5p4p[p]	murein5p4p	two-linked-disacharide-pentapeptide-and-tetrapeptide-murein-units-uncrosslinked-middle-of-chain	C77H119N15O41	-4	periplasm			
+murein5p5p5p[p]	murein5p5p5p	three-linked-disacharide-pentapeptide-murein-units-uncrosslinked-middle-of-chain	C120H186N24O63	-6	periplasm			
+murein5p5p[p]	murein5p5p	two-linked-disacharide-pentapeptide-murein-units-uncrosslinked-middle-of-chain	C80H124N16O42	-4	periplasm			
+murein5px3p[p]	murein5px3p	two-disacharide-linked-murein-units-pentapeptide-corsslinked-tripeptide-A2pm-A2pm-middle-of-chain	C74H112N14O39	-4	periplasm			
+murein5px4p[p]	murein5px4p	two-disacharide-linked-murein-units-pentapeptide-crosslinked-tetrapeptide-A2pm-D-ala-middle-of-chain	C77H117N15O40	-4	periplasm			
+murein5px4px4p[p]	murein5px4px4p	three-disacharide-linked-murein-units-pentapeptide-crosslinked-tetrapeptide-A2pm-D-ala-tetrapeptide-corsslinked-tetrapeptide-A2pm-D-ala-middle-of-chain	C114H172N22O59	-6	periplasm			
+myrsACP[c]	myrsACP	Myristoyl-ACP-n-C140ACP	C398H629O143N96P1S3	-1	cytoplasm	C05761	8056	
+n2o[c]	n2o	Nitrous-oxide	N2O	0	cytoplasm	C00887	4143	17045
+n2o[e]	n2o	Nitrous-oxide	N2O	0	extra-organism	C00887	4143	17045
+n2o[p]	n2o	Nitrous-oxide	N2O	0	periplasm	C00887	4143	17045
+n8aspmd[c]	n8aspmd	N8-Acetylspermidine	C9H23N3O	2	cytoplasm	C01029	4273	27911
+na1[c]	na1	Sodium	Na	1	cytoplasm	C01330	4541	29101
+na1[e]	na1	Sodium	Na	1	extra-organism	C01330	4541	29101
+na1[p]	na1	Sodium	Na	1	periplasm	C01330	4541	29101
+nac[c]	nac	Nicotinate	C6H4NO2	-1	cytoplasm	C00253	3552	15940
+nac[e]	nac	Nicotinate	C6H4NO2	-1	extra-organism	C00253	3552	15940
+nac[p]	nac	Nicotinate	C6H4NO2	-1	periplasm	C00253	3552	15940
+nad[c]	nad	Nicotinamide-adenine-dinucleotide	C21H26N7O14P2	-1	cytoplasm	C00003	3305	15846
+nadh[c]	nadh	Nicotinamide-adenine-dinucleotide-reduced	C21H27N7O14P2	-2	cytoplasm	C00004	3306	16908
+nadp[c]	nadp	Nicotinamide-adenine-dinucleotide-phosphate	C21H25N7O17P3	-3	cytoplasm	C00006	3308	18009
+nadph[c]	nadph	Nicotinamide-adenine-dinucleotide-phosphate-reduced	C21H26N7O17P3	-4	cytoplasm	C00005	3307	16474
+ncam[c]	ncam	Nicotinamide	C6H6N2O	0	cytoplasm	C00153	3453	17154
+nflgln[c]	nflgln	N-Formimino-L-glutamate	C6H9N2O4	-1	cytoplasm	C00439	3728	7274
+nh4[c]	nh4	Ammonium	H4N	1	cytoplasm	C01342	4547	28938
+nh4[e]	nh4	Ammonium	H4N	1	extra-organism	C01342	4547	28938
+nh4[p]	nh4	Ammonium	H4N	1	periplasm	C01342	4547	28938
+ni2[c]	ni2	nickel	Ni	2	cytoplasm	C00291	3585	28112
+ni2[e]	ni2	nickel	Ni	2	extra-organism	C00291	3585	28112
+ni2[p]	ni2	nickel	Ni	2	periplasm	C00291	3585	28112
+nicrnt[c]	nicrnt	Nicotinate-D-ribonucleotide	C11H12NO9P	-2	cytoplasm	C01185	4411	15763
+nmn[c]	nmn	NMN	C11H14N2O8P	-1	cytoplasm	C00455	3741	16171
+nmn[e]	nmn	NMN	C11H14N2O8P	-1	extra-organism	C00455	3741	16171
+nmn[p]	nmn	NMN	C11H14N2O8P	-1	periplasm	C00455	3741	16171
+no2[c]	no2	Nitrite	NO2	-1	cytoplasm	C00088	3388	16301
+no2[e]	no2	Nitrite	NO2	-1	extra-organism	C00088	3388	16301
+no2[p]	no2	Nitrite	NO2	-1	periplasm	C00088	3388	16301
+no3[c]	no3	Nitrate	NO3	-1	cytoplasm	C00244	3543	48107
+no3[e]	no3	Nitrate	NO3	-1	extra-organism	C00244	3543	48107
+no3[p]	no3	Nitrate	NO3	-1	periplasm	C00244	3543	48107
+no[c]	no	Nitric-oxide	NO	0	cytoplasm	C00533	3815	16480
+no[e]	no	Nitric-oxide	NO	0	extra-organism	C00533	3815	16480
+no[p]	no	Nitric-oxide	NO	0	periplasm	C00533	3815	16480
+o2[c]	o2	O2	O2	0	cytoplasm	C00007	3309	15379
+o2[e]	o2	O2	O2	0	extra-organism	C00007	3309	15379
+o2[p]	o2	O2	O2	0	periplasm	C00007	3309	15379
+o2s[c]	o2s	Superoxide-anion	O2	-1	cytoplasm	C00704	3971	18421
+o2s[e]	o2s	Superoxide-anion	O2	-1	extra-organism	C00704	3971	18421
+o2s[p]	o2s	Superoxide-anion	O2	-1	periplasm	C00704	3971	18421
+oaa[c]	oaa	Oxaloacetate	C4H2O5	-2	cytoplasm	C00036	3338	30744
+oaa[e]	oaa	Oxaloacetate	C4H2O5	-2	extra-organism	C00036	3338	30744
+oaa[p]	oaa	Oxaloacetate	C4H2O5	-2	periplasm	C00036	3338	30744
+oc2coa[c]	oc2coa	trans-Oct-2-enoyl-CoA	C29H44N7O17P3S	-4	cytoplasm	C05276	7663	27537
+ocACP[c]	ocACP	Octanoyl-ACP-n-C80ACP	C392H617O143N96P1S3	-1	cytoplasm	C05752	8047	
+occoa[c]	occoa	Octanoyl-CoA-n-C80CoA	C29H46N7O17P3S	-4	cytoplasm	C01944	5048	15533
+ocdcaACP[c]	ocdcaACP	Octadecanoyl-ACP-n-C180ACP	C402H637O143N96P1S3	-1	cytoplasm			
+ocdca[c]	ocdca	octadecanoate-n-C180	C18H35O2	-1	cytoplasm	C01530	4692	25629
+ocdca[e]	ocdca	octadecanoate-n-C180	C18H35O2	-1	extra-organism	C01530	4692	25629
+ocdca[p]	ocdca	octadecanoate-n-C180	C18H35O2	-1	periplasm	C01530	4692	25629
+ocdcea[c]	ocdcea	octadecenoate-n-C181	C18H33O2	-1	cytoplasm		3978	16196
+ocdcea[e]	ocdcea	octadecenoate-n-C181	C18H33O2	-1	extra-organism		3978	16196
+ocdcea[p]	ocdcea	octadecenoate-n-C181	C18H33O2	-1	periplasm		3978	16196
+octa[c]	octa	octanoate-n-C80	C8H15O2	-1	cytoplasm	C06423	8658	28837
+octa[e]	octa	octanoate-n-C80	C8H15O2	-1	extra-organism	C06423	8658	28837
+octa[p]	octa	octanoate-n-C80	C8H15O2	-1	periplasm	C06423	8658	28837
+octdp[c]	octdp	all-trans-Octaprenyl-diphosphate	C40H65O7P2	-3	cytoplasm	C04146	6831	16275
+octeACP[c]	octeACP	cis-octadec-11-enoyl-acyl-carrier-protein-n-C181	C402H635O143N96P1S3	-1	cytoplasm			
+od2coa[c]	od2coa	trans-Octadec-2-enoyl-CoA	C39H64N7O17P3S	-4	cytoplasm	C16218	47205526	
+odecoa[c]	odecoa	Octadecenoyl-CoA-n-C181CoA	C39H64N7O17P3S	-4	cytoplasm	C16218	47205526	
+ohpb[c]	ohpb	2-Oxo-3-hydroxy-4-phosphobutanoate	C4H4O8P	-3	cytoplasm	C06054	8324	27951
+orn[c]	orn	Ornithine	C5H13N2O2	1	cytoplasm	C01602	4756	18257
+orn[e]	orn	Ornithine	C5H13N2O2	1	extra-organism	C01602	4756	18257
+orn[p]	orn	Ornithine	C5H13N2O2	1	periplasm	C01602	4756	18257
+orot5p[c]	orot5p	Orotidine-5-phosphate	C10H10N2O11P	-3	cytoplasm	C01103	4337	15842
+orot[c]	orot	Orotate	C5H3N2O4	-1	cytoplasm	C00295	3589	16742
+orot[e]	orot	Orotate	C5H3N2O4	-1	extra-organism	C00295	3589	16742
+orot[p]	orot	Orotate	C5H3N2O4	-1	periplasm	C00295	3589	16742
+oxam[c]	oxam	Oxamate	C2H2NO3	-1	cytoplasm	C01444	4622	18058
+oxur[c]	oxur	Oxalureate	C3H3N2O4	-1	cytoplasm	C00802	4060	16582
+pa120[c]	pa120	1-2-didodecanoyl-sn-glycerol-3-phosphate	C27H51O8P1	-2	cytoplasm	C00416	3706	16337
+pa120[p]	pa120	1-2-didodecanoyl-sn-glycerol-3-phosphate	C27H51O8P1	-2	periplasm	C00416	3706	16337
+pa140[c]	pa140	1-2-ditetradecanoyl-sn-glycerol-3-phosphate	C31H59O8P1	-2	cytoplasm	C00416	3706	16337
+pa140[p]	pa140	1-2-ditetradecanoyl-sn-glycerol-3-phosphate	C31H59O8P1	-2	periplasm	C00416	3706	16337
+pa141[c]	pa141	1-2-ditetradec-7-enoyl-sn-glycerol-3-phosphate	C31H55O8P1	-2	cytoplasm	C00416	3706	16337
+pa141[p]	pa141	1-2-ditetradec-7-enoyl-sn-glycerol-3-phosphate	C31H55O8P1	-2	periplasm	C00416	3706	16337
+pa160[c]	pa160	1-2-dihexadecanoyl-sn-glycerol-3-phosphate	C35H67O8P1	-2	cytoplasm	C00416	3706	16337
+pa160[p]	pa160	1-2-dihexadecanoyl-sn-glycerol-3-phosphate	C35H67O8P1	-2	periplasm	C00416	3706	16337
+pa161[c]	pa161	1-2-dihexadec-9-enoyl-sn-glycerol-3-phosphate	C35H63O8P1	-2	cytoplasm	C00416	3706	16337
+pa161[p]	pa161	1-2-dihexadec-9-enoyl-sn-glycerol-3-phosphate	C35H63O8P1	-2	periplasm	C00416	3706	16337
+pa180[c]	pa180	1-2-dioctadecanoyl-sn-glycerol-3-phosphate	C39H75O8P1	-2	cytoplasm	C00416	3706	16337
+pa180[p]	pa180	1-2-dioctadecanoyl-sn-glycerol-3-phosphate	C39H75O8P1	-2	periplasm	C00416	3706	16337
+pa181[c]	pa181	1-2-dioctadec-11-enoyl-sn-glycerol-3-phosphate	C39H71O8P1	-2	cytoplasm	C00416	3706	16337
+pa181[p]	pa181	1-2-dioctadec-11-enoyl-sn-glycerol-3-phosphate	C39H71O8P1	-2	periplasm	C00416	3706	16337
+pacald[c]	pacald	Phenylacetaldehyde	C8H8O	0	cytoplasm	C00601	3876	16424
+pacald[e]	pacald	Phenylacetaldehyde	C8H8O	0	extra-organism	C00601	3876	16424
+pacald[p]	pacald	Phenylacetaldehyde	C8H8O	0	periplasm	C00601	3876	16424
+Pald[c]	Pald	Phosphonoacetaldehyde	C2H3O4P1	-2	cytoplasm	C03167	6050	18124
+palmACP[c]	palmACP	Palmitoyl-ACP-n-C160ACP	C400H633O143N96P1S3	-1	cytoplasm	C05764	8059	
+pan4p[c]	pan4p	Pantetheine-4-phosphate	C11H21N2O7PS	-2	cytoplasm	C01134	4365	16858
+pant-R[c]	pant-R	R-Pantoate	C6H11O4	-1	cytoplasm	C00522	3805	 14737 15980
+pap[c]	pap	Adenosine-3-5-bisphosphate	C10H11N5O10P2	-4	cytoplasm	C00054	3356	17985
+paps[c]	paps	3-Phosphoadenylyl-sulfate	C10H11N5O13P2S	-4	cytoplasm	C00053	3355	17980
+pdx5p[c]	pdx5p	Pyridoxine-5-phosphate	C8H10NO6P	-2	cytoplasm	C00627	3900	28803
+pe120[c]	pe120	phosphatidylethanolamine-didodecanoyl-n-C120	C29H58N1O8P1	0	cytoplasm	C00350	3643	16038
+pe120[p]	pe120	phosphatidylethanolamine-didodecanoyl-n-C120	C29H58N1O8P1	0	periplasm	C00350	3643	16038
+pe140[c]	pe140	phosphatidylethanolamine-ditetradecanoyl-n-C140	C33H66N1O8P1	0	cytoplasm	C00350	3643	16038
+pe140[p]	pe140	phosphatidylethanolamine-ditetradecanoyl-n-C140	C33H66N1O8P1	0	periplasm	C00350	3643	16038
+pe141[c]	pe141	phosphatidylethanolamine-ditetradec-7-enoyl-n-C141	C33H62N1O8P1	0	cytoplasm	C00350	3643	16038
+pe141[p]	pe141	phosphatidylethanolamine-ditetradec-7-enoyl-n-C141	C33H62N1O8P1	0	periplasm	C00350	3643	16038
+pe160[c]	pe160	phosphatidylethanolamine-dihexadecanoyl-n-C160	C37H74N1O8P1	0	cytoplasm	C00350	3643	16038
+pe160[p]	pe160	phosphatidylethanolamine-dihexadecanoyl-n-C160	C37H74N1O8P1	0	periplasm	C00350	3643	16038
+pe161[c]	pe161	phosphatidylethanolamine-dihexadec-9enoyl-n-C161	C37H70N1O8P1	0	cytoplasm	C00350	3643	16038
+pe161[p]	pe161	phosphatidylethanolamine-dihexadec-9enoyl-n-C161	C37H70N1O8P1	0	periplasm	C00350	3643	16038
+pe180[c]	pe180	phosphatidylethanolamine-dioctadecanoyl-n-C180	C41H82N1O8P1	0	cytoplasm	C00350	3643	16038
+pe180[p]	pe180	phosphatidylethanolamine-dioctadecanoyl-n-C180	C41H82N1O8P1	0	periplasm	C00350	3643	16038
+pe181[c]	pe181	phosphatidylethanolamine-dioctadec-11-enoyl-n-C181	C41H78N1O8P1	0	cytoplasm	C00350	3643	16038
+pe181[p]	pe181	phosphatidylethanolamine-dioctadec-11-enoyl-n-C181	C41H78N1O8P1	0	periplasm	C00350	3643	16038
+peamn[e]	peamn	Phenethylamine	C8H12N	1	extra-organism	C05332	7711	18397
+peamn[p]	peamn	Phenethylamine	C8H12N	1	periplasm	C05332	7711	18397
+pep[c]	pep	Phosphoenolpyruvate	C3H2O6P	-3	cytoplasm	C00074	3374	 18021 44897
+pep[e]	pep	Phosphoenolpyruvate	C3H2O6P	-3	extra-organism	C00074	3374	 18021 44897
+pep[p]	pep	Phosphoenolpyruvate	C3H2O6P	-3	periplasm	C00074	3374	 18021 44897
+pg120[c]	pg120	Phosphatidylglycerol-didodecanoyl-n-C120	C30H58O10P1	-1	cytoplasm	C00344	3637	
+pg120[p]	pg120	Phosphatidylglycerol-didodecanoyl-n-C120	C30H58O10P1	-1	periplasm	C00344	3637	
+pg140[c]	pg140	Phosphatidylglycerol-ditetradecanoyl-n-C140	C34H66O10P1	-1	cytoplasm	C00344	3637	
+pg140[p]	pg140	Phosphatidylglycerol-ditetradecanoyl-n-C140	C34H66O10P1	-1	periplasm	C00344	3637	
+pg141[c]	pg141	Phosphatidylglycerol-ditetradec-7-enoyl-n-C141	C34H62O10P1	-1	cytoplasm	C00344	3637	
+pg141[p]	pg141	Phosphatidylglycerol-ditetradec-7-enoyl-n-C141	C34H62O10P1	-1	periplasm	C00344	3637	
+pg160[c]	pg160	Phosphatidylglycerol-dihexadecanoyl-n-C160	C38H74O10P1	-1	cytoplasm	C00344	3637	
+pg160[p]	pg160	Phosphatidylglycerol-dihexadecanoyl-n-C160	C38H74O10P1	-1	periplasm	C00344	3637	
+pg161[c]	pg161	Phosphatidylglycerol-dihexadec-9-enoyl-n-C161	C38H70O10P1	-1	cytoplasm	C00344	3637	
+pg161[p]	pg161	Phosphatidylglycerol-dihexadec-9-enoyl-n-C161	C38H70O10P1	-1	periplasm	C00344	3637	
+pg180[c]	pg180	Phosphatidylglycerol-dioctadecanoyl-n-C180	C42H82O10P1	-1	cytoplasm	C00344	3637	
+pg180[p]	pg180	Phosphatidylglycerol-dioctadecanoyl-n-C180	C42H82O10P1	-1	periplasm	C00344	3637	
+pg181[c]	pg181	Phosphatidylglycerol-dioctadec-11-enoyl-n-C181	C42H78O10P1	-1	cytoplasm	C00344	3637	
+pg181[p]	pg181	Phosphatidylglycerol-dioctadec-11-enoyl-n-C181	C42H78O10P1	-1	periplasm	C00344	3637	
+pgp120[c]	pgp120	Phosphatidylglycerophosphate-didodecanoyl-n-C120	C30H57O13P2	-3	cytoplasm	C03892	6624	
+pgp120[p]	pgp120	Phosphatidylglycerophosphate-didodecanoyl-n-C120	C30H57O13P2	-3	periplasm	C03892	6624	
+pgp140[c]	pgp140	Phosphatidylglycerophosphate-ditetradecanoyl-n-C140	C34H65O13P2	-3	cytoplasm	C03892	6624	
+pgp140[p]	pgp140	Phosphatidylglycerophosphate-ditetradecanoyl-n-C140	C34H65O13P2	-3	periplasm	C03892	6624	
+pgp141[c]	pgp141	Phosphatidylglycerophosphate-ditetradec-7-enoyl-n-C141	C34H61O13P2	-3	cytoplasm	C03892	6624	
+pgp141[p]	pgp141	Phosphatidylglycerophosphate-ditetradec-7-enoyl-n-C141	C34H61O13P2	-3	periplasm	C03892	6624	
+pgp160[c]	pgp160	Phosphatidylglycerophosphate-dihexadecanoyl-n-C160	C38H73O13P2	-3	cytoplasm	C03892	6624	
+pgp160[p]	pgp160	Phosphatidylglycerophosphate-dihexadecanoyl-n-C160	C38H73O13P2	-3	periplasm	C03892	6624	
+pgp161[c]	pgp161	Phosphatidylglycerophosphate-dihexadec-9-enoyl-n-C161	C38H69O13P2	-3	cytoplasm			
+pgp161[p]	pgp161	Phosphatidylglycerophosphate-dihexadec-9-enoyl-n-C161	C38H69O13P2	-3	periplasm			
+pgp180[c]	pgp180	Phosphatidylglycerophosphate-dioctadecanoyl-n-C180	C42H81O13P2	-3	cytoplasm	C03892	6624	
+pgp180[p]	pgp180	Phosphatidylglycerophosphate-dioctadecanoyl-n-C180	C42H81O13P2	-3	periplasm	C03892	6624	
+pgp181[c]	pgp181	Phosphatidylglycerophosphate-dioctadec-11-enoyl-n-C181	C42H77O13P2	-3	cytoplasm	C03892	6624	
+pgp181[p]	pgp181	Phosphatidylglycerophosphate-dioctadec-11-enoyl-n-C181	C42H77O13P2	-3	periplasm	C03892	6624	
+phe-L[c]	phe-L	L-Phenylalanine	C9H11NO2	0	cytoplasm	C00079	3379	17295
+phe-L[e]	phe-L	L-Phenylalanine	C9H11NO2	0	extra-organism	C00079	3379	17295
+phe-L[p]	phe-L	L-Phenylalanine	C9H11NO2	0	periplasm	C00079	3379	17295
+pheme[c]	pheme	Protoheme	C34H30FeN4O4	-2	cytoplasm	C00032	3334	17627
+pheme[e]	pheme	Protoheme	C34H30FeN4O4	-2	extra-organism	C00032	3334	17627
+pheme[p]	pheme	Protoheme	C34H30FeN4O4	-2	periplasm	C00032	3334	17627
+phetrna[c]	phetrna	L-Phenylalanyl-tRNA-Phe	C9H10NOR	1	cytoplasm	C03511	6321	29153
+phhlipa[c]	phhlipa	phospho-heptosyl-heptosyl-kdo2-lipidA	C124H219N2O54P3	-8	cytoplasm			
+phom[c]	phom	O-Phospho-L-homoserine	C4H8NO6P	-2	cytoplasm	C01102	4336	15961
+phphhlipa[c]	phphhlipa	phospho-heptosyl-phospho-heptosyl-heptosyl-kdo2-lipidA	C131H230N2O63P4	-10	cytoplasm			
+phpyr[c]	phpyr	Phenylpyruvate	C9H7O3	-1	cytoplasm	C00166	3466	30851
+phthr[c]	phthr	O-Phospho-4-hydroxy-L-threonine	C4H8NO7P	-2	cytoplasm	C06055	8325	18336
+pi[c]	pi	Phosphate	HO4P	-2	cytoplasm	C00009	3311	18367
+pi[e]	pi	Phosphate	HO4P	-2	extra-organism	C00009	3311	18367
+pi[p]	pi	Phosphate	HO4P	-2	periplasm	C00009	3311	18367
+pmcoa[c]	pmcoa	Pimeloyl-CoA	C28H41N7O19P3S	-5	cytoplasm	C01063	4302	15504
+pmtcoa[c]	pmtcoa	Palmitoyl-CoA-n-C160CoA	C37H62N7O17P3S	-4	cytoplasm	C00154	3454	15525
+pnto-R[c]	pnto-R	R-Pantothenate	C9H16NO5	-1	cytoplasm	C00864	4121	 29032 46905 7916
+pnto-R[e]	pnto-R	R-Pantothenate	C9H16NO5	-1	extra-organism	C00864	4121	 29032 46905 7916
+pnto-R[p]	pnto-R	R-Pantothenate	C9H16NO5	-1	periplasm	C00864	4121	 29032 46905 7916
+ppa[c]	ppa	Propionate-n-C30	C3H5O2	-1	cytoplasm	C00163	3463	30768
+ppa[e]	ppa	Propionate-n-C30	C3H5O2	-1	extra-organism	C00163	3463	30768
+ppa[p]	ppa	Propionate-n-C30	C3H5O2	-1	periplasm	C00163	3463	30768
+ppal[c]	ppal	Propanal	C3H6O	0	cytoplasm	C00479	3762	17153
+ppal[e]	ppal	Propanal	C3H6O	0	extra-organism	C00479	3762	17153
+ppal[p]	ppal	Propanal	C3H6O	0	periplasm	C00479	3762	17153
+ppap[c]	ppap	Propanoyl-phosphate	C3H5O5P	-2	cytoplasm	C02876	5809	
+ppbng[c]	ppbng	Porphobilinogen	C10H13N2O4	-1	cytoplasm	C00931	4184	17381
+ppcoa[c]	ppcoa	Propanoyl-CoA	C24H36N7O17P3S	-4	cytoplasm	C00100	3400	15539
+ppgpp[c]	ppgpp	Guanosine-3-5-bis-diphosphate	C10H11N5O17P4	-6	cytoplasm	C01228	4450	17633
+pphn[c]	pphn	Prephenate	C10H8O6	-2	cytoplasm	C00254	3553	16666
+ppi[c]	ppi	Diphosphate	HO7P2	-3	cytoplasm	C00013	3315	 18361 29888
+ppoh[c]	ppoh	1-Propanol	C3H8O1	0	cytoplasm	C05979	8258	28831
+ppp9[c]	ppp9	Protoporphyrin	C34H32N4O4	-2	cytoplasm	C02191	5261	15430
+pppg9[c]	pppg9	Protoporphyrinogen-IX	C34H38N4O4	-2	cytoplasm	C01079	4317	15435
+pppi[c]	pppi	Inorganic-triphosphate	HO10P3	-4	cytoplasm	C03279	6138	18036
+pppn[c]	pppn	Phenylpropanoate	C9H9O2	-1	cytoplasm	C05629	7943	28631
+pppn[e]	pppn	Phenylpropanoate	C9H9O2	-1	extra-organism	C05629	7943	28631
+pppn[p]	pppn	Phenylpropanoate	C9H9O2	-1	periplasm	C05629	7943	28631
+ppt[e]	ppt	Phosphonate	HO3P	-2	extra-organism	C06701	8926	
+ppt[p]	ppt	Phosphonate	HO3P	-2	periplasm	C06701	8926	
+pram[c]	pram	5-Phospho-beta-D-ribosylamine	C5H11NO7P	-1	cytoplasm	C03090	5988	37737
+pran[c]	pran	N-5-Phospho-D-ribosyl-anthranilate	C12H13NO9P	-3	cytoplasm	C04302	6961	7091
+prbamp[c]	prbamp	1-5-Phosphoribosyl-AMP	C15H19N5O14P2	-4	cytoplasm	C02741	5701	
+prbatp[c]	prbatp	1-5-Phosphoribosyl-ATP	C15H19N5O20P4	-6	cytoplasm	C02739	5699	18263
+prfp[c]	prfp	1-5-Phosphoribosyl-5-5-phosphoribosylamino-methylideneaminoimidazole-4-carboxamide	C15H21N5O15P2	-4	cytoplasm	C04896	7447	18302
+prlp[c]	prlp	5-5-phospho-1-deoxyribulos-1-ylamino-methylideneamino-1-5-phosphoribosyl-imidazole-4-carboxamide	C15H21N5O15P2	-4	cytoplasm	C04916	7464	27735
+pro-L[c]	pro-L	L-Proline	C5H9NO2	0	cytoplasm	C00148	3448	17203
+pro-L[e]	pro-L	L-Proline	C5H9NO2	0	extra-organism	C00148	3448	17203
+pro-L[p]	pro-L	L-Proline	C5H9NO2	0	periplasm	C00148	3448	17203
+progly[c]	progly	L-Prolinylglycine	C7H12N2O3	0	cytoplasm			
+progly[e]	progly	L-Prolinylglycine	C7H12N2O3	0	extra-organism			
+progly[p]	progly	L-Prolinylglycine	C7H12N2O3	0	periplasm			
+protrna[c]	protrna	L-Prolyl-tRNA-Pro	C5H8NOR	1	cytoplasm	C02702	5665	29154
+prpp[c]	prpp	5-Phospho-alpha-D-ribose-1-diphosphate	C5H8O14P3	-5	cytoplasm	C00119	3419	17111
+ps120[c]	ps120	phosphatidylserine-didodecanoyl-n-C120	C30H57N1O10P1	-1	cytoplasm	C02737	5698	
+ps140[c]	ps140	phosphatidylserine-ditetradecanoyl-n-C140	C34H65N1O10P1	-1	cytoplasm	C02737	5698	
+ps141[c]	ps141	phosphatidylserine-ditetradec-7-enoyl-n-C141	C34H61N1O10P1	-1	cytoplasm	C02737	5698	
+ps160[c]	ps160	phosphatidylserine-dihexadecanoyl-n-C160	C38H73N1O10P1	-1	cytoplasm	C02737	5698	
+ps161[c]	ps161	phosphatidylserine-dihexadec-9-enoyl-n-C161	C38H69N1O10P1	-1	cytoplasm	C02737	5698	
+ps180[c]	ps180	phosphatidylserine-dioctadecanoyl-n-C180	C42H81N1O10P1	-1	cytoplasm	C02737	5698	
+ps181[c]	ps181	phosphatidylserine-dioctadec-11-enoyl-n-C181	C42H77N1O10P1	-1	cytoplasm	C02737	5698	
+psclys[e]	psclys	psicoselysine	C12H25N2O7	1	extra-organism			
+psclys[p]	psclys	psicoselysine	C12H25N2O7	1	periplasm			
+pser-L[c]	pser-L	O-Phospho-L-serine	C3H6NO6P	-2	cytoplasm	C01005	4251	15811
+pser-L[e]	pser-L	O-Phospho-L-serine	C3H6NO6P	-2	extra-organism	C01005	4251	15811
+pser-L[p]	pser-L	O-Phospho-L-serine	C3H6NO6P	-2	periplasm	C01005	4251	15811
+ptrc[c]	ptrc	Putrescine	C4H14N2	2	cytoplasm	C00134	3434	17148
+ptrc[e]	ptrc	Putrescine	C4H14N2	2	extra-organism	C00134	3434	17148
+ptrc[p]	ptrc	Putrescine	C4H14N2	2	periplasm	C00134	3434	17148
+pyam5p[c]	pyam5p	Pyridoxamine-5-phosphate	C8H12N2O5P	-1	cytoplasm	C00647	3919	18335
+pydam[c]	pydam	Pyridoxamine	C8H13N2O2	1	cytoplasm	C00534	3816	16410
+pydx5p[c]	pydx5p	Pyridoxal-5-phosphate	C8H8NO6P	-2	cytoplasm	C00018	3320	18405
+pydx[c]	pydx	Pyridoxal	C8H9NO3	0	cytoplasm	C00250	3549	17310
+pydxn[c]	pydxn	Pyridoxine	C8H11NO3	0	cytoplasm	C00314	3608	16709
+pyr[c]	pyr	Pyruvate	C3H3O3	-1	cytoplasm	C00022	3324	32816
+pyr[e]	pyr	Pyruvate	C3H3O3	-1	extra-organism	C00022	3324	32816
+pyr[p]	pyr	Pyruvate	C3H3O3	-1	periplasm	C00022	3324	32816
+q8[c]	q8	Ubiquinone-8	C49H74O4	0	cytoplasm	C00399	3689	16389
+q8h2[c]	q8h2	Ubiquinol-8	C49H76O4	0	cytoplasm	C00390	3680	17976
+quln[c]	quln	Quinolinate	C7H3NO4	-2	cytoplasm	C03722	6487	16675
+r1p[c]	r1p	alpha-D-Ribose-1-phosphate	C5H9O8P	-2	cytoplasm	C00442		
+r5p[c]	r5p	alpha-D-Ribose-5-phosphate	C5H9O8P	-2	cytoplasm	C00117	3417	17797
+r5p[e]	r5p	alpha-D-Ribose-5-phosphate	C5H9O8P	-2	extra-organism	C00117	3417	17797
+r5p[p]	r5p	alpha-D-Ribose-5-phosphate	C5H9O8P	-2	periplasm	C00117	3417	17797
+remnant1[c]	remnant1	residual-atoms-of-reaction-DMBZIDSYN	C4H2N2O3	0	cytoplasm			
+remnant1[e]	remnant1	residual-atoms-of-reaction-DMBZIDSYN	C4H2N2O3	0	extra-organism			
+remnant1[p]	remnant1	residual-atoms-of-reaction-DMBZIDSYN	C4H2N2O3	0	periplasm			
+rbflvrd[c]	rbflvrd	Reduced-riboflavin	C17H22N4O6	0	cytoplasm	C01007	4252	8798
+rbl-L[c]	rbl-L	L-Ribulose	C5H10O5	0	cytoplasm	C00508	3791	16880
+rhcys[c]	rhcys	S-Ribosyl-L-homocysteine	C9H17NO6S	0	cytoplasm	C03539	6343	
+rib-D[c]	rib-D	D-Ribose	C5H10O5	0	cytoplasm	C00121	3421	47013
+rib-D[e]	rib-D	D-Ribose	C5H10O5	0	extra-organism	C00121	3421	47013
+rib-D[p]	rib-D	D-Ribose	C5H10O5	0	periplasm	C00121	3421	47013
+ribflv[c]	ribflv	Riboflavin	C17H20N4O6	0	cytoplasm	C00255	3554	17015
+rml1p[c]	rml1p	L-Rhamnulose-1-phosphate	C6H11O8P	-2	cytoplasm	C01131	4362	17892
+rml[c]	rml	L-Rhamnulose	C6H12O5	0	cytoplasm	C00861	4118	17897
+rmn[c]	rmn	L-Rhamnose	C6H12O5	0	cytoplasm	C00507	3790	16055
+rmn[e]	rmn	L-Rhamnose	C6H12O5	0	extra-organism	C00507	3790	16055
+rmn[p]	rmn	L-Rhamnose	C6H12O5	0	periplasm	C00507	3790	16055
+ru5p-D[c]	ru5p-D	D-Ribulose-5-phosphate	C5H9O8P	-2	cytoplasm	C00199	3499	17363
+ru5p-L[c]	ru5p-L	L-Ribulose-5-phosphate	C5H9O8P	-2	cytoplasm	C01101	4335	17666
+s7p[c]	s7p	Sedoheptulose-7-phosphate	C7H13O10P	-2	cytoplasm	C00281	3576	15721
+s[c]	s	Sulfur	S	0	cytoplasm	C00087	3387	17909
+salchs4[c]	salchs4	Salmochelin-S4	C42H47N3O25	0	cytoplasm			
+salchs4[e]	salchs4	Salmochelin-S4	C42H47N3O25	0	extra-organism			
+salchs4[p]	salchs4	Salmochelin-S4	C42H47N3O25	0	periplasm			
+salchs4fe[c]	salchs4fe	Salmochelin-S4-Fe-III	C42FeH47N3O25	3	cytoplasm			
+salchs4fe[e]	salchs4fe	Salmochelin-S4-Fe-III	C42FeH47N3O25	3	extra-organism			
+salchs4fe[p]	salchs4fe	Salmochelin-S4-Fe-III	C42FeH47N3O25	3	periplasm			
+salchsx[c]	salchsx	Salmochelin-SX	C16H21NO11	-1	cytoplasm			
+salchsx[e]	salchsx	Salmochelin-SX	C16H21NO11	-1	extra-organism			
+salchsx[p]	salchsx	Salmochelin-SX	C16H21NO11	-1	periplasm			
+sarcs[c]	sarcs	Sarcosine	C3H7NO2	0	cytoplasm	C00213	3513	15611
+sbt6p[c]	sbt6p	D-Sorbitol-6-phosphate	C6H13O9P	-2	cytoplasm	C01096	4331	17044
+sbt-D[e]	sbt-D	D-Sorbitol	C6H14O6	0	extra-organism	C00794	4052	17924
+sbt-D[p]	sbt-D	D-Sorbitol	C6H14O6	0	periplasm	C00794	4052	17924
+sbzcoa[c]	sbzcoa	O-Succinylbenzoyl-CoA	C32H39N7O20P3S	-5	cytoplasm	C03160	6045	15509
+scl[c]	scl	sirohydrochlorin	C42H39N4O16	-7	cytoplasm	C05778	8073	18023
+sectrna[c]	sectrna	L-Selenocysteinyl-tRNA-Sec	C3H6NOSeR	1	cytoplasm			
+seln[c]	seln	Selenide	HSe	-1	cytoplasm	C01528	4690	16503
+selnp[c]	selnp	Selenophosphate	H2O3PSe	-1	cytoplasm	C05172	7583	16144
+ser-D[c]	ser-D	D-Serine	C3H7NO3	0	cytoplasm	C00740	4003	16523
+ser-D[e]	ser-D	D-Serine	C3H7NO3	0	extra-organism	C00740	4003	16523
+ser-D[p]	ser-D	D-Serine	C3H7NO3	0	periplasm	C00740	4003	16523
+ser-L[c]	ser-L	L-Serine	C3H7NO3	0	cytoplasm	C00065	3365	17115
+ser-L[e]	ser-L	L-Serine	C3H7NO3	0	extra-organism	C00065	3365	17115
+ser-L[p]	ser-L	L-Serine	C3H7NO3	0	periplasm	C00065	3365	17115
+seramp[c]	seramp	L-seryl-AMP	C13H19N6O9P	0	cytoplasm	C05820	8115	
+sertrna[c]	sertrna	L-Seryl-tRNA-Ser	C3H6NO2R	1	cytoplasm	C02553	5554	29162
+sertrna-sec-[c]	sertrna-sec-	L-Seryl-tRNA-Sec	C3H6NO2R	1	cytoplasm			13170
+sheme[c]	sheme	Siroheme	C42H36FeN4O16	-8	cytoplasm	C00748	4010	28599
+skm5p[c]	skm5p	Shikimate-5-phosphate	C7H8O8P	-3	cytoplasm	C03175	6057	17052
+skm[c]	skm	Shikimate	C7H9O5	-1	cytoplasm	C00493	3776	16119
+skm[e]	skm	Shikimate	C7H9O5	-1	extra-organism	C00493	3776	16119
+skm[p]	skm	Shikimate	C7H9O5	-1	periplasm	C00493	3776	16119
+sl26da[c]	sl26da	N-Succinyl-LL-2-6-diaminoheptanedioate	C11H16N2O7	-2	cytoplasm	C04421	7053	17279
+sl2a6o[c]	sl2a6o	N-Succinyl-2-L-amino-6-oxoheptanedioate	C11H12NO8	-3	cytoplasm	C04462	7087	35266
+so2[c]	so2	sulfur-dioxide	O2S	0	cytoplasm	C09306	11497	18422
+so2[e]	so2	sulfur-dioxide	O2S	0	extra-organism	C09306	11497	18422
+so2[p]	so2	sulfur-dioxide	O2S	0	periplasm	C09306	11497	18422
+so3[c]	so3	Sulfite	O3S	-2	cytoplasm	C00094	3394	48854
+so3[e]	so3	Sulfite	O3S	-2	extra-organism	C00094	3394	48854
+so3[p]	so3	Sulfite	O3S	-2	periplasm	C00094	3394	48854
+so4[c]	so4	Sulfate	O4S	-2	cytoplasm	C00059	3359	16189
+so4[e]	so4	Sulfate	O4S	-2	extra-organism	C00059	3359	16189
+so4[p]	so4	Sulfate	O4S	-2	periplasm	C00059	3359	16189
+spmd[c]	spmd	Spermidine	C7H22N3	3	cytoplasm	C00315	3609	16610
+spmd[e]	spmd	Spermidine	C7H22N3	3	extra-organism	C00315	3609	16610
+spmd[p]	spmd	Spermidine	C7H22N3	3	periplasm	C00315	3609	16610
+ssaltpp[c]	ssaltpp	Succinate-semialdehyde-thiamin-diphosphate-anion	C16H21N4O10P2S	-3	cytoplasm	C05816		
+stcoa[c]	stcoa	Stearoyl-CoA-n-C180CoA	C39H66N7O17P3S	-4	cytoplasm	C00412	3702	15541
+sucarg[c]	sucarg	N2-Succinyl-L-arginine	C10H17N4O5	-1	cytoplasm	C03296	6152	17705
+sucbz[c]	sucbz	o-Succinylbenzoate	C11H8O5	-2	cytoplasm	C02730	5692	18325
+succ[c]	succ	Succinate	C4H4O4	-2	cytoplasm	C00042	3344	15741
+succ[e]	succ	Succinate	C4H4O4	-2	extra-organism	C00042	3344	15741
+succ[p]	succ	Succinate	C4H4O4	-2	periplasm	C00042	3344	15741
+succoa[c]	succoa	Succinyl-CoA	C25H35N7O19P3S	-5	cytoplasm	C00091	3391	15380
+sucglu[c]	sucglu	N2-Succinyl-L-glutamate	C9H10NO7	-3	cytoplasm	C05931	8219	48957
+sucgsa[c]	sucgsa	N2-Succinyl-L-glutamate-5-semialdehyde	C9H11NO6	-2	cytoplasm	C05932	8220	27657
+suchms[c]	suchms	O-Succinyl-L-homoserine	C8H12NO6	-1	cytoplasm	C01118	4349	16160
+sucorn[c]	sucorn	N2-Succinyl-L-ornithine	C9H15N2O5	-1	cytoplasm	C03415	6244	27574
+sucr[e]	sucr	Sucrose	C12H22O11	0	extra-organism	C00089	3389	17992
+sucr[p]	sucr	Sucrose	C12H22O11	0	periplasm	C00089	3389	17992
+sucsal[c]	sucsal	Succinic-semialdehyde	C4H5O3	-1	cytoplasm	C00232	3531	16265
+sulfac[e]	sulfac	sulfoacetate	C2H2O5S	-2	extra-organism	C14179	7846991	
+sulfac[p]	sulfac	sulfoacetate	C2H2O5S	-2	periplasm	C14179	7846991	
+t3c11vaceACP[c]	t3c11vaceACP	trans-3-cis-11-vacceoyl-acyl-carrier-protein	C402H633O143N96P1S3	-1	cytoplasm			
+t3c5ddeceACP[c]	t3c5ddeceACP	trans-3-cis-5-dodecenoyl-acyl-carrier-protein	C396H621O143N96P1S3	-1	cytoplasm			
+t3c7mrseACP[c]	t3c7mrseACP	trans-3-cis-7-myristoleoyl-acyl-carrier-protein	C398H625O143N96P1S3	-1	cytoplasm			
+t3c9palmeACP[c]	t3c9palmeACP	trans-3-cis-9-palmitoleoyl-acyl-carrier-protein	C400H629O143N96P1S3	-1	cytoplasm			
+tag-D[e]	tag-D	D-Tagatose	C6H12O6	0	extra-organism	C00795	4053	4249
+tag-D[p]	tag-D	D-Tagatose	C6H12O6	0	periplasm	C00795	4053	4249
+tag1p-D[c]	tag1p-D	D-Tagatose-1-phosphate	C6H11O9P	-2	cytoplasm			
+tag6p-D[c]	tag6p-D	D-Tagatose-6-phosphate	C6H11O9P	-2	cytoplasm	C01097	4332	4251
+tagdp-D[c]	tagdp-D	D-Tagatose-1-6-biphosphate	C6H10O12P2	-4	cytoplasm	C03785	6535	4250
+tagur[c]	tagur	D-Tagaturonate	C6H9O7	-1	cytoplasm	C00558	3838	17886
+tartr-D[c]	tartr-D	D-tartrate	C4H4O6	-2	cytoplasm	C02107	5189	15672
+tartr-D[e]	tartr-D	D-tartrate	C4H4O6	-2	extra-organism	C02107	5189	15672
+tartr-D[p]	tartr-D	D-tartrate	C4H4O6	-2	periplasm	C02107	5189	15672
+tartr-L[c]	tartr-L	L-tartrate	C4H4O6	-2	cytoplasm	C00898	4154	 15671 30924
+tartr-L[e]	tartr-L	L-tartrate	C4H4O6	-2	extra-organism	C00898	4154	 15671 30924
+tartr-L[p]	tartr-L	L-tartrate	C4H4O6	-2	periplasm	C00898	4154	 15671 30924
+taur[e]	taur	Taurine	C2H7NO3S	0	extra-organism	C00245	3544	15891
+taur[p]	taur	Taurine	C2H7NO3S	0	periplasm	C00245	3544	15891
+tcynt[c]	tcynt	Thiocyanate	CNS	-1	cytoplasm	C01755	4888	29200
+tcynt[e]	tcynt	Thiocyanate	CNS	-1	extra-organism	C01755	4888	29200
+tcynt[p]	tcynt	Thiocyanate	CNS	-1	periplasm	C01755	4888	29200
+td2coa[c]	td2coa	trans-Tetradec-2-enoyl-CoA	C35H56N7O17P3S	-4	cytoplasm	C05273	7660	27721
+tdcoa[c]	tdcoa	Tetradecanoyl-CoA-n-C140CoA	C35H58N7O17P3S	-4	cytoplasm	C02593	5585	15532
+tddec2eACP[c]	tddec2eACP	trans-Dodec-2-enoyl-acyl-carrier-protein	C396H623O143N96P1S3	-1	cytoplasm	C05758	8053	
+tdeACP[c]	tdeACP	cis-tetradec-7-enoyl-acyl-carrier-protein-n-C141	C398H627O143N96P1S3	-1	cytoplasm			
+tdec2eACP[c]	tdec2eACP	trans-Dec-2-enoyl-acyl-carrier-protein	C394H619O143N96P1S3	-1	cytoplasm	C05754	8049	
+tdecoa[c]	tdecoa	Tetradecenoyl-CoA-n-C141CoA	C35H56N7O17P3S	-4	cytoplasm	C06737	8959	
+tet[e]	tet	Tetrathionate	O6S4	-2	extra-organism	C02084	5169	 15226 16853
+tet[p]	tet	Tetrathionate	O6S4	-2	periplasm	C02084	5169	 15226 16853
+thdp[c]	thdp	2-3-4-5-Tetrahydrodipicolinate	C7H7NO4	-2	cytoplasm	C03972	6692	864
+thex2eACP[c]	thex2eACP	trans-Hex-2-enoyl-acyl-carrier-protein	C390H611O143N96P1S3	-1	cytoplasm	C05748	8043	
+thf[c]	thf	5-6-7-8-Tetrahydrofolate	C19H21N7O6	-2	cytoplasm	C00101	3401	15635
+thm[c]	thm	Thiamin	C12H17N4OS	1	cytoplasm	C00378	3668	18385
+thm[e]	thm	Thiamin	C12H17N4OS	1	extra-organism	C00378	3668	18385
+thm[p]	thm	Thiamin	C12H17N4OS	1	periplasm	C00378	3668	18385
+thmmp[c]	thmmp	Thiamin-monophosphate	C12H16N4O4PS	-1	cytoplasm	C01081	4319	9533
+thmpp[c]	thmpp	Thiamine-diphosphate	C12H16N4O7P2S	-2	cytoplasm	C00068	3368	9532
+thr-L[c]	thr-L	L-Threonine	C4H9NO3	0	cytoplasm	C00188	3488	16857
+thr-L[e]	thr-L	L-Threonine	C4H9NO3	0	extra-organism	C00188	3488	16857
+thr-L[p]	thr-L	L-Threonine	C4H9NO3	0	periplasm	C00188	3488	16857
+thrp[c]	thrp	L-Threonine-O-3-phosphate	C4H8NO6P	-2	cytoplasm	C12147	14294	37525
+thrp[e]	thrp	L-Threonine-O-3-phosphate	C4H8NO6P	-2	extra-organism	C12147	14294	37525
+thrp[p]	thrp	L-Threonine-O-3-phosphate	C4H8NO6P	-2	periplasm	C12147	14294	37525
+thrtrna[c]	thrtrna	L-Threonyl-tRNA-Thr	C4H8NO2R	1	cytoplasm	C02992	5901	29163
+thym[c]	thym	Thymine	C5H6N2O2	0	cytoplasm	C00178	3478	17821
+thym[e]	thym	Thymine	C5H6N2O2	0	extra-organism	C00178	3478	17821
+thym[p]	thym	Thymine	C5H6N2O2	0	periplasm	C00178	3478	17821
+thymd[c]	thymd	Thymidine	C10H14N2O5	0	cytoplasm	C00214	3514	17748
+thymd[e]	thymd	Thymidine	C10H14N2O5	0	extra-organism	C00214	3514	17748
+thymd[p]	thymd	Thymidine	C10H14N2O5	0	periplasm	C00214	3514	17748
+tma[e]	tma	trimethylamine	C3H10N	1	extra-organism	C00565	3844	18139
+tma[p]	tma	trimethylamine	C3H10N	1	periplasm	C00565	3844	18139
+tmao[e]	tmao	Trimethylamine-N-oxide	C3H9NO	0	extra-organism	C01104	4338	15724
+tmao[p]	tmao	Trimethylamine-N-oxide	C3H9NO	0	periplasm	C01104	4338	15724
+tmrs2eACP[c]	tmrs2eACP	trans-Tetradec-2-enoyl-acyl-carrier-protein	C398H627O143N96P1S3	-1	cytoplasm	C05760	8055	
+toct2eACP[c]	toct2eACP	trans-Oct-2-enoyl-acyl-carrier-protein	C392H615O143N96P1S3	-1	cytoplasm	C05751	8046	
+toctd2eACP[c]	toctd2eACP	trans-octadec-2-enoyl-acyl-carrier-protein	C402H635O143N96P1S3	-1	cytoplasm			
+tpalm2eACP[c]	tpalm2eACP	trans-Hexadec-2-enoyl-acyl-carrier-protein	C400H631O143N96P1S3	-1	cytoplasm	C05763	8058	
+trdox[c]	trdox	Oxidized-thioredoxin	X	0	cytoplasm	C00343	3636	18191
+trdrd[c]	trdrd	Reduced-thioredoxin	XH2	0	cytoplasm	C00342	3635	15967
+tre6p[c]	tre6p	alpha-alpha-Trehalose-6-phosphate	C12H21O14P	-2	cytoplasm	C00689	3958	18283
+tre[c]	tre	Trehalose	C12H22O11	0	cytoplasm	C01083	4320	16551
+tre[e]	tre	Trehalose	C12H22O11	0	extra-organism	C01083	4320	16551
+tre[p]	tre	Trehalose	C12H22O11	0	periplasm	C01083	4320	16551
+trnaala[c]	trnaala	tRNA-Ala	R	0	cytoplasm	C01635	4784	29170
+trnaarg[c]	trnaarg	tRNA-Arg	R	0	cytoplasm	C01636	4785	29171
+trnaasn[c]	trnaasn	tRNA-Asn	C10H17O10PR2	0	cytoplasm	C01637	4786	29172
+trnaasp[c]	trnaasp	tRNA-Asp	R	0	cytoplasm	C01638	4787	29186
+trnacys[c]	trnacys	tRNA-Cys	R	0	cytoplasm	C01639	4788	29167
+trnagln[c]	trnagln	tRNA-Gln	R	0	cytoplasm	C01640	4789	29168
+trnaglu[c]	trnaglu	tRNA-Glu	R	0	cytoplasm	C01641	4790	29175
+trnagly[c]	trnagly	tRNA-Gly	R	0	cytoplasm	C01642	4791	29176
+trnahis[c]	trnahis	tRNA-His	R	0	cytoplasm	C01643	4792	29178
+trnaile[c]	trnaile	tRNA-Ile	R	0	cytoplasm	C01644	4793	29174
+trnaleu[c]	trnaleu	tRNA-Leu	R	0	cytoplasm	C01645	4794	29169
+trnalys[c]	trnalys	tRNA-Lys	R	0	cytoplasm	C01646	4795	29185
+trnamet[c]	trnamet	tRNA-Met	R	0	cytoplasm	C01647	4796	29173
+trnaphe[c]	trnaphe	tRNA-Phe	R	0	cytoplasm	C01648	4797	29184
+trnapro[c]	trnapro	tRNA-Pro	R	0	cytoplasm	C01649	4798	29177
+trnasecys[c]	trnasecys	tRNA-SeCys	R	0	cytoplasm			
+trnaser[c]	trnaser	tRNA-Ser	R	0	cytoplasm	C01650	4799	29179
+trnathr[c]	trnathr	tRNA-Thr	R	0	cytoplasm	C01651	4800	29180
+trnatrp[c]	trnatrp	tRNA-Trp	R	0	cytoplasm	C01652	4801	29181
+trnatyr[c]	trnatyr	tRNA-Tyr	R	0	cytoplasm	C00787	4045	29182
+trnaval[c]	trnaval	tRNA-Val	R	0	cytoplasm	C01653	4802	29183
+trp-L[c]	trp-L	L-Tryptophan	C11H12N2O2	0	cytoplasm	C00078	3378	16828
+trp-L[e]	trp-L	L-Tryptophan	C11H12N2O2	0	extra-organism	C00078	3378	16828
+trp-L[p]	trp-L	L-Tryptophan	C11H12N2O2	0	periplasm	C00078	3378	16828
+trptrna[c]	trptrna	L-Tryptophanyl-tRNA-Trp	C11H11N2OR	1	cytoplasm	C03512	6322	29159
+tsul[c]	tsul	Thiosulfate	O3S2	-2	cytoplasm	C00320	3614	16094
+tsul[e]	tsul	Thiosulfate	O3S2	-2	extra-organism	C00320	3614	16094
+tsul[p]	tsul	Thiosulfate	O3S2	-2	periplasm	C00320	3614	16094
+ttdca[c]	ttdca	tetradecanoate-n-C140	C14H27O2	-1	cytoplasm	C06424	8659	 28875 30807
+ttdca[e]	ttdca	tetradecanoate-n-C140	C14H27O2	-1	extra-organism	C06424	8659	 28875 30807
+ttdca[p]	ttdca	tetradecanoate-n-C140	C14H27O2	-1	periplasm	C06424	8659	 28875 30807
+ttdcea[c]	ttdcea	tetradecenoate-n-C141	C14H25O2	-1	cytoplasm			
+ttdcea[e]	ttdcea	tetradecenoate-n-C141	C14H25O2	-1	extra-organism			
+ttdcea[p]	ttdcea	tetradecenoate-n-C141	C14H25O2	-1	periplasm			
+tungs[c]	tungs	tungstate	O4W1	-2	cytoplasm		26697048	46502
+tungs[e]	tungs	tungstate	O4W1	-2	extra-organism		26697048	46502
+tungs[p]	tungs	tungstate	O4W1	-2	periplasm		26697048	46502
+tym[e]	tym	Tyramine	C8H12NO	1	extra-organism	C00483	3766	15760
+tym[p]	tym	Tyramine	C8H12NO	1	periplasm	C00483	3766	15760
+tyr-L[c]	tyr-L	L-Tyrosine	C9H11NO3	0	cytoplasm	C00082	3382	17895
+tyr-L[e]	tyr-L	L-Tyrosine	C9H11NO3	0	extra-organism	C00082	3382	17895
+tyr-L[p]	tyr-L	L-Tyrosine	C9H11NO3	0	periplasm	C00082	3382	17895
+tyrp[e]	tyrp	Phosphotyrosine	C9H10NO6P	-2	extra-organism	C06501	8732	
+tyrp[p]	tyrp	Phosphotyrosine	C9H10NO6P	-2	periplasm	C06501	8732	
+tyrtrna[c]	tyrtrna	L-Tyrosyl-tRNA-Tyr	C9H10NO2R	1	cytoplasm	C02839	5781	29161
+u23ga[c]	u23ga	UDP-2-3-bis-3-hydroxytetradecanoyl-glucosamine	C43H75N3O20P2	-2	cytoplasm	C04652	7239	17787
+u3aga[c]	u3aga	UDP-3-O-3-hydroxytetradecanoyl-N-acetylglucosamine	C31H51N3O19P2	-2	cytoplasm	C04738	7309	28131
+u3hga[c]	u3hga	UDP-3-O-3-hydroxytetradecanoyl-D-glucosamine	C29H50N3O18P2	-1	cytoplasm	C06022	8294	27392
+uLa4fn[c]	uLa4fn	undecaprenyl-phosphate-4-amino-4-formyl-L-arabinose	C61H99N1O8P1	-1	cytoplasm			
+uLa4n[c]	uLa4n	undecaprenyl-phosphate-4-amino-4-deoxy-L-arabinose	C60H100N1O7P1	0	cytoplasm			
+uLa4n[p]	uLa4n	undecaprenyl-phosphate-4-amino-4-deoxy-L-arabinose	C60H100N1O7P1	0	periplasm			
+uaagmda[c]	uaagmda	Undecaprenyl-diphospho-N-acetylmuramoyl-N-acetylglucosamine-L-ala-D-glu-meso-2-6-diaminopimeloyl-D-ala-D-ala	C95H152N8O28P2	-4	cytoplasm	C05898	8186	
+uaccg[c]	uaccg	UDP-N-acetyl-3-O-1-carboxyvinyl-D-glucosamine	C20H26N3O19P2	-3	cytoplasm	C04631	7220	16435
+uacgam[c]	uacgam	UDP-N-acetyl-D-glucosamine	C17H25N3O17P2	-2	cytoplasm	C00043	3345	16264
+uacgam[e]	uacgam	UDP-N-acetyl-D-glucosamine	C17H25N3O17P2	-2	extra-organism	C00043	3345	16264
+uacgam[p]	uacgam	UDP-N-acetyl-D-glucosamine	C17H25N3O17P2	-2	periplasm	C00043	3345	16264
+uacmam[c]	uacmam	UDP-N-acetyl-D-mannosamine	C17H25N3O17P2	-2	cytoplasm	C01170	4397	16287
+uacmamu[c]	uacmamu	UDP-N-acetyl-D-mannosaminouronate	C17H22N3O18P2	-3	cytoplasm	C06240	8481	28581
+uagmda[c]	uagmda	Undecaprenyl-diphospho-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2-6-diaminopimeloyl-D-alanyl-D-alanine	C87H139N7O23P2	-4	cytoplasm	C05897	8185	
+uama[c]	uama	UDP-N-acetylmuramoyl-L-alanine	C23H33N4O20P2	-3	cytoplasm	C01212	4434	16932
+uamag[c]	uamag	UDP-N-acetylmuramoyl-L-alanyl-D-glutamate	C28H39N5O23P2	-4	cytoplasm	C00692	3960	16970
+uamr[c]	uamr	UDP-N-acetylmuramate	C20H28N3O19P2	-3	cytoplasm	C01050	4292	17882
+udcpdp[c]	udcpdp	Undecaprenyl-diphosphate	C55H89O7P2	-3	cytoplasm	C03543	6347	17047
+udcpdp[p]	udcpdp	Undecaprenyl-diphosphate	C55H89O7P2	-3	periplasm	C03543	6347	17047
+udcdp2Oag[p]	udcdp2Oag	Undecaprenyl-diphosphate-O-antigene-2x	C103H170O41P2	-2	periplasm			
+udcdp3Oag[p]	udcdp3Oag	Undecaprenyl-diphosphate-O-antigene-3x	C127H210O58P2	-2	periplasm			
+udcdp4Oag[p]	udcdp4Oag	Undecaprenyl-diphosphate-O-antigene-4x	C151H250O75P2	-2	periplasm			
+udcdp5Oag[p]	udcdp5Oag	Undecaprenyl-diphosphate-O-antigene-5x	C175H290O92P2	-2	periplasm			
+udcdp6Oag[p]	udcdp6Oag	Undecaprenyl-diphosphate-O-antigene-6x	C199H330O109P2	-2	periplasm			
+udcdp7Oag[p]	udcdp7Oag	Undecaprenyl-diphosphate-O-antigene-7x	C223H370O126P2	-2	periplasm			
+udcdp8Oag[p]	udcdp8Oag	Undecaprenyl-diphosphate-O-antigene-8x	C247H410O143P2	-2	periplasm			
+udcdp9Oag[p]	udcdp9Oag	Undecaprenyl-diphosphate-O-antigene-9x	C271H450O160P2	-2	periplasm			
+udcdp10Oag[p]	udcdp10Oag	Undecaprenyl-diphosphate-O-antigene-10x	C295H490O177P2	-2	periplasm			
+udcdp11Oag[p]	udcdp11Oag	Undecaprenyl-diphosphate-O-antigene-11x	C319H530O194P2	-2	periplasm			
+udcdp12Oag[p]	udcdp12Oag	Undecaprenyl-diphosphate-O-antigene-12x	C343H570O211P2	-2	periplasm			
+udcdp13Oag[p]	udcdp13Oag	Undecaprenyl-diphosphate-O-antigene-13x	C367H610O228P2	-2	periplasm			
+udcdp14Oag[p]	udcdp14Oag	Undecaprenyl-diphosphate-O-antigene-14x	C391H650O245P2	-2	periplasm			
+udcdp15Oag[p]	udcdp15Oag	Undecaprenyl-diphosphate-O-antigene-15x	C415H690O262P2	-2	periplasm			
+udcdp16Oag[p]	udcdp16Oag	Undecaprenyl-diphosphate-O-antigene-16x	C439H730O279P2	-2	periplasm			
+udcdp17Oag[p]	udcdp17Oag	Undecaprenyl-diphosphate-O-antigene-17x	C463H770O296P2	-2	periplasm			
+udcdp18Oag[p]	udcdp18Oag	Undecaprenyl-diphosphate-O-antigene-18x	C487H810O313P2	-2	periplasm			
+udcdp19Oag[p]	udcdp19Oag	Undecaprenyl-diphosphate-O-antigene-19x	C511H850O330P2	-2	periplasm			
+udcdp20Oag[p]	udcdp20Oag	Undecaprenyl-diphosphate-O-antigene-20x	C535H890O347P2	-2	periplasm			
+udcdpgal[c]	udcdpgal	Undecaprenyl-diphosphate-galactose	C61H100O12P2	-2	cytoplasm			
+udcdpgalrmn[c]	udcdpgalrmn	Undecaprenyl-diphosphate-galactose-rhamnose	C67H110O16P2	-2	cytoplasm			
+udcdpgalrmnman[c]	udcdpgalrmnman	Undecaprenyl-diphosphate-galactose-rhamnose-mannose	C73H120O21P2	-2	cytoplasm			
+udcdpgalrmnmanabe[c]	udcdpgalrmnmanabe	Undecaprenyl-diphosphate-galactose-rhamnose-mannose-abequose	C79H130O24P2	-2	cytoplasm			
+udcdpgalrmnmanabe[p]	udcdpgalrmnmanabe	Undecaprenyl-diphosphate-galactose-rhamnose-mannose-abequose	C79H130O24P2	-2	periplasm			
+udcpp[c]	udcpp	Undecaprenyl-phosphate	C55H89O4P	-2	cytoplasm	C00348	3641	16141
+udcpp[p]	udcpp	Undecaprenyl-phosphate	C55H89O4P	-2	periplasm	C00348	3641	16141
+udpLa4fn[c]	udpLa4fn	uridine-5-diphospho-beta-4-deoxy-4-formamido-L-arabinose	C15H21N3O16P2	-2	cytoplasm		17756768	
+udpLa4n[c]	udpLa4n	uridine-5-diphospho-beta-4-deoxy-4-amino-L-arabinose	C14H22N3O15P2	-1	cytoplasm			
+udpLa4o[c]	udpLa4o	UDP-4-keto-pyranose	C14H18N2O16P2	-2	cytoplasm			
+udp[c]	udp	UDP	C9H11N2O12P2	-3	cytoplasm	C00015	3317	17659
+udpacgal[e]	udpacgal	UDP-N-acetyl-D-galactosamine	C17H25N3O17P2	-2	extra-organism	C00203	3503	16650
+udpacgal[p]	udpacgal	UDP-N-acetyl-D-galactosamine	C17H25N3O17P2	-2	periplasm	C00203	3503	16650
+udpg[c]	udpg	UDPglucose	C15H22N2O17P2	-2	cytoplasm	C00029	3331	18066
+udpg[e]	udpg	UDPglucose	C15H22N2O17P2	-2	extra-organism	C00029	3331	18066
+udpg[p]	udpg	UDPglucose	C15H22N2O17P2	-2	periplasm	C00029	3331	18066
+udpgal[c]	udpgal	UDPgalactose	C15H22N2O17P2	-2	cytoplasm	C00052	3354	18307
+udpgal[e]	udpgal	UDPgalactose	C15H22N2O17P2	-2	extra-organism	C00052	3354	18307
+udpgal[p]	udpgal	UDPgalactose	C15H22N2O17P2	-2	periplasm	C00052	3354	18307
+udpgalfur[c]	udpgalfur	UDP-D-galacto-1-4-furanose	C15H22N2O17P2	-2	cytoplasm	C03733	6496	18251
+udpglcur[c]	udpglcur	UDP-D-glucuronate	C15H19N2O18P2	-3	cytoplasm	C00167	3467	17200
+udpglcur[e]	udpglcur	UDP-D-glucuronate	C15H19N2O18P2	-3	extra-organism	C00167	3467	17200
+udpglcur[p]	udpglcur	UDP-D-glucuronate	C15H19N2O18P2	-3	periplasm	C00167	3467	17200
+ugmd[c]	ugmd	UDP-N-acetylmuramoyl-L-alanyl-D-gamma-glutamyl-meso-2-6-diaminopimelate	C35H51N7O26P2	-4	cytoplasm	C04877	7429	
+ugmda[c]	ugmda	UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2-6-diaminopimeloyl-D-alanyl-D-alanine	C41H61N9O28P2	-4	cytoplasm	C04882	7434	
+um4p[c]	um4p	UDP-N-acetylmuramoyl-L-alanyl-D-gamma-glutamyl-meso-2-6-diaminopimelate-D-alanine	C38H56N8O27P2	-4	cytoplasm			
+ump[c]	ump	UMP	C9H11N2O9P	-2	cytoplasm	C00105	3405	16695
+ump[e]	ump	UMP	C9H11N2O9P	-2	extra-organism	C00105	3405	16695
+ump[p]	ump	UMP	C9H11N2O9P	-2	periplasm	C00105	3405	16695
+unaga[c]	unaga	Undecaprenyl-diphospho-N-acetyl-glucosamine	C63H103NO12P2	-2	cytoplasm	C01289	4508	
+unagamu[c]	unagamu	Undecaprenyl-diphospho-N-acetylglucosamine-N-acetylmannosaminuronate	C71H113N2O18P2	-3	cytoplasm			
+unagamuf[c]	unagamuf	Undecaprenyl-diphospho-N-acetylglucosamine-N-acetylmannosaminuronate-N-acetamido-4-6-dideoxy-D-galactose	C79H126N3O22P2	-3	cytoplasm			
+unagamuf[p]	unagamuf	Undecaprenyl-diphospho-N-acetylglucosamine-N-acetylmannosaminuronate-N-acetamido-4-6-dideoxy-D-galactose	C79H126N3O22P2	-3	periplasm			
+uppg3[c]	uppg3	Uroporphyrinogen-III	C40H36N4O16	-8	cytoplasm	C01051	4293	15437
+ura[c]	ura	Uracil	C4H4N2O2	0	cytoplasm	C00106	3406	17568
+ura[e]	ura	Uracil	C4H4N2O2	0	extra-organism	C00106	3406	17568
+ura[p]	ura	Uracil	C4H4N2O2	0	periplasm	C00106	3406	17568
+urate[c]	urate	Urate	C5H4N4O3	0	cytoplasm	C00366	3657	17775
+urdglyc[c]	urdglyc	-Ureidoglycolate	C3H5N2O4	-1	cytoplasm	C00603	3878	15412
+urea[c]	urea	Urea	CH4N2O	0	cytoplasm	C00086	3386	16199
+urea[e]	urea	Urea	CH4N2O	0	extra-organism	C00086	3386	16199
+urea[p]	urea	Urea	CH4N2O	0	periplasm	C00086	3386	16199
+uri[c]	uri	Uridine	C9H12N2O6	0	cytoplasm	C00299	3593	16704
+uri[e]	uri	Uridine	C9H12N2O6	0	extra-organism	C00299	3593	16704
+uri[p]	uri	Uridine	C9H12N2O6	0	periplasm	C00299	3593	16704
+urocan[c]	urocan	Urocanate	C6H5N2O2	-1	cytoplasm	C00785	4043	30817
+utp[c]	utp	UTP	C9H11N2O15P3	-4	cytoplasm	C00075	3375	15713
+val-L[c]	val-L	L-Valine	C5H11NO2	0	cytoplasm	C00183	3483	16414
+val-L[e]	val-L	L-Valine	C5H11NO2	0	extra-organism	C00183	3483	16414
+val-L[p]	val-L	L-Valine	C5H11NO2	0	periplasm	C00183	3483	16414
+valtrna[c]	valtrna	L-Valyl-tRNA-Val	C5H10NOR	1	cytoplasm	C02554	5555	29164
+xan[c]	xan	Xanthine	C5H4N4O2	0	cytoplasm	C00385	3675	17712
+xan[e]	xan	Xanthine	C5H4N4O2	0	extra-organism	C00385	3675	17712
+xan[p]	xan	Xanthine	C5H4N4O2	0	periplasm	C00385	3675	17712
+xdp[c]	xdp	XDP	C10H11N4O12P2	-3	cytoplasm	C01337	4545	
+xmp[c]	xmp	Xanthosine-5-phosphate	C10H11N4O9P	-2	cytoplasm	C00655	3925	15652
+xmp[e]	xmp	Xanthosine-5-phosphate	C10H11N4O9P	-2	extra-organism	C00655	3925	15652
+xmp[p]	xmp	Xanthosine-5-phosphate	C10H11N4O9P	-2	periplasm	C00655	3925	15652
+xtp[c]	xtp	XTP	C10H11N4O15P3	-4	cytoplasm	C00700	3968	
+xtsn[c]	xtsn	Xanthosine	C10H12N4O6	0	cytoplasm	C01762	4895	18107
+xtsn[e]	xtsn	Xanthosine	C10H12N4O6	0	extra-organism	C01762	4895	18107
+xtsn[p]	xtsn	Xanthosine	C10H12N4O6	0	periplasm	C01762	4895	18107
+xu5p-D[c]	xu5p-D	D-Xylulose-5-phosphate	C5H9O8P	-2	cytoplasm	C00231	3530	16332
+xu5p-L[c]	xu5p-L	L-Xylulose-5-phosphate	C5H9O8P	-2	cytoplasm	C03291	6148	16593
+xyl-D[c]	xyl-D	D-Xylose	C5H10O5	0	cytoplasm	C00181	3481	15936
+xyl-D[e]	xyl-D	D-Xylose	C5H10O5	0	extra-organism	C00181	3481	15936
+xyl-D[p]	xyl-D	D-Xylose	C5H10O5	0	periplasm	C00181	3481	15936
+xylu-D[c]	xylu-D	D-Xylulose	C5H10O5	0	cytoplasm	C00310	3604	17140
+xylu-L[c]	xylu-L	L-Xylulose	C5H10O5	0	cytoplasm	C00312	3606	17399
+xylu-L[e]	xylu-L	L-Xylulose	C5H10O5	0	extra-organism	C00312	3606	17399
+xylu-L[p]	xylu-L	L-Xylulose	C5H10O5	0	periplasm	C00312	3606	17399
+zn2[c]	zn2	Zinc	Zn	2	cytoplasm	C00038	3340	29105
+zn2[e]	zn2	Zinc	Zn	2	extra-organism	C00038	3340	29105
+zn2[p]	zn2	Zinc	Zn	2	periplasm	C00038	3340	29105
+drib[c]	drib	2-Deoxy-D-ribose	C5H10O4	0	cytoplasm	C01801	4927	28816
+drib[e]	drib	2-Deoxy-D-ribose	C5H10O4	0	extra-organism	C01801	4927	28816
+drib[p]	drib	2-Deoxy-D-ribose	C5H10O4	0	periplasm	C01801	4927	28816
+pydx[e]	pydx	Pyridoxal	C8H9NO3	0	extra-organism	C00250	3549	17310
+pydxn[e]	pydxn	Pyridoxine	C8H11NO3	0	extra-organism	C00314	3608	16709
+chitob[e]	chitob	Chitobiose	C16H28N2O11	0	extra-organism	C01674	4818	
+slcys[c]	slcys	S-Sulfo-L-cysteine	C3H6NO5S2	-1	cytoplasm	C05824	8119	
+2oh3d[c]	2oh3d	2-Oxohept-3-ene-1,7-dioate	C7H6O5	-2	cytoplasm	C03063	5963	1254
+2ins[c]	2ins	2-Inosose	C6H10O6	0	cytoplasm	C00691	3959	17811
+msa[c]	msa	Malonate semialdehyde	C3H3O3	-1	cytoplasm	C00222	3522	17960
+chit6p[c]	chit6p	chitobiose-6-phosphate	C16H27N2O14P	-2	cytoplasm		853844	
+d5kgp[c]	d5kgp	2-Deoxy-5-keto-D-gluconic acid 6-phosphate	C6H8O9P	-3	cytoplasm	C06893	9110	
+d5kg[c]	d5kg	2-Deoxy-5-keto-D-gluconic acid	C6H9O6	-1	cytoplasm	C06892	9109	27972
+24dhhed[c]	24dhhed	2,4-Dihydroxyhept-2-enedioate	C7H8O6	-2	cytoplasm	C06201	8451	
+dkdi[c]	dkdi	D-2,3-Diketo 4-deoxy-epi-inositol	C6H8O5	0	cytoplasm	C06891	9108	4077
+rnam[e]	rnam	N-Ribosylnicotinamide	C11H15N2O5	1	extra-organism	C03150	6038	15927
+rnam[c]	rnam	N-Ribosylnicotinamide	C11H15N2O5	1	cytoplasm	C03150	6038	15927
+udcpo5[c]	udcpo5	Undecaprenyl diphosphate galactose-rhamnose-mannose-abequose-acetyl	C81H134O25P2	-2	cytoplasm			
+udcpo4[c]	udcpo4	Undecaprenyl diphosphate galactose-rhamnose-mannose-abequose	C79H132O24P2	-2	cytoplasm			
+udcpgrm[c]	udcpgrm	Undecaprenyl diphosphate galactose-rhamnose-mannose	C73H122O21P2	-2	cytoplasm		23061145	
+udcpgr[c]	udcpgr	Undecaprenyl diphosphate galactose-rhamnose	C67H112O16P2	-2	cytoplasm			
+udcpg[c]	udcpg	Undecaprenyl diphosphate galactose	C61H102O12P2	-2	cytoplasm		7121	16046
+tcb[c]	tcb	tricarballylate	C6H5O6	-3	cytoplasm		3333	4167
+chitob[p]	chitob	Chitobiose	C16H28N2O11	0	periplasm	C01674	4818	
+rnam[p]	rnam	N-Ribosylnicotinamide	C11H15N2O5	1	periplasm	C03150	6038	15927
+udcpo5[p]	udcpo5	Undecaprenyl diphosphate galactose-rhamnose-mannose-abequose-acetyl	C81H134O25P2	-2	periplasm			
+udcpo5[e]	udcpo5	Undecaprenyl diphosphate galactose-rhamnose-mannose-abequose-acetyl	C81H134O25P2	-2	extra-organism			
+tcb[p]	tcb	tricarballylate	C6H5O6	-3	periplasm		3333	4167
+tcb[e]	tcb	tricarballylate	C6H5O6	-3	extra-organism		3333	4167
+tton[p]	tton	Trithionate	H2O6S3	-2	periplasm	C01861	4976	15987
+tton[e]	tton	Trithionate	H2O6S3	-2	extra-organism	C01861	4976	15987
+psd5p[c]	psd5p	Pseudouridine 5-phosphate	C9H13N2O9P	-2	cytoplasm	C01168	4395	18116
+peptido-ST[p]	peptido-ST	Membrane murein mixture			periplasm			
+clpn2-ST[p]	clpn2-ST	Membrane cardiolipin mixture			periplasm			
+pg2-ST[p]	pg2-ST	Membrane phosphatidylglycerol mixture			periplasm			
+12dgr2-ST[p]	12dgr2-ST	Membrane 1,2-diacylglycerol mixture			periplasm			
+pe2-ST[p]	pe2-ST	Membrane phosphatidylethanolamine mixture			periplasm			
+ps2-ST[p]	ps2-ST	Membrane phosphatidylserine mixture			periplasm			
+colipaOA[e]	colipaOA	Membrane LPS mixture			extra-organism			
+pa2-ST[p]	pa2-ST	Membrane phosphatidate mixture			periplasm			
+OA-ST[p]	OA-ST	OA-ST[p]			periplasm			
+udcpo4[p]	udcpo4	Undecaprenyl diphosphate galactose-rhamnose-mannose-abequose	C79H132O24P2	-2	periplasm			
+udcpo4[e]	udcpo4	Undecaprenyl diphosphate galactose-rhamnose-mannose-abequose	C79H132O24P2	-2	extra-organism			
+pydx[p]	pydx	Pyridoxal	C8H9NO3	0	periplasm	C00250	3549	17310
+pydxn[p]	pydxn	Pyridoxine	C8H11NO3	0	periplasm	C00314	3608	16709
+4hthr[p]	4hthr	4-Hydroxy-L-threonine	C4H9NO4	0	periplasm	C06056	8326	
+4hthr[e]	4hthr	4-Hydroxy-L-threonine	C4H9NO4	0	extra-organism	C06056	8326	
+23dhbzs3[p]	23dhbzs3	2-3-dihydroxybenzoylserine trimer	C30H29N3O16		periplasm			
+salchs2[p]	salchs2	Salmochelin-S2	C42H49N3O26		periplasm			
+salchs2fe[p]	salchs2fe	Salmochelin-S2-Fe-III	C42FeH49N3O26		periplasm			
+23dhbzs3[e]	23dhbzs3	2-3-dihydroxybenzoylserine trimer	C30H29N3O16		extra-organism			
+fe3dhbzs3[e]	fe3dhbzs3	2-3-dihydroxybenzoylserine trimer-Fe-III	C30FeH29N3O16		extra-organism			
+fe3dhbzs3[p]	fe3dhbzs3	2-3-dihydroxybenzoylserine trimer-Fe-III	C30FeH29N3O16		periplasm			
+fe3dhbzs3[c]	fe3dhbzs3	2-3-dihydroxybenzoylserine trimer-Fe-III	C30FeH29N3O16		cytoplasm			
+23dhbzs3[c]	23dhbzs3	2-3-dihydroxybenzoylserine trimer	C30H29N3O16		cytoplasm			
+salchs2[e]	salchs2	Salmochelin-S2	C42H49N3O26		extra-organism			
+salchs2fe[e]	salchs2fe	Salmochelin-S2-Fe-III	C42FeH49N3O26		extra-organism			
+salchs2fe[c]	salchs2fe	Salmochelin-S2-Fe-III	C42FeH49N3O26		cytoplasm			
+salchs2[c]	salchs2	Salmochelin-S2	C42H49N3O26		cytoplasm			
+salchs1[c]	salchs1	Salmochelin-S1	C26H30N2O16		cytoplasm			
+23dhbzs2[c]	23dhbzs2	2-3-dihydroxybenzoylserine dimer	C20H20N2O11		cytoplasm			
+entermg[c]	entermg	Enterobactin monoglycosylated	C36H37N3O20		cytoplasm			
+guln-L[p]	guln-L	L-gulonate	C6H11O7		periplasm			
+guln-L[e]	guln-L	L-gulonate	C6H11O7		extra-organism			
+guln-L[c]	guln-L	L-gulonate	C6H11O7		cytoplasm			
+dxyl[p]	dxyl	1-deoxy-D-xylulose	C5H10O4	0	periplasm	C06257	8496	28354
+dxyl[e]	dxyl	1-deoxy-D-xylulose	C5H10O4	0	extra-organism	C06257	8496	28354
+murein-lpp[p]	murein-lpp	Braun lipoprotein conjugated with murein	C385H645N102O139S2		periplasm			
+apolpp[p]	apolpp	Braun apolipoprotein	C292H498N87O98S2		periplasm			
+lpp-sp[p]	lpp-sp	Braun lipoprotein signal peptide	C90H165N25O25S		periplasm			
+diglyceride-prolpp[c]	diglyceride-prolpp	Diglyceride Braun prolipoprotein	C382H661N112O122S3		cytoplasm			
+glyceryl-prolpp[c]	glyceryl-prolpp	Glyceryl Braun prolipoprotein	C366H631N112O121S3		cytoplasm			
+prolpp[c]	prolpp	Braun prolipoprotein	C350H601N112O120S3		cytoplasm			

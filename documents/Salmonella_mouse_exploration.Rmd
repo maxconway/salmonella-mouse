@@ -1,0 +1,168 @@
+---
+title: "Salmonella Mouse exploration"
+author: "Max Conway"
+date: "13 May 2016"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(dev = 'pdf')
+library(dplyr)
+library(readr)
+library(FluxBalanceAnalyzeR)
+library(stringr)
+library(tidyr)
+library(purrr)
+library(ggplot2)
+library(RColorBrewer)
+```
+# Read and preprocess reaction table
+The preprocessing here is purely bookkeeping, changing some terminology in the model file to fit what the model parsing function will expect.
+```{r}
+rxns <- read_tsv('../data/LT2_react.tsv') %>%
+  select(abbreviation=`Rxn name`,
+         equation=Formula,
+         uppbnd=UB,
+         lowbnd=LB,
+         geneAssociation=`Gene-reaction association`,
+         Subsystem) %>%
+  mutate(obj_coef=abbreviation=='biomass_iRR1083') %>%
+  mutate(geneAssociation = str_replace_all(geneAssociation, 'and', '&'),
+         geneAssociation = str_replace_all(geneAssociation, 'or', '|'))
+```
+
+# Read mapping between gene terminologies
+This table will be used to map between STM style codes and gene names
+```{r}
+genes_mapping <- read_tsv('../data/LT2_genes.tsv')
+```
+
+# Read and preprocess RNA counts
+We first select a control sample, which the others will be normalised against. Here we use `Input`.
+```{r}
+control <- 'Input'
+```
+Next, we:
+
+1. Read the sequence count table.
+2. Reorganise it into a long format that's easier to analyse.
+3. Throw away very large outliers (greater than 100* the median absolute deviation). More sophisticated and sensitive outlider detection would probably be a good addition.
+4. Normalise each replicate to a mean of 1. Counts differ quite strongly between replicates, and I'm assuming that this is due to differences in the raw number of cells analysed, in which case this normalisation is transforming from the total RNA to the RNA density.
+5. Take the mean of replicates for each group. I'm not sure if this is best done now, or later.
+6. Normalise each group against the control. Because we're dividing by it, the control can't have any zeros, so I'm using `Input`, rather than `Group1`.
+7. Transform the resulting values to a more suitable distribution, with lower variance. Here I've assumed that the starting distribution is lognormal, and transformed to a gamma distribution with hand tuned parameters. I've done this because it is easy and works, not because it is necessarily correct.
+
+```{r}
+rnas <- read_tsv('../data/seq_counts.tsv') %>% # 1
+  gather(measurement, count, -Locus, -Gene, -Product) %>% # 2
+  separate(measurement, c('group', 'replicate'), '_') %>%
+  mutate(replicate = str_c(group, '_', replicate)) %>%
+  # first we'll do a round of outlider detection
+  group_by(replicate) %>%
+  filter(count < 100*mad(count)+median(count)) %>% # 3
+  ungroup %>%
+  # next, remove experimental variance between replicates
+  group_by(replicate) %>%
+  mutate(count = count/mean(count)) %>% # 4
+  ungroup %>%
+  # now, average and normalize groups against control
+  group_by(Gene, group) %>%
+  summarise(meancount = mean(count)) %>% # 5
+  spread(group, meancount) %>%
+  ungroup %>%
+  mutate(Group1 = Group1/.[[control]],
+         Group2 = Group2/.[[control]],  # 6
+         Group3 = Group3/.[[control]],
+         Input = Input/.[[control]]) %>%
+  gather('group', 'nexpression', -Gene) %>%
+  mutate(normalized = qgamma(plnorm(nexpression),shape = 10,scale = 0.1)) %>% # 7
+  rename(presence = normalized)
+```
+
+# Join the FBA model and expression data, and perform FBA.
+First, we need a list of the genes that are in the model, so that we can create default values for any genes that the model requires but for which there isn't any expression data.
+```{r}
+genes_in_model <- rxns$geneAssociation %>%
+  str_split('[()|& ]+') %>%
+  flatten_chr() %>%
+  discard(is.na) %>%
+  discard(~ str_length(.x)==0)
+```
+Now, to join the datasets and run the resulting models, we:
+
+1. Join the expression data to the table that maps between the different gene terminologies.
+2. We've now got expression data for all the experimental groups. For each group, we:
+    3. Fill in any genes that we're missing expression data for with a default value (1).
+    4. Create a new reaction table that's adjusted to the expression data.
+    5. Parse the reaction table.
+    6. Simulate the FBA model.
+    7. Reannotate the reaction table with the results.
+
+```{r, message=FALSE, results='hide'}
+results <- inner_join( # 1
+    rnas %>%
+      select_('Gene', 'group', 'presence'),
+    genes_mapping %>%
+      select_(Gene='Alias',
+             name='Gene')
+  ) %>%
+    group_by(group) %>% # 2
+    do(bind_rows(., data_frame(name=setdiff(genes_in_model, .$name), presence=1, group=.$group[1]))) %>% # 3
+    by_slice(function(x){gene_associate(rxns, x %>% select_('name', 'presence'), expression_flux_function = I)}) %>% # 4
+    unnest(.out) %>%
+    group_by(group) %>%
+    do(mutate(., flux = parse_reaction_table(.) %>% # 5
+             gurobi::gurobi() %>% # 6
+             getElement('x'))) # 7
+```
+
+# Analyse the results
+First, let's look at how reactions have varied from control. Here we find how much flux difference there is from `Input`, only looking at those reactions that do display some change.
+```{r}
+results_analysed_1 <- results %>%
+  filter(!(Subsystem %in% c('Transport Outer Membrane Porin'))) %>%
+  spread(group, flux) %>%
+  mutate(Group1 = Group1-.[[control]],
+         Group2 = Group2-.[[control]],
+         Group3 = Group3-.[[control]],
+         Input = Input-.[[control]]) %>%
+  gather('group', 'relflux', starts_with('Group'), Input) %>%
+  filter(group!=control) %>%
+  group_by(abbreviation) %>%
+  mutate(variety = length(unique(round(relflux, 2)))) %>%
+  ungroup %>%
+  filter(variety==3)
+```
+
+We can now plot this as a vertical bar chart to see what's happened. We're plotting the square root absolute flux, in order to get an idea of the relative magnitudes.
+```{r, warning=FALSE, fig.height=20, fig.width=14, out.height='0.9\\textheight', out.width='\\textwidth', dpi=300}
+results_analysed_1 %>%  
+  group_by(abbreviation) %>%
+  filter(max(abs(relflux))>1) %>%
+  ggplot(aes(
+    x=reorder(abbreviation, as.numeric(factor(Subsystem))), 
+    y=relflux, 
+    fill = Subsystem
+    )) + 
+  geom_bar(position = 'dodge', stat = 'identity') + 
+  facet_grid(.~group) +
+  scale_y_continuous(trans = 'sqrt')+
+  coord_flip() +
+  scale_fill_manual(values=rep_along(1:36,brewer.pal(12,"Set3"))) +
+  theme_bw() +
+  theme(legend.position='bottom',
+        panel.grid.major.y=element_blank())
+```
+
+We can see that, with the current setup, only the `Group1` reactions are showing a difference from control. I would guess because it has larger sequence counts than the other groups, which mean that the normalization has a less strong effect.
+
+We can see from the graph here that the majority of the reactions either stayed at 0, or changed by 1000 (that is, they either switched from either 0 flux to the maximum possible, or vice versa).
+We can also see that there appear have been particularly big changes in the transport and exchange subsystems.
+
+# Conclusion
+More work is needed on normalization to give more pronounced results, but now that we have the pipeline, the target is obvious and we should be able to fine tune the procedure effectively.
+
+
+
+
