@@ -119,8 +119,8 @@ models_with_targets <- models_with_expression %>%
   }) %>%
   unnest(.out) %>%
   #mutate(activation=1) %>% # for testing
-  mutate(uppbnd = ifelse(is.na(activation), uppbnd, uppbnd * activation),
-         lowbnd = ifelse(is.na(activation), lowbnd, lowbnd * activation)) %T>%
+  mutate(uppbnd = ifelse(is.na(activation), uppbnd, pmax(0, pmin(uppbnd, baseflux * activation * 1.1))),
+         lowbnd = ifelse(is.na(activation), lowbnd, pmin(0, pmax(lowbnd, baseflux * activation * 0.9)))) %T>%
   (function(x){print(x %>%
                        filter(!(is.na(activation))) %>%
                        #filter(abs(baseflux)<900) %>%
@@ -149,7 +149,7 @@ results_analysed_2 <- results %>%
   group_by(abbreviation) %>%
   mutate(variety = sd(flux)/mean(abs(flux))) %>%
   ungroup %>%
-  filter(variety>1)
+  filter(variety>0.7)
 
 ## plot
 results_analysed_2 %>%  
@@ -188,7 +188,18 @@ reaction_metab_results <- full_list_results %>%
   select(-fluxmat) %>%
   unnest(fluxdf)
 
-
+results_analysed_2 %>%
+  group_by(group) %>%
+  by_slice(function(x){
+    stoich <- parse_reaction_table(x)$A
+    matrix(x$flux,nrow(stoich), ncol(stoich), byrow=TRUE) * as.matrix(stoich)
+  }) %>%
+  (function(x){
+    x[x$group=='Group1','.out'][[1]][[1]] - x[x$group=='Input','.out'][[1]][[1]]
+  }) %>%
+  heatmap.plus::heatmap.plus(distfun = (function(x){dist(abs(x))}),
+                             col=RColorBrewer::brewer.pal(11,'RdYlGn')
+  )
 
 # reaction_metab_results %>%
 #   inner_join(.,.,by=c('reaction','metabolite')) %>%
