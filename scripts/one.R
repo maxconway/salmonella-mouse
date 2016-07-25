@@ -50,6 +50,10 @@ rxns <- read_tsv('data/LT2_react.tsv') %>%
   mutate(geneAssociation = str_replace_all(geneAssociation, 'and', '&'),
          geneAssociation = str_replace_all(geneAssociation, 'or', '|'))
 
+# Custom reaction bounds
+rxns <- rxns %>%
+  mutate(lowbnd = ifelse(abbreviation=='EX_skm(e)',-10,lowbnd))
+
 # From reaction table, list all genes
 genes_in_model <- rxns$geneAssociation %>%
   str_split('[()|& ]+') %>%
