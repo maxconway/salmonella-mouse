@@ -85,7 +85,7 @@ rnas <- inner_join(
   mutate(replicate = str_c(group, '_', replicate)) %>%
   # next, remove experimental variance between replicates
   group_by(replicate) %>%
-  mutate(count = count/mean(count)) %>%
+  mutate(count = (count+1)/mean(count+1)) %>%
   ungroup %>%
   # now, average and normalize groups against control
   group_by(Gene, group) %>%
@@ -152,11 +152,11 @@ results <- models_with_targets %>%
 results_analysed_2 <- results %>%
   group_by(abbreviation) %>%
   mutate(variety = sd(flux)/mean(abs(flux))) %>%
-  ungroup %>%
-  filter(variety>0.7)
+  ungroup
 
 ## plot
-results_analysed_2 %>%  
+results_analysed_2 %>%
+  filter(variety>0.7) %>%  
   ggplot(aes(
     x=name, 
     y=flux, 
@@ -193,6 +193,7 @@ reaction_metab_results <- full_list_results %>%
   unnest(fluxdf)
 
 results_analysed_2 %>%
+  filter(variety>0.7) %>%
   group_by(group) %>%
   by_slice(function(x){
     stoich <- parse_reaction_table(x)$A
@@ -205,59 +206,34 @@ results_analysed_2 %>%
                              col=RColorBrewer::brewer.pal(11,'RdYlGn')
   )
 
-# reaction_metab_results %>%
-#   inner_join(.,.,by=c('reaction','metabolite')) %>%
-#   mutate(contrast=str_c(group.x, ' - ', group.y), diff = flux.x-flux.y) %>%
-#   filter(abs(diff)>(0.1*pmax(abs(flux.x), abs(flux.y)))) %>%
-#   filter(contrast %in% c('Input - Group1','Input - Group3','Group1 - Group2', 'Group2 - Group3')) %>%
-#   select(-group.x, -group.y, -flux.x, -flux.y) %>%
-#   spread(metabolite, diff, fill=0) %>%
-#   group_by(contrast) %>%
-#   by_slice(function(x){
-#     res <- as.matrix(x %>% select(-reaction))
-#     rownames(res) <- x$reaction
-#     return(res)
-#   }) %>%
-#   pwalk(function(contrast, .out){
-#     heatmap.plus::heatmap.plus(.out, 
-#                                distfun = (function(x){dist(abs(x))}), 
-#                                col=RColorBrewer::brewer.pal(11,'RdYlGn'), 
-#                                main=contrast
-#     )
-#   })
+# Publication pics
+(results %>%
+  # normalize by group biomass
+  # group_by(group) %>%
+  # mutate(propflux = flux / flux[abbreviation=='biomass_iRR1083']) %>%
+  # ungroup %>%
+  # normalize by typical reaction flux
+  group_by(abbreviation) %>%
+  mutate(
+    baseflux = flux[group=='Input'],
+    normflux = flux / ifelse(baseflux!=0 & is.finite(baseflux), baseflux, mean(abs(flux)))
+    ) %>%
+  ungroup %>%
+  # filter out uninteresting
+  filter(!near(normflux, normflux[abbreviation=='biomass_iRR1083'], tol=0.05)) %>%
+  # plot
+  ggplot(aes(x=normflux, y=abbreviation, colour=group)) + 
+  geom_point() +
+  theme_bw()) %>%
+  ggsave('publication_images/horizontal_point_summary.png',.)
 
-
-# # shows that at least some groups show effect
-#  read_tsv('data/seq_counts.tsv') %>%
-#   gather(measurement, count, -Locus, -Gene, -Product) %>%
-#   separate(measurement, c('group', 'replicate'), '_') %>%
-#   mutate(replicate = str_c(group, '_', replicate)) %>%
-#   # first we'll do a round of outlider detection
-#   group_by(replicate) %>%
-#   filter(count < 100*mad(count)+median(count)) %>%
-#   ungroup %>%
-#   # next, remove experimental variance between replicates
-#   group_by(replicate) %>%
-#   mutate(count = count/mean(count)) %>%
-#   ungroup %>%
-#   # now, average and normalize groups against control
-#   group_by(Gene, group) %>%
-#   summarise(meancount = mean(count)) %>%
-#   spread(group, meancount) %>%
-#   ungroup %>%
-#   mutate(Group1 = Group1/.[[control]],
-#          Group2 = Group2/.[[control]],
-#          Group3 = Group3/.[[control]],
-#          Input = Input/.[[control]]) %>%
-#   gather('group', 'nexpression', -Gene) %>%
-#   mutate(normalized = qgamma(plnorm(nexpression),shape = 10,scale = 0.1)) %>%
-#   rename(presence = normalized)
-#   gather(measurement, count, -Locus, -Gene, -Product) %>%
-#   separate(measurement, c('group', 'replicate'), '_') %>%
-#   filter(group %in% c('Group1', 'Group2', 'Group3')) %>%
-#   group_by(Gene, group) %>%
-#   mutate(intra_group_sd=sd(count)) %>%
-#   group_by(Gene) %>%
-#   mutate(inter_goup_sd = sd(count)) %>%
-#   mutate(intra_inter_ratio = inter_goup_sd/intra_group_sd) %>%
-#   ggplot(aes(x=intra_inter_ratio)) + geom_density() + scale_x_log10()
+results_analysed_2 %>%
+  filter(variety>0.01) %>%  
+  ggplot(aes(
+    x=name, 
+    y=flux, 
+    fill = group
+  )) + 
+  geom_bar(stat='identity', position='dodge') + 
+  scale_y_continuous(trans = scales::trans_new('cbrt', function(x){sign(x)*abs(x)^(1/3)}, function(x){x^3}, domain = c(-Inf, Inf))) +
+  coord_flip()
