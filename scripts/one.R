@@ -207,7 +207,7 @@ results_analysed_2 %>%
   )
 
 # Publication pics
-(results %>%
+results_analysed_3 <- results %>%
   # normalize by group biomass
   # group_by(group) %>%
   # mutate(propflux = flux / flux[abbreviation=='biomass_iRR1083']) %>%
@@ -217,23 +217,42 @@ results_analysed_2 %>%
   mutate(
     baseflux = flux[group=='Input'],
     normflux = flux / ifelse(baseflux!=0 & is.finite(baseflux), baseflux, mean(abs(flux)))
-    ) %>%
+  ) %>%
   ungroup %>%
-  # filter out uninteresting
-  filter(!near(normflux, normflux[abbreviation=='biomass_iRR1083'], tol=0.05)) %>%
+  # prepare to filter out uninteresting
+  group_by(group) %>%
+  mutate(bmflux = normflux[abbreviation=='biomass_iRR1083']) %>%
+  ungroup
+
+(results_analysed_3 %>%
+  group_by(abbreviation) %>%
+  filter(!all(near(normflux, bmflux, tol=0.001))) %>%
   # plot
-  ggplot(aes(x=normflux, y=abbreviation, colour=group)) + 
+  ggplot(aes(x=normflux, y=paste0(name,' (',abbreviation,')'), colour=group)) + 
   geom_point() +
   theme_bw()) %>%
   ggsave('publication_images/horizontal_point_summary.png',.)
 
-results_analysed_2 %>%
-  filter(variety>0.01) %>%  
-  ggplot(aes(
-    x=name, 
-    y=flux, 
-    fill = group
-  )) + 
-  geom_bar(stat='identity', position='dodge') + 
-  scale_y_continuous(trans = scales::trans_new('cbrt', function(x){sign(x)*abs(x)^(1/3)}, function(x){x^3}, domain = c(-Inf, Inf))) +
-  coord_flip()
+rate_matricies <- results_analysed_3 %>%
+  group_by(abbreviation) %>%
+  filter(!all(near(normflux, bmflux, tol=0.001))) %>%
+  ungroup %>%
+  group_by(group) %>%
+  by_slice(function(x){
+    stoich <- parse_reaction_table(x)$A
+    matrix(x$flux,nrow(stoich), ncol(stoich), byrow=TRUE) * as.matrix(stoich)
+  }) %>%
+  with(set_names(.out, group))
+
+
+walk2(.x = c('Group1','Group2','Group3','Input'), .y=c('Group1','Group2','Group3'), .f=function(x,y){
+  png(paste0('publication_images/heatmap_',y,'_vs_',x,'.png'))
+  heatmap.plus::heatmap.plus(rate_matricies[[y]] - rate_matricies[[x]],
+                             distfun = (function(x){dist(abs(x))}),
+                             col=RColorBrewer::brewer.pal(11,'RdYlGn'),
+                             main = paste0(y, ' vs Input'),
+                             xlab = 'reaction abbreviation',
+                             ylab = 'metabolite abbreviation'
+    )
+  dev.off()
+})
