@@ -235,7 +235,7 @@ results_analysed_3 <- results %>%
 
 rate_matricies <- results_analysed_3 %>%
   group_by(abbreviation) %>%
-  filter(!all(near(normflux, bmflux, tol=0.001))) %>%
+  filter(!all(near(normflux, bmflux, tol=0.1))) %>%
   ungroup %>%
   group_by(group) %>%
   by_slice(function(x){
@@ -245,14 +245,11 @@ rate_matricies <- results_analysed_3 %>%
   with(set_names(.out, group))
 
 
-walk2(.x = c('Group1','Group2','Group3','Input'), .y=c('Group1','Group2','Group3'), .f=function(x,y){
-  png(paste0('publication_images/heatmap_',y,'_vs_',x,'.png'))
-  heatmap.plus::heatmap.plus(rate_matricies[[y]] - rate_matricies[[x]],
-                             distfun = (function(x){dist(abs(x))}),
-                             col=RColorBrewer::brewer.pal(11,'RdYlGn'),
-                             main = paste0(y, ' vs Input'),
-                             xlab = 'reaction abbreviation',
-                             ylab = 'metabolite abbreviation'
-    )
-  dev.off()
-})
+expand.grid(x=c('Group1','Group2','Group3','Input'), y=c('Group1','Group2','Group3'), stringsAsFactors = FALSE) %>%
+  filter(x!=y) %>%
+  invoke_rows(.d=., .f=function(x,y){
+  (rate_matricies[[y]] - rate_matricies[[x]]) %>%
+     heatmap2ggplot %>%
+      ggsave(paste0('publication_images/heatmap_',y,'_vs_',x,'.png'),.)
+  }
+  )
