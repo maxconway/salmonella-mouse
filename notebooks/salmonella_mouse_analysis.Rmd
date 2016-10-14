@@ -1,0 +1,273 @@
+---
+title: "Salmonella mouse analysis"
+output: html_notebook
+---
+
+Load libraries
+```{r}
+library(dplyr)
+library(readr)
+library(FluxBalanceAnalyzeR)
+library(stringr)
+library(tidyr)
+library(purrr)
+library(ggplot2)
+library(magrittr)
+```
+Helper functions
+```{r}
+optimize_and_minimize <- function(mod){
+  res1 <- gurobi::gurobi(mod, params = list(OutputFlag=0))
+  
+  mod1 <- mod
+  flux <- res1$x
+  mod1$lb[flux >= 0] <- 0
+  mod1$ub[flux <= 0] <- 0
+  mod1$lb[mod$obj !=0] <- flux[mod$obj !=0]
+  mod1$ub[mod$obj !=0] <- flux[mod$obj !=0]
+  mod1$obj <- -sign(flux)
+  
+  res2 <- gurobi::gurobi(mod1, params = list(OutputFlag=0))
+  res1$x <- res2$x
+  return(res1)
+}
+
+find_fluxes <- function(reaction_table){
+  optimresult <- parse_reaction_table(reaction_table) %>%
+    optimize_and_minimize
+  if('x' %in% names(optimresult)){
+    return(optimresult$x)
+  }else{
+    return(0)
+  }
+}
+
+heatmap2ggplot <- function(x){
+  rowlevels <- x %>% 
+    dist() %>%
+    hclust() %>%
+    with(labels[order])
+  
+  collevels <- x %>% 
+    t() %>%
+    dist() %>%
+    hclust() %>%
+    with(labels[order])
+    
+  x %>%
+    as.data.frame() %>%
+    tibble::rownames_to_column() %>%
+    gather(key = 'colname', value = 'value', -rowname) %>%
+    mutate(colname = factor(colname, collevels),
+           rowname = factor(rowname, rowlevels)) %>%
+    # group_by(colname) %>%
+    # filter(!all(between(value,-0.01,0.01))) %>%
+    # ungroup %>%
+    # group_by(rowname) %>%
+    # filter(!all(between(value,-0.01,0.01))) %>%
+    # ungroup %>%
+    ggplot(aes(x=colname, y=rowname, fill = value)) +
+    geom_tile() +
+    scale_fill_distiller(limits = c(-max(abs(x)), max(abs(x))), type='div', palette = 'RdBu')
+}
+```
+
+Read in reaction table
+```{r}
+rxns <- read_tsv('../data/LT2_react.tsv') %>%
+  select(abbreviation=`Rxn name`,
+         equation=Formula,
+         uppbnd=UB,
+         lowbnd=LB,
+         geneAssociation=`Gene-reaction association`,
+         Subsystem,
+         name = `Rxn description`
+         ) %>%
+  mutate(obj_coef=1*(abbreviation=='biomass_iRR1083')) %>%
+  mutate(geneAssociation = str_replace_all(geneAssociation, 'and', '&'),
+         geneAssociation = str_replace_all(geneAssociation, 'or', '|'))
+
+```
+
+Custom reaction bounds
+```{r}
+rxns <- rxns %>%
+  mutate(lowbnd = ifelse(abbreviation=='EX_skm(e)',-10,lowbnd))
+```
+
+From reaction table, list all genes
+```{r}
+genes_in_model <- rxns$geneAssociation %>%
+  str_split('[()|& ]+') %>%
+  flatten_chr() %>%
+  discard(is.na) %>%
+  discard(~ str_length(.x)==0)
+```
+
+Map between STM style codes and gene names
+```{r}
+genes_mapping <- read_tsv('../data/LT2_genes.tsv')
+
+gene_names_in_model <- genes_mapping %>%
+  filter(Gene %in% genes_in_model) %>%
+  getElement('Alias')
+```
+
+Select which group to use as the control. This will produce a wild type output.
+```{r}
+control <- 'Input'
+```
+
+Read in rna counts and preprocess them
+```{r}
+rnas <- inner_join(
+  read_tsv('../data/seq_counts.tsv') %>%
+    rename(Alias = Gene),
+  genes_mapping %>%
+    select(Alias,
+           Gene)
+) %>%
+  filter(Gene %in% genes_in_model) %>%
+  gather(measurement, count, -Locus, -Gene, -Product, -Alias) %>%
+  separate(measurement, c('group', 'replicate'), '_') %>%
+  mutate(replicate = str_c(group, '_', replicate)) %>%
+  # next, remove experimental variance between replicates
+  group_by(replicate) %>%
+  mutate(count = (count+1)/mean(count+1)) %>%
+  ungroup %>%
+  # now, average and normalize groups against control
+  group_by(Gene, group) %>%
+  summarise(meancount = mean(count)) %>%
+  spread(group, meancount) %>%
+  ungroup %>%
+  mutate(Group1 = Group1/.[[control]],
+         Group2 = Group2/.[[control]],
+         Group3 = Group3/.[[control]],
+         Input = Input/.[[control]]) %>%
+  gather('group', 'nexpression', -Gene) %>%
+  mutate(nexpression = pmin(nexpression, qexp(0.99, 1/mean(nexpression)))) %>%
+  mutate(presence = qgamma(pexp(nexpression, 1), 20,20)) %T>%
+  (function(x){print(x %>%
+      ggplot(aes(y=presence, x=nexpression)) +
+      geom_point()
+  )})
+```
+
+Project the gene expressions onto the fluxes
+```{r}
+models_with_expression <- rnas %>%
+  group_by(group) %>%
+  do(bind_rows(., data_frame(Gene=setdiff(genes_in_model, .$Gene), presence=NA, group=.$group[1]))) %>%
+  by_slice(function(x){
+    rxns %>%
+      mutate(activation = FluxBalanceAnalyzeR::gene_eval(geneAssociation, x$Gene, x$presence))
+  }) %>%
+  unnest(.out)
+```
+
+adjust flux bounds in line with activation
+```{r}
+models_with_targets <- models_with_expression %>%
+  group_by(group) %>%
+  by_slice(function(x){
+    x %>% mutate(baseflux = find_fluxes(x)) # this is useful if we want the flux bounds to be a function of the initial fluxes
+  }) %>%
+  unnest(.out) %>%
+  #mutate(activation=1) %>% # for testing
+  mutate(uppbnd = ifelse(is.na(activation), uppbnd, pmax(0, pmin(uppbnd, baseflux * activation * 1.1))),
+         lowbnd = ifelse(is.na(activation), lowbnd, pmin(0, pmax(lowbnd, baseflux * activation * 0.9)))) %T>%
+  (function(x){print(x %>%
+                       filter(!(is.na(activation))) %>%
+                       #filter(abs(baseflux)<900) %>%
+                       ggplot(aes(x = baseflux)) + 
+                       geom_ribbon(aes(ymin=lowbnd, ymax=uppbnd)) + 
+                       geom_point(aes(y=baseflux), colour='blue')
+  )})
+```
+
+calculate final fluxes
+```{r}
+results <- models_with_targets %>%
+  group_by(group) %>%
+  by_slice(function(x){
+    x %>% 
+      mutate(flux = find_fluxes(x))
+  }) %>%
+  unnest(.out) %T>%
+  (. %>%
+  filter(str_detect(abbreviation, 'iomass')) %>%
+  select(group, abbreviation, flux) %>% 
+  print
+  )
+```
+
+Produce final figures
+=====================
+
+Prepare flux data
+```{r}
+results_analysed_3 <- results %>%
+  # normalize by group biomass
+  # group_by(group) %>%
+  # mutate(propflux = flux / flux[abbreviation=='biomass_iRR1083']) %>%
+  # ungroup %>%
+  # normalize by typical reaction flux
+  group_by(abbreviation) %>%
+  mutate(
+    baseflux = flux[group=='Input'],
+    normflux = flux / ifelse(baseflux!=0 & is.finite(baseflux), baseflux, mean(abs(flux)))
+  ) %>%
+  ungroup %>%
+  # prepare to filter out uninteresting
+  group_by(group) %>%
+  mutate(bmflux = normflux[abbreviation=='biomass_iRR1083']) %>%
+  ungroup
+```
+
+Plot an overall horizontal summary
+```{r}
+horizontal_point_summary <- results_analysed_3 %>%
+  group_by(abbreviation) %>%
+  filter(!all(near(normflux, bmflux, tol=0.001))) %>%
+  # plot
+  ggplot(aes(x=normflux, y=abbreviation, colour=group)) + 
+  geom_point() +
+  scale_x_continuous(trans = scales::trans_new('cbrt', function(x){sign(x)*abs(x)^(1/3)}, function(x){x^3})) +
+  theme_bw()
+
+  ggsave('../publication_images/horizontal_point_summary.png',plot=horizontal_point_summary)
+  print(horizontal_point_summary)
+```
+
+Prepare data for heatmap by adding metabolite data
+```{r}
+rate_matricies <- results_analysed_3 %>%
+  group_by(abbreviation) %>%
+  filter(!all(near(normflux, bmflux, tol=0.1))) %>%
+  ungroup %>%
+  group_by(group) %>%
+  by_slice(function(x){
+    stoich <- parse_reaction_table(x)$A
+    matrix(x$normflux,nrow(stoich), ncol(stoich), byrow=TRUE) * as.matrix(stoich)
+  }) %>%
+  with(set_names(.out, group))
+```
+
+Plot heatmaps
+```{r}
+expand.grid(x=c('Group1','Group2','Group3','Input'), y=c('Group1','Group2','Group3'), stringsAsFactors = FALSE) %>%
+  filter(x!=y) %>%
+  invoke_rows(.d=., .f=function(x,y){
+    ((rate_matricies[[y]] - rate_matricies[[x]]) %>%
+       heatmap2ggplot + 
+       labs(x='Reaction', y='Metabolite', fill='Normalized Flux') +
+       theme_bw()
+    ) %>%
+      ggsave(paste0('../publication_images/heatmap_',y,'_vs_',x,'.png'),.)
+  }
+  )
+```
+
+
+
+
