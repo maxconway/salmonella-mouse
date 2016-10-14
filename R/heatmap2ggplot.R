@@ -16,13 +16,13 @@ heatmap2ggplot <- function(x){
     gather(key = 'colname', value = 'value', -rowname) %>%
     mutate(colname = factor(colname, collevels),
            rowname = factor(rowname, rowlevels)) %>%
-    group_by(colname) %>%
-    filter(!all(between(value,-0.01,0.01))) %>%
-    ungroup %>%
-    group_by(rowname) %>%
-    filter(!all(between(value,-0.01,0.01))) %>%
-    ungroup %>%
+    # group_by(colname) %>%
+    # filter(!all(between(value,-0.01,0.01))) %>%
+    # ungroup %>%
+    # group_by(rowname) %>%
+    # filter(!all(between(value,-0.01,0.01))) %>%
+    # ungroup %>%
     ggplot(aes(x=colname, y=rowname, fill = value)) +
     geom_tile() +
-    scale_fill_gradient2()
+    scale_fill_distiller(limits = c(-max(abs(x)), max(abs(x))), type='div', palette = 'RdBu')
 }

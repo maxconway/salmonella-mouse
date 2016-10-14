@@ -240,7 +240,7 @@ rate_matricies <- results_analysed_3 %>%
   group_by(group) %>%
   by_slice(function(x){
     stoich <- parse_reaction_table(x)$A
-    matrix(x$flux,nrow(stoich), ncol(stoich), byrow=TRUE) * as.matrix(stoich)
+    matrix(x$normflux,nrow(stoich), ncol(stoich), byrow=TRUE) * as.matrix(stoich)
   }) %>%
   with(set_names(.out, group))
 
@@ -248,8 +248,10 @@ rate_matricies <- results_analysed_3 %>%
 expand.grid(x=c('Group1','Group2','Group3','Input'), y=c('Group1','Group2','Group3'), stringsAsFactors = FALSE) %>%
   filter(x!=y) %>%
   invoke_rows(.d=., .f=function(x,y){
-  (rate_matricies[[y]] - rate_matricies[[x]]) %>%
-     heatmap2ggplot %>%
+    ((rate_matricies[[y]] - rate_matricies[[x]]) %>%
+       heatmap2ggplot + 
+       labs(x='Reaction', y='Metabolite', fill='Normalized Flux') 
+    ) %>%
       ggsave(paste0('publication_images/heatmap_',y,'_vs_',x,'.png'),.)
   }
   )
