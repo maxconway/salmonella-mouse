@@ -68,7 +68,7 @@ heatmap2ggplot <- function(x){
     # ungroup %>%
     ggplot(aes(x=colname, y=rowname, fill = value)) +
     geom_tile() +
-    scale_fill_distiller(limits = c(-max(abs(x)), max(abs(x))), type='div', palette = 'RdBu')
+    scale_fill_distiller(limits = c(-max(abs(x)), max(abs(x))), type='div', palette = 'Spectral')
 }
 ```
 
@@ -133,7 +133,8 @@ rnas <- inner_join(
   mutate(replicate = str_c(group, '_', replicate)) %>%
   # next, remove experimental variance between replicates
   group_by(replicate) %>%
-  mutate(count = (count+1)/mean(count+1)) %>%
+  mutate(count = log(count+1),
+         count = count/mean(count)) %>%
   ungroup %>%
   # now, average and normalize groups against control
   group_by(Gene, group) %>%
@@ -144,11 +145,10 @@ rnas <- inner_join(
          Group2 = Group2/.[[control]],
          Group3 = Group3/.[[control]],
          Input = Input/.[[control]]) %>%
-  gather('group', 'nexpression', -Gene) %>%
-  mutate(nexpression = pmin(nexpression, qexp(0.99, 1/mean(nexpression)))) %>%
-  mutate(presence = qgamma(pexp(nexpression, 1), 20,20)) %T>%
+  gather('group', 'presence', -Gene) %>% 
+      mutate(presence = qnorm(pnorm(presence, mean=1, sd=sd(presence)), mean=1, sd=0.1)) %T>%
   (function(x){print(x %>%
-      ggplot(aes(y=presence, x=nexpression)) +
+      ggplot(aes(x=presence, y=qnorm(rank(presence)/length(presence)))) +
       geom_point()
   )})
 ```
