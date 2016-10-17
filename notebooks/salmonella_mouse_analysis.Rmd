@@ -60,15 +60,15 @@ heatmap2ggplot <- function(x){
     gather(key = 'colname', value = 'value', -rowname) %>%
     mutate(colname = factor(colname, collevels),
            rowname = factor(rowname, rowlevels)) %>%
-    # group_by(colname) %>%
-    # filter(!all(between(value,-0.01,0.01))) %>%
-    # ungroup %>%
-    # group_by(rowname) %>%
-    # filter(!all(between(value,-0.01,0.01))) %>%
-    # ungroup %>%
+    group_by(colname) %>%
+    mutate(removeme = between(value,-0.1,0.1)) %>% filter(!removeme) %>% select(-removeme) %>%
+    ungroup %>%
+    group_by(rowname) %>%
+    mutate(removeme = between(value,-0.1,0.1)) %>% filter(!removeme) %>% select(-removeme) %>%
+    ungroup %>%
     ggplot(aes(x=colname, y=rowname, fill = value)) +
     geom_tile() +
-    scale_fill_distiller(limits = c(-max(abs(x)), max(abs(x))), type='div', palette = 'Spectral')
+    scale_fill_distiller(limits = c(-max(abs(x)), max(abs(x))), type='div', palette = 'BrBG')
 }
 ```
 
@@ -241,29 +241,35 @@ horizontal_point_summary <- results_analysed_3 %>%
 
 Prepare data for heatmap by adding metabolite data
 ```{r}
-rate_matricies <- results_analysed_3 %>%
-  group_by(abbreviation) %>%
-  filter(!all(near(normflux, bmflux, tol=0.1))) %>%
-  ungroup %>%
-  group_by(group) %>%
-  by_slice(function(x){
-    stoich <- parse_reaction_table(x)$A
-    matrix(x$normflux,nrow(stoich), ncol(stoich), byrow=TRUE) * as.matrix(stoich)
-  }) %>%
-  with(set_names(.out, group))
+rate_tables <- results_analysed_3 %>%
+    group_by(abbreviation) %>%
+    filter(!all(near(normflux, bmflux, tol=0.1))) %>%
+    ungroup %>%
+    group_by(group) %>%
+    by_slice(function(x){
+        inner_join(x, expand_reactions(x)) %>%
+            mutate(rate = flux*stoich)
+    }) %>%
+    with(set_names(.out, group))
 ```
 
 Plot heatmaps
 ```{r}
-expand.grid(x=c('Group1','Group2','Group3','Input'), y=c('Group1','Group2','Group3'), stringsAsFactors = FALSE) %>%
+expand.grid(x=c('Group1','Group2','Group3'), y=c('Group1','Group2','Group3','Input'), stringsAsFactors = FALSE) %>%
   filter(x!=y) %>%
   invoke_rows(.d=., .f=function(x,y){
-    ((rate_matricies[[y]] - rate_matricies[[x]]) %>%
-       heatmap2ggplot + 
-       labs(x='Reaction', y='Metabolite', fill='Normalized Flux') +
-       theme_bw()
+    (inner_join(rate_tables[[x]], rate_tables[[y]], by=c('abbreviation', 'met')) %>%
+       mutate(diff = rate.x-rate.y) %>%
+       group_by(abbreviation) %>%
+       filter(max(abs(diff))>0.05) %>%
+       ggplot(aes(x=abbreviation, y=met, fill=diff)) + 
+       geom_tile() +
+       scale_fill_distiller(type='div', palette = 'RdYlGn', direction = 1) + 
+       labs(x='Reaction', y='Metabolite', fill='Flux difference') +
+       theme_bw() + 
+       theme(axis.text.x = element_text(angle = 45, hjust = 1))
     ) %>%
-      ggsave(paste0('../publication_images/heatmap_',y,'_vs_',x,'.png'),.)
+      ggsave(paste0('../publication_images/heatmap_',x,'_vs_',y,'.png'),.)
   }
   )
 ```

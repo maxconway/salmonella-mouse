@@ -1,0 +1,5 @@
+for figures heatmap_Group1_vs_Group2, heatmap_Group1_vs_Group3, heatmap_Group2_vs_Group3
+
+Looking first at the comparison between Groups 2 and 3, we can see the reason that the relationship between these groups was not obvious from figure 2. As seen in figure 1, these groups differ in their use of SO3R vs SURi. These impact on handling of nadp and nadph - Nicotinamide adenine dinucleotide phosphate and its reduced form, respectively. Because these metabolites are so widely used, this effect is spread over many other reactions, and so the knockon effects are not obvious.
+
+Looking at the comparisons between group 1 and groups 2 and 3, we once again see the strong effect around iron oxidation. However, we can also see differences around the Beta-ketoacyl-ACP synthases KAS14 and KAS15, the Phosphoadenylyl-sulfate reductases, PAPSR and PAPSR2, and crucially around Glutaredoxin reductase and Glutaredoxin oxidoreductase, GRXR and GTHOr, which interact with nadph and nadp and are involved with reduction behaviour, highlighting that these reactions may be important in the behaviour differences between group2 and group 3.
