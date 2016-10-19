@@ -227,13 +227,20 @@ results_analysed_3 <- results %>%
 Plot an overall horizontal summary
 ```{r}
 horizontal_point_summary <- results_analysed_3 %>%
+    filter(Subsystem!='Exchange') %>%
     group_by(abbreviation) %>%
     filter(!all(near(normflux, bmflux, tol=0.001))) %>%
+    ungroup %>%
+    arrange(Subsystem,abbreviation, group) %>%
+    mutate(abbreviation=fct_inorder(abbreviation)) %>%
     # plot
-    ggplot(aes(x=normflux, y=abbreviation, colour=group, shape=group)) + 
-    geom_point(alpha=0.5) +
-  labs(x='Normalized Flux', y='Reaction Abbreviation') +
-    theme_bw()
+    ggplot(aes(x=normflux, y=abbreviation)) + 
+    geom_point(aes(colour=group, shape=group), alpha=0.5) +
+    labs(x='Normalized Flux', y='Reaction Abbreviation') +
+    theme_bw() + 
+    geom_tile(aes(width=3.5, x=-2, y=abbreviation, fill=letters[as.numeric(as.factor(Subsystem)) %% 8+1]), show.legend = FALSE) +
+    geom_text(aes(x=-2, label = pathway, group=Subsystem), check_overlap=TRUE, data=(. %>% group_by(Subsystem) %>% mutate(pathway = ifelse(abbreviation==nth(abbreviation,round(n()/2)),Subsystem,NA)))) +
+    scale_fill_brewer(type='qual', palette = 'Set3')
 
   ggsave('../publication_images/horizontal_point_summary.png',plot=horizontal_point_summary)
   print(horizontal_point_summary)
@@ -266,6 +273,7 @@ expand.grid(x=c('Group1','Group2','Group3'), y=c('Group1','Group2','Group3','Inp
        geom_tile() +
        scale_fill_distiller(type='div', palette = 'RdYlGn', direction = 1) + 
        labs(x='Reaction', y='Metabolite', fill='Flux difference') +
+       ggtitle(str_c(x, ' vs ', y)) +
        theme_bw() + 
        theme(axis.text.x = element_text(angle = 45, hjust = 1))
     ) %>%
