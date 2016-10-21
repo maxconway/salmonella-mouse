@@ -35,10 +35,14 @@ optimize_and_minimize <- function(mod){
 }
 
 find_fluxes <- function(reaction_table){
-  optimresult <- parse_reaction_table(reaction_table) %>%
-    optimize_and_minimize
-  if('x' %in% names(optimresult)){
-    return(optimresult$x)
+  optimresults <- map(1:10, function(x){optimize_and_minimize(parse_reaction_table(sample_frac(reaction_table)))}) %>%
+    map(getElement, 'x') %>%
+    compact()
+  if(length(optimresults)>0){
+    optimresults %>%
+    map(data_frame) %>%
+    bind_cols() %>%
+    rowMeans(na.rm=TRUE)
   }else{
     return(0)
   }
@@ -62,19 +66,19 @@ heatmap2ggplot <- function(x){
     gather(key = 'colname', value = 'value', -rowname) %>%
     mutate(colname = factor(colname, collevels),
            rowname = factor(rowname, rowlevels)) %>%
-    group_by(colname) %>%
-    mutate(removeme = between(value,-0.1,0.1)) %>% filter(!removeme) %>% select(-removeme) %>%
-    ungroup %>%
-    group_by(rowname) %>%
-    mutate(removeme = between(value,-0.1,0.1)) %>% filter(!removeme) %>% select(-removeme) %>%
-    ungroup %>%
+    # group_by(colname) %>%
+    # mutate(removeme = between(value,-0.1,0.1)) %>% filter(!removeme) %>% select(-removeme) %>%
+    # ungroup %>%
+    # group_by(rowname) %>%
+    # mutate(removeme = between(value,-0.1,0.1)) %>% filter(!removeme) %>% select(-removeme) %>%
+    # ungroup %>%
     ggplot(aes(x=colname, y=rowname, fill = value)) +
     geom_tile() +
     scale_fill_distiller(limits = c(-max(abs(x)), max(abs(x))), type='div', palette = 'BrBG')
 }
 
 
-nonlinear_trans <- function(left, right, zoom){
+trans_magnify <- function(left, right, zoom){
   
 line <- function(x1,y1,slope){
   y <- function(x){(x-x1)*slope+y1}
@@ -256,9 +260,10 @@ results_analysed_3 <- results %>%
     norm2 = ifelse(rep_along(flux, !near(median(flux),0,tol=0.00001)), flux/median(flux), NA),
     norm3 = ifelse(rep_along(flux, !near(median(abs(flux)),0,tol=0.00001)), flux/median(abs(flux)), NA),
     norm4 = ifelse(rep_along(flux, !near(mean(abs(flux)),0,tol=0.00001)), flux/mean(abs(flux)), NA),
-    normflux = coalesce(norm1, norm2, norm3, norm4)
+    norm5 = ifelse(rep_along(flux, near(flux,0,tol=0.00001)), 0, NA),
+    normflux = coalesce(norm1, norm2, norm3, norm4, norm5)
   ) %>%
-  select(-norm1, -norm2, -norm3, -norm4) %>%
+  select(-norm1, -norm2, -norm3, -norm4, -norm5) %>%
   ungroup %>%
   # prepare to filter out uninteresting
   group_by(group) %>%
@@ -278,7 +283,7 @@ horizontal_point_summary <- results_analysed_3 %>%
     mutate(abbreviation=fct_inorder(abbreviation)) %>%
     # plot
     ggplot(aes(x=normflux, y=abbreviation)) + 
-  scale_x_continuous(labels=scales::percent, trans=nonlinear_trans(1.1,1.3,20)) +
+  scale_x_continuous(labels=scales::percent, trans=trans_magnify(1.1,1.3,20)) +
     geom_point(aes(colour=group, shape=group), alpha=0.5) +
     labs(x='Normalized Flux', y='Reaction Abbreviation') +
     theme_bw() + 
@@ -294,7 +299,8 @@ Prepare data for heatmap by adding metabolite data
 ```{r}
 rate_tables <- results_analysed_3 %>%
     group_by(abbreviation) %>%
-    filter(!all(near(normflux, bmflux, tol=0.1))) %>%
+    filter(!all(near(normflux, bmflux, tol=0.001)),
+           !all(near(normflux, 0))) %>%
     ungroup %>%
     group_by(group) %>%
     by_slice(function(x){
