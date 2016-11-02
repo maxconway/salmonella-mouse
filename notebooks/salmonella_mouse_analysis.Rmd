@@ -20,11 +20,14 @@ Helper functions
 ```{r}
 optimize_and_minimize <- function(mod){
   res1 <- gurobi::gurobi(mod, params = list(OutputFlag=0))
+  if(res1$status=='INFEASIBLE'){
+    return(res1)
+  }
   
   mod1 <- mod
   flux <- res1$x
-  mod1$lb[flux >= 0] <- 0
-  mod1$ub[flux <= 0] <- 0
+  mod1$lb[flux > 0] <- 0
+  mod1$ub[flux < 0] <- 0
   mod1$lb[mod$obj !=0] <- flux[mod$obj !=0]
   mod1$ub[mod$obj !=0] <- flux[mod$obj !=0]
   mod1$obj <- -sign(flux)
@@ -34,19 +37,38 @@ optimize_and_minimize <- function(mod){
   return(res1)
 }
 
-find_fluxes <- function(reaction_table){
-  optimresults <- map(1:10, function(x){optimize_and_minimize(parse_reaction_table(sample_frac(reaction_table)))}) %>%
-    map(getElement, 'x') %>%
-    compact()
-  if(length(optimresults)>0){
-    optimresults %>%
-    map(data_frame) %>%
-    bind_cols() %>%
-    rowMeans(na.rm=TRUE)
+find_fluxes_single <- function(reaction_table){
+  res <- reaction_table %>%
+    parse_reaction_table() %>%
+    optimize_and_minimize()
+
+  if('x' %in% names(res)){
+    return(res$x)
   }else{
-    return(0)
+     return(0)
   }
 }
+
+# find_fluxes_average <- function(reaction_table){
+#   map_df(1:10, function(x){rxns}, .id='sample') %>%
+#     group_by(sample) %>%
+#     sample_frac() %>%
+#     by_slice(find_fluxes_single) %>%
+#     
+#   optimresults <- map(1, function(x){optimize_and_minimize(parse_reaction_table(sample_frac(reaction_table)))}) %>%
+#     map(getElement, 'x') %>%
+#     compact()
+#   if(length(optimresults)>0){
+#     optimresults %>%
+#     map(data_frame) %>%
+#     bind_cols() %>%
+#     rowMeans(na.rm=TRUE)
+#   }else{
+#     return(0)
+#   }
+# }
+
+find_fluxes <- find_fluxes_single
 
 heatmap2ggplot <- function(x){
   rowlevels <- x %>% 
@@ -65,7 +87,7 @@ heatmap2ggplot <- function(x){
     tibble::rownames_to_column() %>%
     gather(key = 'colname', value = 'value', -rowname) %>%
     mutate(colname = factor(colname, collevels),
-           rowname = factor(rowname, rowlevels)) %>%
+           rowname = factor(rowname, rgene_associateowlevels)) %>%
     # group_by(colname) %>%
     # mutate(removeme = between(value,-0.1,0.1)) %>% filter(!removeme) %>% select(-removeme) %>%
     # ungroup %>%
@@ -283,12 +305,12 @@ horizontal_point_summary <- results_analysed_3 %>%
     mutate(abbreviation=fct_inorder(abbreviation)) %>%
     # plot
     ggplot(aes(x=normflux, y=abbreviation)) + 
-  scale_x_continuous(labels=scales::percent, trans=trans_magnify(1.1,1.3,20)) +
+    scale_x_continuous(labels=scales::percent, trans=trans_magnify(1.1,1.3,20)) +
     geom_point(aes(colour=group, shape=group), alpha=0.5) +
     labs(x='Normalized Flux', y='Reaction Abbreviation') +
     theme_bw() + 
-    geom_tile(aes(width=0.1, x=3.8, y=abbreviation, fill=letters[as.numeric(as.factor(Subsystem)) %% 8+1]), show.legend = FALSE) +
-    geom_text(aes(x=3.8, label = pathway, group=Subsystem), check_overlap=TRUE, data=(. %>% group_by(Subsystem) %>% mutate(pathway = ifelse(abbreviation==nth(abbreviation,round(n()/2)),Subsystem,NA))), hjust=1, alpha=0.5, size=2.5) +
+    geom_tile(aes(width=0.1, x=max(normflux)*1.7, y=abbreviation, fill=letters[as.numeric(as.factor(Subsystem)) %% 8+1]), show.legend = FALSE) +
+    geom_text(aes(x=max(normflux)*1.7, label = pathway, group=Subsystem), check_overlap=TRUE, data=(. %>% group_by(Subsystem) %>% mutate(pathway = ifelse(abbreviation==nth(abbreviation,round(n()/2)),Subsystem,NA))), hjust=1, alpha=0.5, size=2.5) +
     scale_fill_brewer(type='qual', palette = 'Set3')
 
   ggsave('../publication_images/horizontal_point_summary.png',plot=horizontal_point_summary)
@@ -305,7 +327,7 @@ rate_tables <- results_analysed_3 %>%
     group_by(group) %>%
     by_slice(function(x){
         inner_join(x, expand_reactions(x)) %>%
-            mutate(rate = flux*stoich)
+            mutate(rate = flux * stoich / abs(stoich))
     }) %>%
     with(set_names(.out, group))
 ```
@@ -321,8 +343,8 @@ expand.grid(x=c('Group1','Group2','Group3'), y=c('Group1','Group2','Group3','Inp
        filter(max(abs(diff))>0.05) %>%
        ggplot(aes(x=abbreviation, y=met, fill=diff)) + 
        geom_tile() +
-       scale_fill_distiller(type='div', palette = 'RdYlGn', direction = 1) + 
-       labs(x='Reaction', y='Metabolite', fill='Flux difference') +
+       scale_fill_gradient2(midpoint=0, low='blue', high='red') + 
+       labs(x='Reaction', y='Metabolite', fill='Raw flux difference') +
        ggtitle(str_c(x, ' vs ', y)) +
        theme_bw() + 
        theme(axis.text.x = element_text(angle = 45, hjust = 1))
