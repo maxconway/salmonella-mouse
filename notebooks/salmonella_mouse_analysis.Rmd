@@ -233,9 +233,13 @@ adjust flux bounds in line with activation
 models_with_targets <- models_with_expression %>%
   group_by(group) %>%
   by_slice(function(x){
-    x %>% mutate(baseflux = find_fluxes(x)) # this is useful if we want the flux bounds to be a function of the initial fluxes
+    x %>% 
+      find_flux_variability_df() %>%
+      rename(baseflux = flux)
   }) %>%
   unnest(.out) %>%
+  mutate(activation = ifelse(sd>0.1, NA, activation)) %>%
+  select(-sd) %>%
   #mutate(activation=1) %>% # for testing
   mutate(uppbnd = ifelse(is.na(activation), uppbnd, pmax(0, pmin(uppbnd, baseflux * activation * 1.1))),
          lowbnd = ifelse(is.na(activation), lowbnd, pmin(0, pmax(lowbnd, baseflux * activation * 0.9)))) %T>%
@@ -253,8 +257,7 @@ calculate final fluxes
 results <- models_with_targets %>%
   group_by(group) %>%
   by_slice(function(x){
-    x %>% 
-      mutate(flux = find_fluxes(x))
+    x %>% find_flux_variability_df()
   }) %>%
   unnest(.out) %T>%
   (. %>%
@@ -299,7 +302,8 @@ horizontal_point_summary <- results_analysed_3 %>%
     filter(Subsystem!='Exchange') %>%
     group_by(abbreviation) %>%
     filter(!all(near(normflux, bmflux, tol=0.001)),
-           !all(near(normflux, 0))) %>%
+           !all(near(normflux, 0)),
+           0.2*sd(flux)>mean(sd)) %>%
     ungroup %>%
     arrange(Subsystem,abbreviation, group) %>%
     mutate(abbreviation=fct_inorder(abbreviation)) %>%
