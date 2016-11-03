@@ -1,7 +1,7 @@
 ---
 title: "Salmonella mouse analysis"
 output:
-  html_notebook: default
+html_notebook: default
 ---
 
 Load libraries
@@ -41,11 +41,11 @@ find_fluxes_single <- function(reaction_table){
   res <- reaction_table %>%
     parse_reaction_table() %>%
     optimize_and_minimize()
-
+  
   if('x' %in% names(res)){
     return(res$x)
   }else{
-     return(0)
+    return(0)
   }
 }
 
@@ -81,7 +81,7 @@ heatmap2ggplot <- function(x){
     dist() %>%
     hclust() %>%
     with(labels[order])
-    
+  
   x %>%
     as.data.frame() %>%
     tibble::rownames_to_column() %>%
@@ -102,36 +102,36 @@ heatmap2ggplot <- function(x){
 
 trans_magnify <- function(left, right, zoom){
   
-line <- function(x1,y1,slope){
-  y <- function(x){(x-x1)*slope+y1}
-  x <- function(y){(y-y1)/slope+x1}
-  return(list(x=x,y=y))
-}
+  line <- function(x1,y1,slope){
+    y <- function(x){(x-x1)*slope+y1}
+    x <- function(y){(y-y1)/slope+x1}
+    return(list(x=x,y=y))
+  }
   
   scales::trans_new('linear_magnifier',
-                             transform = function(x){
-                               beginning <- line(left,left,1)
-                               middle <- line(left, beginning$y(left), zoom)
-                               end <- line(right, middle$y(right), 1)
-                               
-                               ifelse(x<left, beginning$y(x),
-                                      ifelse(between(x, left,right), middle$y(x),
-                                             ifelse(x>right, end$y(x), NA)
-                                             )
-                                      )
-                             },
-                             inverse = function(x){
-                               beginning <- line(left,left,1)
-                               middle <- line(left, beginning$y(left), zoom)
-                               end <- line(right, middle$y(right), 1)
-                               
-                               ifelse(x<beginning$y(left), beginning$x(x),
-                                      ifelse(between(x, middle$y(left), middle$y(right)), middle$x(x),
-                                             ifelse(x > end$y(right), end$x(x), NA)
-                                             )
-                                      )
-                             }
+                    transform = function(x){
+                      beginning <- line(left,left,1)
+                      middle <- line(left, beginning$y(left), zoom)
+                      end <- line(right, middle$y(right), 1)
+                      
+                      ifelse(x<left, beginning$y(x),
+                             ifelse(between(x, left,right), middle$y(x),
+                                    ifelse(x>right, end$y(x), NA)
                              )
+                      )
+                    },
+                    inverse = function(x){
+                      beginning <- line(left,left,1)
+                      middle <- line(left, beginning$y(left), zoom)
+                      end <- line(right, middle$y(right), 1)
+                      
+                      ifelse(x<beginning$y(left), beginning$x(x),
+                             ifelse(between(x, middle$y(left), middle$y(right)), middle$x(x),
+                                    ifelse(x > end$y(right), end$x(x), NA)
+                             )
+                      )
+                    }
+  )
 }
 ```
 
@@ -145,10 +145,11 @@ rxns <- read_tsv('../data/LT2_react.tsv') %>%
          geneAssociation=`Gene-reaction association`,
          Subsystem,
          name = `Rxn description`
-         ) %>%
+  ) %>%
   mutate(obj_coef=1*(abbreviation=='biomass_iRR1083')) %>%
   mutate(geneAssociation = str_replace_all(geneAssociation, 'and', '&'),
-         geneAssociation = str_replace_all(geneAssociation, 'or', '|'))
+         geneAssociation = str_replace_all(geneAssociation, 'or', '|')) %>%
+  sample_frac()
 
 ```
 
@@ -209,10 +210,10 @@ rnas <- inner_join(
          Group3 = Group3/.[[control]],
          Input = Input/.[[control]]) %>%
   gather('group', 'presence', -Gene) %>% 
-      mutate(presence = qnorm(pnorm(presence, mean=1, sd=sd(presence)), mean=1, sd=0.1)) %T>%
+  mutate(presence = qnorm(pnorm(presence, mean=1, sd=sd(presence)), mean=1, sd=0.2)) %T>%
   (function(x){print(x %>%
-      ggplot(aes(x=presence, y=qnorm(rank(presence)/length(presence)))) +
-      geom_point()
+                       ggplot(aes(x=presence, y=qnorm(rank(presence)/length(presence)))) +
+                       geom_point()
   )})
 ```
 
@@ -221,28 +222,42 @@ Project the gene expressions onto the fluxes
 models_with_expression <- rnas %>%
   group_by(group) %>%
   do(bind_rows(., data_frame(Gene=setdiff(genes_in_model, .$Gene), presence=NA, group=.$group[1]))) %>%
-  by_slice(function(x){
+  nest() %>%
+  mutate(data = map(data, function(x){
     rxns %>%
       mutate(activation = FluxBalanceAnalyzeR::gene_eval(geneAssociation, x$Gene, x$presence))
-  }) %>%
-  unnest(.out)
+  })) %>%
+  unnest()
 ```
 
 adjust flux bounds in line with activation
 ```{r}
 models_with_targets <- models_with_expression %>%
   group_by(group) %>%
-  by_slice(function(x){
-    x %>% 
-      find_flux_variability_df() %>%
-      rename(baseflux = flux)
-  }) %>%
-  unnest(.out) %>%
-  mutate(activation = ifelse(sd>0.1, NA, activation)) %>%
+  nest %>%
+  mutate(data = map(data, find_flux_variability_df)) %>%
+  unnest() %>%
+  rename(baseflux = flux) %>%
+  group_by(abbreviation) %>%
+  mutate(
+    stable = max(sd)<0.000001 & sd(baseflux) < 0.1*mean(abs(baseflux)),
+    activation = ifelse(stable, activation, NA)
+    ) %>%
   select(-sd) %>%
   #mutate(activation=1) %>% # for testing
-  mutate(uppbnd = ifelse(is.na(activation), uppbnd, pmax(0, pmin(uppbnd, baseflux * activation * 1.1))),
-         lowbnd = ifelse(is.na(activation), lowbnd, pmin(0, pmax(lowbnd, baseflux * activation * 0.9)))) %T>%
+  mutate(uppbnd = ifelse(is.na(activation), 
+                         baseflux + abs(baseflux)*0.1,
+                         (baseflux+(abs(baseflux)*0.1))#*activation
+  ),
+  lowbnd = ifelse(is.na(activation), 
+                  baseflux - abs(baseflux)*0.1,
+                  (baseflux-(abs(baseflux)*0.1))#*activation
+  ),
+  lowbnd = ifelse(abbreviation=='biomass_iRR1083', baseflux, lowbnd),
+  obj_coef = ifelse(is.finite(activation), activation-1, 0),
+  obj_coef = obj_coef + (abbreviation=='biomass_iRR1083')*1
+  ) %>%
+  ungroup %T>%
   (function(x){print(x %>%
                        filter(!(is.na(activation))) %>%
                        #filter(abs(baseflux)<900) %>%
@@ -256,14 +271,13 @@ calculate final fluxes
 ```{r}
 results <- models_with_targets %>%
   group_by(group) %>%
-  by_slice(function(x){
-    x %>% find_flux_variability_df()
-  }) %>%
-  unnest(.out) %T>%
+  nest() %>%
+  mutate(data = map(data, find_flux_variability_df)) %>%
+  unnest() %T>%
   (. %>%
-  filter(str_detect(abbreviation, 'iomass')) %>%
-  select(group, abbreviation, flux) %>% 
-  print
+     filter(str_detect(abbreviation, 'iomass')) %>%
+     select(group, abbreviation, flux) %>% 
+     print
   )
 ```
 
@@ -273,67 +287,52 @@ Produce final figures
 Prepare flux data
 ```{r}
 results_analysed_3 <- results %>%
-  # normalize by group biomass
-  # group_by(group) %>%
-  # mutate(propflux = flux / flux[abbreviation=='biomass_iRR1083']) %>%
-  # ungroup %>%
-  # normalize by typical reaction flux
+  # filter out uninteresting
   group_by(abbreviation) %>%
   mutate(
-    baseflux = flux[group=='Input'],
-    norm1 = ifelse(rep_along(flux, !near(baseflux,0,tol=0.00001)), flux/baseflux, NaN),
-    norm2 = ifelse(rep_along(flux, !near(median(flux),0,tol=0.00001)), flux/median(flux), NA),
-    norm3 = ifelse(rep_along(flux, !near(median(abs(flux)),0,tol=0.00001)), flux/median(abs(flux)), NA),
-    norm4 = ifelse(rep_along(flux, !near(mean(abs(flux)),0,tol=0.00001)), flux/mean(abs(flux)), NA),
-    norm5 = ifelse(rep_along(flux, near(flux,0,tol=0.00001)), 0, NA),
-    normflux = coalesce(norm1, norm2, norm3, norm4, norm5)
-  ) %>%
-  select(-norm1, -norm2, -norm3, -norm4, -norm5) %>%
-  ungroup %>%
-  # prepare to filter out uninteresting
-  group_by(group) %>%
-  mutate(bmflux = normflux[abbreviation=='biomass_iRR1083']) %>%
+    ctrlflux = flux[group=='Input'],
+    normflux_ctrl = ifelse(!near(ctrlflux,0, tol=0.00001), flux/ctrlflux, NA),
+    normflux_median = ifelse(!near(median(flux),0, tol=0.00001), flux/median(flux), NA),
+    normflux_mean = ifelse(!near(mean(flux),0, tol=0.00001), flux/mean(flux), NA),
+    normflux = coalesce(normflux_ctrl, normflux_median, normflux_mean),
+    RSD = sd(normflux)/mean(abs(normflux)),
+    stable_1 = max(sd)<0.000001,
+    stable_2 = sd(baseflux)<0.000001
+    ) %>%
+  filter(stable_1, stable_2, is.finite(RSD), !near(RSD,0)) %>%
+  #filter(RSD>0.5) %>%
   ungroup
 ```
 
 Plot an overall horizontal summary
 ```{r}
 horizontal_point_summary <- results_analysed_3 %>%
-    filter(Subsystem!='Exchange') %>%
-    group_by(abbreviation) %>%
-    filter(!all(near(normflux, bmflux, tol=0.001)),
-           !all(near(normflux, 0)),
-           0.2*sd(flux)>mean(sd)) %>%
-    ungroup %>%
-    arrange(Subsystem,abbreviation, group) %>%
-    mutate(abbreviation=fct_inorder(abbreviation)) %>%
-    # plot
-    ggplot(aes(x=normflux, y=abbreviation)) + 
-    scale_x_continuous(labels=scales::percent, trans=trans_magnify(1.1,1.3,20)) +
-    geom_point(aes(colour=group, shape=group), alpha=0.5) +
-    labs(x='Normalized Flux', y='Reaction Abbreviation') +
-    theme_bw() + 
-    geom_tile(aes(width=0.1, x=max(normflux)*1.7, y=abbreviation, fill=letters[as.numeric(as.factor(Subsystem)) %% 8+1]), show.legend = FALSE) +
-    geom_text(aes(x=max(normflux)*1.7, label = pathway, group=Subsystem), check_overlap=TRUE, data=(. %>% group_by(Subsystem) %>% mutate(pathway = ifelse(abbreviation==nth(abbreviation,round(n()/2)),Subsystem,NA))), hjust=1, alpha=0.5, size=2.5) +
-    scale_fill_brewer(type='qual', palette = 'Set3')
+  filter(Subsystem!='Exchange') %>%
+  arrange(Subsystem,abbreviation, group) %>%
+  mutate(abbreviation=fct_inorder(abbreviation)) %>%
+  # plot
+  ggplot(aes(x=normflux, y=abbreviation)) + 
+  scale_x_continuous(labels=scales::percent, trans=trans_magnify(0.75,1.1,5)) +
+  geom_point(aes(colour=group, shape=group), alpha=0.5) +
+  labs(x='Normalized Flux', y='Reaction Abbreviation') +
+  theme_bw() + 
+  geom_tile(aes(width=0.1, x=max(normflux)*1.7, y=abbreviation, fill=letters[as.numeric(as.factor(Subsystem)) %% 8+1]), show.legend = FALSE) +
+  geom_text(aes(x=max(normflux)*1.7, label = pathway, group=Subsystem), check_overlap=TRUE, data=(. %>% group_by(Subsystem) %>% mutate(pathway = ifelse(abbreviation==nth(abbreviation,round(n()/2)),Subsystem,NA))), hjust=1, alpha=0.5, size=2.5) +
+  scale_fill_brewer(type='qual', palette = 'Set3')
 
-  ggsave('../publication_images/horizontal_point_summary.png',plot=horizontal_point_summary)
-  print(horizontal_point_summary)
+ggsave('../publication_images/horizontal_point_summary.png',plot=horizontal_point_summary)
+print(horizontal_point_summary)
 ```
 
 Prepare data for heatmap by adding metabolite data
 ```{r}
 rate_tables <- results_analysed_3 %>%
-    group_by(abbreviation) %>%
-    filter(!all(near(normflux, bmflux, tol=0.001)),
-           !all(near(normflux, 0))) %>%
-    ungroup %>%
-    group_by(group) %>%
-    by_slice(function(x){
-        inner_join(x, expand_reactions(x)) %>%
-            mutate(rate = flux * stoich / abs(stoich))
-    }) %>%
-    with(set_names(.out, group))
+  group_by(group) %>%
+  by_slice(function(x){
+    inner_join(x, expand_reactions(x)) %>%
+      mutate(rate = flux * stoich / abs(stoich))
+  }) %>%
+  with(set_names(.out, group))
 ```
 
 Plot heatmaps
