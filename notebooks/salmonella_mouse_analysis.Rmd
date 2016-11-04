@@ -242,20 +242,17 @@ models_with_targets <- models_with_expression %>%
   mutate(
     stable = max(sd)<0.000001 & sd(baseflux) < 0.1*mean(abs(baseflux)),
     activation = ifelse(stable, activation, NA)
-    ) %>%
+  ) %>%
   select(-sd) %>%
   #mutate(activation=1) %>% # for testing
-  mutate(uppbnd = ifelse(is.na(activation), 
-                         baseflux + abs(baseflux)*0.1,
-                         (baseflux+(abs(baseflux)*0.1))#*activation
-  ),
-  lowbnd = ifelse(is.na(activation), 
-                  baseflux - abs(baseflux)*0.1,
-                  (baseflux-(abs(baseflux)*0.1))#*activation
-  ),
-  lowbnd = ifelse(abbreviation=='biomass_iRR1083', baseflux, lowbnd),
-  obj_coef = ifelse(is.finite(activation), activation-1, 0),
-  obj_coef = obj_coef + (abbreviation=='biomass_iRR1083')*1
+  mutate(
+    adjustment = ifelse(is.na(activation), abs(baseflux)*0.1+1, abs(activation-1)*abs(baseflux)*0.1+1),
+    uppbnd = ifelse(uppbnd>0, baseflux + adjustment, pmin(0, baseflux + adjustment)),
+    lowbnd = ifelse(lowbnd<0, baseflux - adjustment, pmax(0, baseflux - adjustment)),
+    adjustment=NULL,
+    lowbnd = ifelse(abbreviation=='biomass_iRR1083', baseflux, lowbnd),
+    obj_coef = ifelse(is.finite(activation), (activation-1)*sign(baseflux), 0)
+    #obj_coef = obj_coef + (abbreviation=='biomass_iRR1083')*1
   ) %>%
   ungroup %T>%
   (function(x){print(x %>%
@@ -263,7 +260,7 @@ models_with_targets <- models_with_expression %>%
                        #filter(abs(baseflux)<900) %>%
                        ggplot(aes(x = baseflux)) + 
                        geom_ribbon(aes(ymin=lowbnd, ymax=uppbnd)) + 
-                       geom_point(aes(y=baseflux), colour='blue')
+                       geom_point(aes(y=baseflux), colour='blue') + scale_y_continuous(trans = scales::trans_new('cbrt', function(x){sign(x)*abs(x)^(1/3)}, function(x){x^3}))
   )})
 ```
 
@@ -272,7 +269,7 @@ calculate final fluxes
 results <- models_with_targets %>%
   group_by(group) %>%
   nest() %>%
-  mutate(data = map(data, find_flux_variability_df)) %>%
+  mutate(data = map(data, find_flux_variability_df, do_minimization=FALSE)) %>%
   unnest() %T>%
   (. %>%
      filter(str_detect(abbreviation, 'iomass')) %>%
@@ -290,35 +287,31 @@ results_analysed_3 <- results %>%
   # filter out uninteresting
   group_by(abbreviation) %>%
   mutate(
-    ctrlflux = flux[group=='Input'],
-    normflux_ctrl = ifelse(!near(ctrlflux,0, tol=0.00001), flux/ctrlflux, NA),
-    normflux_median = ifelse(!near(median(flux),0, tol=0.00001), flux/median(flux), NA),
-    normflux_mean = ifelse(!near(mean(flux),0, tol=0.00001), flux/mean(flux), NA),
-    normflux = coalesce(normflux_ctrl, normflux_median, normflux_mean),
-    RSD = sd(normflux)/mean(abs(normflux)),
+    baseflux = flux[group=='Input'],
+    boring = all(near(flux, baseflux)),
+    normflux = (flux-baseflux)/(uppbnd-lowbnd),
     stable_1 = max(sd)<0.000001,
-    stable_2 = sd(baseflux)<0.000001
+    stable_2 = sd(baseflux)<0.001*mean(abs(baseflux))
     ) %>%
-  filter(stable_1, stable_2, is.finite(RSD), !near(RSD,0)) %>%
-  #filter(RSD>0.5) %>%
   ungroup
 ```
 
 Plot an overall horizontal summary
 ```{r}
 horizontal_point_summary <- results_analysed_3 %>%
-  filter(Subsystem!='Exchange') %>%
-  arrange(Subsystem,abbreviation, group) %>%
-  mutate(abbreviation=fct_inorder(abbreviation)) %>%
-  # plot
-  ggplot(aes(x=normflux, y=abbreviation)) + 
-  scale_x_continuous(labels=scales::percent, trans=trans_magnify(0.75,1.1,5)) +
-  geom_point(aes(colour=group, shape=group), alpha=0.5) +
-  labs(x='Normalized Flux', y='Reaction Abbreviation') +
-  theme_bw() + 
-  geom_tile(aes(width=0.1, x=max(normflux)*1.7, y=abbreviation, fill=letters[as.numeric(as.factor(Subsystem)) %% 8+1]), show.legend = FALSE) +
-  geom_text(aes(x=max(normflux)*1.7, label = pathway, group=Subsystem), check_overlap=TRUE, data=(. %>% group_by(Subsystem) %>% mutate(pathway = ifelse(abbreviation==nth(abbreviation,round(n()/2)),Subsystem,NA))), hjust=1, alpha=0.5, size=2.5) +
-  scale_fill_brewer(type='qual', palette = 'Set3')
+    filter(stable_1, stable_2, !boring) %>%
+    filter(Subsystem!='Exchange') %>%
+    arrange(Subsystem,abbreviation, group) %>%
+    mutate(abbreviation=fct_inorder(abbreviation)) %>%
+    # plot
+    ggplot(aes(x=normflux, y=abbreviation)) + 
+    scale_x_continuous(labels=scales::percent, breaks=seq(-1,1,0.5), minor_breaks=seq(-1,1,0.25), limits=c(-4,1), trans = scales::trans_new('cbrt', function(x){sign(x)*abs(x)^(1/3)}, function(x){x^3})) +
+    geom_point(aes(colour=group, shape=group), alpha=0.5) +
+    labs(x='Normalized flux change', y='Reaction abbreviation') +
+    theme_bw() + 
+    geom_tile(aes(width=0.1, x=-0.9, y=abbreviation, fill=letters[as.numeric(as.factor(Subsystem)) %% 8+1]), show.legend = FALSE, alpha=0.2) +
+    geom_text(aes(x=-0.9, label = pathway, group=Subsystem), check_overlap=TRUE, data=(. %>% group_by(Subsystem) %>% mutate(pathway = ifelse(abbreviation==nth(abbreviation,round(n()/2)),Subsystem,NA))), hjust=1, alpha=0.5, size=2.5) +
+    scale_fill_brewer(type='qual', palette = 'Set3')
 
 ggsave('../publication_images/horizontal_point_summary.png',plot=horizontal_point_summary)
 print(horizontal_point_summary)
@@ -327,6 +320,7 @@ print(horizontal_point_summary)
 Prepare data for heatmap by adding metabolite data
 ```{r}
 rate_tables <- results_analysed_3 %>%
+  filter(stable_1, stable_2, !boring) %>%
   group_by(group) %>%
   by_slice(function(x){
     inner_join(x, expand_reactions(x)) %>%
@@ -357,6 +351,15 @@ expand.grid(x=c('Group1','Group2','Group3'), y=c('Group1','Group2','Group3','Inp
   )
 ```
 
+Output table
+```{r}
+results_analysed_3 %>%
+  filter(stable_1, stable_2, !boring) %>%
+  select(abbreviation, group, flux, name, equation, Subsystem, geneAssociation) %>%
+  spread(group, flux) %>%
+  select(abbreviation, Input, starts_with('Group'), everything()) %>%
+  write_tsv('../temp/important.tsv')
+```
 
 
 
