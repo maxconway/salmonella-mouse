@@ -17,9 +17,9 @@ library(magrittr)
 library(forcats)
 ```
 
-Set up params
+set params
 ```{r}
-folds = 100
+folds <- 50
 ```
 
 
@@ -123,7 +123,7 @@ adjust flux bounds in line with activation
 models_with_targets <- models_with_expression %>%
   group_by(group) %>%
   nest %>%
-  mutate(data = map(data, find_flux_variability_df, folds=folds, do_minimization=TRUE)) %>%
+  mutate(data = map(data, find_flux_variability_df, folds=folds)) %>%
   unnest() %>%
   rename(baseflux = flux) %>%
   group_by(abbreviation) %>%
@@ -134,11 +134,12 @@ models_with_targets <- models_with_expression %>%
   select(-sd) %>%
   #mutate(activation=1) %>% # for testing
   mutate(
-    adjustment = ifelse(is.na(activation), abs(baseflux)*0.1+0.1, abs(activation-1)*abs(baseflux)*0.1+0.1),
+    adjustment = ifelse(is.na(activation), abs(baseflux)*0.1+0.1, abs(activation-1)*abs(baseflux)+0.1),
     uppbnd = ifelse(uppbnd>0, baseflux + adjustment, pmin(0, baseflux + adjustment)),
     lowbnd = ifelse(lowbnd<0, baseflux - adjustment, pmax(0, baseflux - adjustment)),
-    lowbnd = ifelse(abbreviation=='biomass_iRR1083', baseflux, lowbnd)
-#    obj_coef = ifelse(is.finite(activation), (activation-1)*sign(baseflux), 0)
+    adjustment=NULL,
+    lowbnd = ifelse(abbreviation=='biomass_iRR1083', baseflux, lowbnd),
+    obj_coef = ifelse(is.finite(activation), (activation-1)*sign(baseflux), 0)
     #obj_coef = obj_coef + (abbreviation=='biomass_iRR1083')*1
   ) %>%
   ungroup %T>%
@@ -156,7 +157,7 @@ calculate final fluxes
 results <- models_with_targets %>%
   group_by(group) %>%
   nest() %>%
-  mutate(data = map(data, find_flux_variability_df, folds=folds, do_minimization=TRUE)) %>%
+  mutate(data = map(data, find_flux_variability_df, do_minimization=FALSE, folds=folds)) %>%
   unnest() %T>%
   (. %>%
      filter(str_detect(abbreviation, 'iomass')) %>%
@@ -175,9 +176,8 @@ results_analysed_3 <- results %>%
   group_by(abbreviation) %>%
   mutate(
     inputflux = flux[group=='Input'],
+    boring = all(near(flux, baseflux)),
     normflux = (flux-inputflux)/(uppbnd-lowbnd),
-    boring_1 = all(near(flux, inputflux)),
-    boring_2 = all(near(flux, baseflux)),
     interest = sd(normflux),
     stable_1 = max(sd)<0.000001,
     stable_2 = sd(baseflux)<0.001*mean(abs(baseflux))
@@ -188,8 +188,8 @@ results_analysed_3 <- results %>%
 Plot an overall horizontal summary
 ```{r}
 horizontal_point_summary <- results_analysed_3 %>%
-    filter(stable_1, stable_2, !boring_1, !boring_2) %>% top_n(30*4, interest) %>%
-    #filter(Subsystem!='Exchange') %>%
+    filter(stable_1, stable_2, !boring) %>% top_n(30*4, interest) %>%
+    filter(Subsystem!='Exchange') %>%
     arrange(Subsystem,abbreviation, group) %>%
     mutate(abbreviation=fct_inorder(abbreviation)) %>%
     # plot
@@ -198,7 +198,7 @@ horizontal_point_summary <- results_analysed_3 %>%
     geom_point(aes(colour=group, shape=group), alpha=0.5) +
     labs(x='Normalized flux change', y='Reaction abbreviation') +
     theme_bw() + 
-    geom_tile(aes(width=0.1, x=-0.9, y=abbreviation, fill=letters[as.numeric(as.factor(Subsystem)) %% 8+1]), show.legend = FALSE, alpha=0.2,) +
+    geom_tile(aes(width=0.1, x=-0.9, y=abbreviation, fill=letters[as.numeric(as.factor(Subsystem)) %% 8+1]), show.legend = FALSE, alpha=0.2) +
     geom_text(aes(x=-0.9, label = pathway, group=Subsystem), check_overlap=TRUE, data=(. %>% group_by(Subsystem) %>% mutate(pathway = ifelse(abbreviation==nth(abbreviation,round(n()/2)),Subsystem,NA))), hjust=1, alpha=0.5, size=2.5) +
     scale_fill_brewer(type='qual', palette = 'Set3')
 
@@ -209,10 +209,10 @@ print(horizontal_point_summary)
 Prepare data for heatmap by adding metabolite data
 ```{r}
 rate_tables <- results_analysed_3 %>%
-  filter(stable_1, stable_2, !boring_1, !boring_2) %>% top_n(20*4, interest) %>%
+  filter(stable_1, stable_2, !boring) %>% top_n(30*4, interest) %>%
   group_by(group) %>%
   nest() %>%
-  mutate(data = map(data, function(x){
+  mutate(data=map(data,function(x){
     inner_join(x, expand_reactions(x), by = "abbreviation") %>%
       mutate(rate = flux * stoich / abs(stoich))
   })) %>%
@@ -242,7 +242,7 @@ expand.grid(x=c('Group1','Group2','Group3'), y=c('Group1','Group2','Group3','Inp
 Output table
 ```{r}
 results_analysed_3 %>%
-  filter(stable_1, stable_2, !boring_1, !boring_2) %>% top_n(30*4, interest) %>%
+  filter(stable_1, stable_2, !boring) %>% top_n(30*4, interest) %>%
   select(abbreviation, group, flux, name, equation, Subsystem, geneAssociation) %>%
   spread(group, flux) %>%
   select(abbreviation, Input, starts_with('Group'), everything()) %>%
