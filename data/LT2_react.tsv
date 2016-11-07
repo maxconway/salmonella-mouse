@@ -1340,7 +1340,7 @@ GLCURtex	D glucuronat transport via diffusion extracellular to periplasm 	glcur[
 GLDBRAN2	glycogen debranching enzyme bglycogen  glycogen 	bglycogen[c] --> glycogen[c] 	STM3537	STM3537	GlycolysisGluconeogenesis	0	0	1000
 GLGC	glucose 1 phosphate adenylyltransferase	atp[c] + g1p[c] + h[c] --> adpglc[c] + ppi[c] 	STM3536	STM3536	GlycolysisGluconeogenesis	0	0	1000
 GLNabcpp	L glutamine transport via ABC system periplasm 	atp[c] + gln-L[p] + h2o[c] --> adp[c] + gln-L[c] + h[c] + pi[c] 	( STM0830  and  STM0829  and  STM0828 )	STM0828 STM0829 STM0830	Transport Inner Membrane	0	0	1000
-GLNS	glutamine synthetase	atp[c] + glu-L[c] + nh4[c] --> adp[c] + gln-L[c] + h[c] + pi[c] 	STM4007	STM4007	Glutamate metabolism	0	0	1000
+GLNS	glutamine synthetase	atp[c] + glu-L[c] + nh4[c] --> adp[c] + gln-L[c] + h[c] + pi[c] 	STM4007	STM4007	Glutamate Metabolism	0	0	1000
 GLNtex	L glutamine transport via diffusion extracellular to periplasm 	gln-L[e] <=> gln-L[p] 	( STM0999  or  STM1473  or  STM2267  or  STM0320 )	STM0320 STM0999 STM1473 STM2267	Transport Outer Membrane Porin	1	-1000	1000
 GLNTRS	Glutaminyl tRNA synthetase	atp[c] + gln-L[c] + trnagln[c] --> amp[c] + glntrna[c] + ppi[c] 	STM0686	STM0686	tRNA Charging	0	0	1000
 GLTPD	Galactitol 1 phosphate dehydrogenase	galt1p[c] + nad[c] <=> h[c] + nadh[c] + tag6p-D[c] 	STM3261	STM3261	Alternate Carbon Metabolism	1	-1000	1000
@@ -1352,7 +1352,7 @@ GLUN	glutaminase	gln-L[c] + h2o[c] --> glu-L[c] + nh4[c] 	STM1525	STM1525	Glutam
 GLUNpp	glutaminase	gln-L[p] + h2o[p] --> glu-L[p] + nh4[p] 	STM3106	STM3106	Glutamate Metabolism	0	0	1000
 GLUPRT	glutamine phosphoribosyldiphosphate amidotransferase	gln-L[c] + h2o[c] + prpp[c] --> glu-L[c] + ppi[c] + pram[c] 	STM2362	STM2362	Purine and Pyrimidine Biosynthesis	0	0	1000
 GLUR	glutamate racemase	glu-D[c] <=> glu-L[c] 	STM4131	STM4131	Cell Envelope Biosynthesis	1	-1000	1000
-GLUSy	glutamate synthase NADPH 	akg[c] + gln-L[c] + h[c] + nadph[c] --> 2 glu-L[c] + nadp[c] 	( STM3330  and  STM3331 )	STM3330 STM3331	Glutamate metabolism	0	0	1000
+GLUSy	glutamate synthase NADPH 	akg[c] + gln-L[c] + h[c] + nadph[c] --> 2 glu-L[c] + nadp[c] 	( STM3330  and  STM3331 )	STM3330 STM3331	Glutamate Metabolism	0	0	1000
 GLUt2rpp	L glutamate transport via proton symport reversible periplasm 	glu-L[p] + h[p] <=> glu-L[c] + h[c] 	STM4283	STM4283	Transport Inner Membrane	1	-1000	1000
 GLUt4pp	Naglutamate symport periplasm 	glu-L[p] + na1[p] --> glu-L[c] + na1[c] 	STM3746	STM3746	Transport Inner Membrane	0	0	1000
 GLUtex	L glutamate transport via diffusion extracellular to periplasm 	glu-L[e] <=> glu-L[p] 	( STM0320  or  STM0999  or  STM1473  or  STM2267 )	STM0320 STM0999 STM1473 STM2267	Transport Outer Membrane Porin	1	-1000	1000
