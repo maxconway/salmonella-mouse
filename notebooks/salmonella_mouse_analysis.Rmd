@@ -81,7 +81,7 @@ rnas <- inner_join(
 ) %>%
   filter(Gene %in% genes_in_model) %>%
   gather(measurement, count, -Locus, -Gene, -Product, -Alias) %>%
-  separate(measurement, c('group', 'replicate'), '_') %>%
+  separate(measurement, c('group', 'replicate'), '\\W*_\\W*') %>%
   mutate(replicate = str_c(group, '_', replicate)) %>%
   # next, remove experimental variance between replicates
   group_by(replicate) %>%
