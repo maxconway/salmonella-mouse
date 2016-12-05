@@ -1,7 +1,5 @@
 for figures heatmap_Group1_vs_Input, heatmap_Group3_vs_Input, heatmap_Group3_vs_Input
 
-These figures are heatmaps showing the detail of fluxes of each reaction through each metabolite, compared to the in vitro case. Note that the flux differences here are higher than the fluxes we see in figure 1, because they are unnormalized and are multiplied by the reaction stoichiometry.
+These figures are heatmaps showing the detail of fluxes of each reaction through each metabolite, compared to the in vitro case. Note that the flux differences here are typically higher than the fluxes we see in figure 1, because they are not normalized between groups and are multiplied by the reaction stoichiometry. We notice that Group 1 displays more polarized responses than Groups 2 and 3, this is simply because it has more in common with the control.
 
-In Group 1, we can see that the major changes around around handling of water and iron oxides, supporting our interpretation of figure 1. Furthermore, we can trace the interaction between thse components to an upregulation in the reaction FEROpp, representing ferroxidase, and controlled by the gene STM0168.
-
-In Groups 2 and 3, we can see similar regulation of water and oxygen, but without similar behaviour around FEROpp. This once again shows that the differences between these groups are much more subtle than the behaviour of group 1.
+In Groups 1 and 2, we can see strong changes around phosphate and mannose metabolism. This is consistent with changes to cell growth and repair pathways. In Group 3, we see changes associated with the enzyme Phospho-N-acetylmuramoyl-pentapeptide-transferase, which are more closely related to cell wall synthesis.

@@ -214,7 +214,9 @@ rate_tables <- results_analysed_3 %>%
   nest() %>%
   mutate(data=map(data,function(x){
     inner_join(x, expand_reactions(x), by = "abbreviation") %>%
-      mutate(rate = flux * stoich / abs(stoich))
+      mutate(rate = flux * stoich / abs(stoich)) %>% 
+      arrange(Subsystem,abbreviation) %>%
+      mutate(abbreviation=fct_inorder(abbreviation))
   })) %>%
   with(set_names(data, group))
 ```
@@ -226,10 +228,11 @@ expand.grid(x=c('Group1','Group2','Group3'), y=c('Group1','Group2','Group3','Inp
   pwalk(function(x,y){
     (inner_join(rate_tables[[x]], rate_tables[[y]], by=c('abbreviation', 'met')) %>%
        mutate(diff = rate.x-rate.y) %>%
+       mutate(diff = diff/sd(diff)) %>%
        ggplot(aes(x=abbreviation, y=met, fill=diff)) + 
        geom_tile() +
        scale_fill_gradient2(midpoint=0, low='blue', high='red') + 
-       labs(x='Reaction', y='Metabolite', fill='Raw flux difference') +
+       labs(x='Reaction', y='Metabolite', fill='Flux difference') +
        ggtitle(str_c(x, ' vs ', y)) +
        theme_bw() + 
        theme(axis.text.x = element_text(angle = 45, hjust = 1))
