@@ -304,5 +304,23 @@ results_analysed_3 %>%
   write_tsv('../temp/important.tsv')
 ```
 
+Cool network plot
+```{r}
+expanded %$%
+  visNetwork(nodes=bind_rows(rxns %>% 
+                               transmute(id=as.character(abbreviation),
+                                         type='rxn'),
+                             mets %>% 
+                               transmute(id=met, type='met')) %>%
+               mutate(title=id,
+                      group=type),
+             edges=stoich %>%
+               mutate(from = ifelse(stoich>0, as.character(abbreviation), met),
+                      to = ifelse(stoich>0, met, as.character(abbreviation)),
+                      value = abs(stoich),
+                      title = abs(stoich),
+                      arrows='middle')) %>%
+  visOptions(highlightNearest = TRUE, nodesIdSelection = TRUE)
+```
 
 
