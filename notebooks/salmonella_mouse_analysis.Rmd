@@ -158,13 +158,16 @@ results <- models_with_targets %>%
   group_by(group) %>%
   nest() %>%
   mutate(data = map(data, find_flux_variability_df, do_minimization=FALSE, folds=folds)) %>%
-  unnest() %T>%
-  (. %>%
-     filter(str_detect(abbreviation, 'iomass')) %>%
-     select(group, abbreviation, flux) %>% 
-     print
-  )
+  unnest()
 ```
+
+Check biomass fluxes
+```{r}
+results %>%
+     filter(abbreviation=='biomass_iRR1083') %>%
+     select(group, abbreviation, flux)
+```
+
 
 Produce final figures
 =====================
@@ -182,25 +185,49 @@ results_analysed_3 <- results %>%
     stable_1 = max(sd)<0.000001,
     stable_2 = sd(baseflux)<0.001*mean(abs(baseflux))
     ) %>%
-  ungroup
+  ungroup %>%
+  arrange(Subsystem, abbreviation, group) %>%
+  mutate(Subsystem = fct_inorder(Subsystem),
+         abbreviation=fct_inorder(abbreviation),
+         group = fct_relevel(group, 'Input', 'Group1', 'Group2', 'Group3')
+         )
 ```
 
 Plot an overall horizontal summary
 ```{r}
 horizontal_point_summary <- results_analysed_3 %>%
-    filter(stable_1, stable_2, !boring) %>% top_n(30*4, interest) %>%
-    filter(Subsystem!='Exchange') %>%
-    arrange(Subsystem,abbreviation, group) %>%
-    mutate(abbreviation=fct_inorder(abbreviation)) %>%
-    # plot
-    ggplot(aes(x=normflux, y=abbreviation)) + 
-    scale_x_continuous(labels=scales::percent, breaks=seq(-1,1,0.5), minor_breaks=seq(-1,1,0.25), limits=c(-4,1), trans = scales::trans_new('cbrt', function(x){sign(x)*abs(x)^(1/3)}, function(x){x^3})) +
-    geom_point(aes(colour=group, shape=group), alpha=0.5) +
-    labs(x='Normalized flux change', y='Reaction abbreviation') +
-    theme_bw() + 
-    geom_tile(aes(width=0.1, x=-0.9, y=abbreviation, fill=letters[as.numeric(as.factor(Subsystem)) %% 8+1]), show.legend = FALSE, alpha=0.2) +
-    geom_text(aes(x=-0.9, label = pathway, group=Subsystem), check_overlap=TRUE, data=(. %>% group_by(Subsystem) %>% mutate(pathway = ifelse(abbreviation==nth(abbreviation,round(n()/2)),Subsystem,NA))), hjust=1, alpha=0.5, size=2.5) +
-    scale_fill_brewer(type='qual', palette = 'Set3')
+  filter(stable_1, stable_2, !boring) %>% top_n(30*4, interest) %>%
+  filter(Subsystem!='Exchange') %>%
+  mutate(abbreviation = fct_rev(abbreviation),
+         Subsystem = factor(Subsystem, levels = levels(Subsystem), labels=str_wrap(levels(Subsystem),30))) %>% # make the abbreviation plot in correct order
+  # plot
+  ggplot(aes(x=normflux, y=abbreviation)) + 
+  scale_x_continuous(labels=scales::percent, 
+                     breaks=seq(-1,1,0.5), 
+                     minor_breaks=seq(-1,1,0.25), 
+                     limits=c(-4,1), 
+                     trans = scales::trans_new('cbrt', function(x){sign(x)*abs(x)^(1/3)}, function(x){x^3})
+  ) +
+  scale_shape_manual(values = c('Input'='0', 'Group1'='1', 'Group2'='2', 'Group3'='3'))+
+  geom_point(aes(colour=group, shape=group), alpha=0.5, size=2) +
+  geom_tile(aes(width=0.1, x=-0.9, y=abbreviation, fill=letters[as.numeric(as.factor(Subsystem)) %% 8+1]), 
+            show.legend = FALSE, 
+            alpha=0.2
+  ) +
+  geom_text(aes(x=-0.9, label = pathway, group=Subsystem), 
+            check_overlap=TRUE, 
+            data=(. %>% 
+                    group_by(Subsystem) %>% 
+                    mutate(pathway = as.character(Subsystem)) %>%
+                    mutate(pathway = ifelse(abbreviation==nth(abbreviation,round(n()/2)),pathway,NA))
+                  ),
+            hjust=1, 
+            alpha=0.5, 
+            size=2.5
+  ) + 
+  scale_fill_brewer(type='qual', palette = 'Set3') +
+  labs(x='Normalized flux change', y='Reaction abbreviation') +
+  theme_bw()
 
 ggsave('../publication_images/horizontal_point_summary.png',plot=horizontal_point_summary)
 print(horizontal_point_summary)
@@ -214,9 +241,7 @@ rate_tables <- results_analysed_3 %>%
   nest() %>%
   mutate(data=map(data,function(x){
     inner_join(x, expand_reactions(x), by = "abbreviation") %>%
-      mutate(rate = flux * stoich / abs(stoich)) %>% 
-      arrange(Subsystem,abbreviation) %>%
-      mutate(abbreviation=fct_inorder(abbreviation))
+      mutate(rate = flux * stoich / abs(stoich))
   })) %>%
   with(set_names(data, group))
 ```
