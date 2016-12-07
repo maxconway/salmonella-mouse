@@ -190,14 +190,14 @@ results_analysed_3 <- results %>%
   mutate(Subsystem = fct_inorder(Subsystem),
          abbreviation=fct_inorder(abbreviation),
          group = fct_relevel(group, 'Input', 'Group1', 'Group2', 'Group3')
-         )
+         ) %>%
+  filter(stable_1, stable_2, !boring) %>% top_n(30*4, interest) %>%
+  filter(Subsystem!='Exchange')
 ```
 
 Plot an overall horizontal summary
 ```{r}
 horizontal_point_summary <- results_analysed_3 %>%
-  filter(stable_1, stable_2, !boring) %>% top_n(30*4, interest) %>%
-  filter(Subsystem!='Exchange') %>%
   mutate(abbreviation = fct_rev(abbreviation),
          Subsystem = factor(Subsystem, levels = levels(Subsystem), labels=str_wrap(levels(Subsystem),30))) %>% # make the abbreviation plot in correct order
   # plot
@@ -235,42 +235,69 @@ print(horizontal_point_summary)
 
 Prepare data for heatmap by adding metabolite data
 ```{r}
-rate_tables <- results_analysed_3 %>%
-  filter(stable_1, stable_2, !boring) %>% top_n(30*4, interest) %>%
+rates <- results_analysed_3 %>%
   group_by(group) %>%
   nest() %>%
   mutate(data=map(data,function(x){
     inner_join(x, expand_reactions(x), by = "abbreviation") %>%
       mutate(rate = flux * stoich / abs(stoich))
-  })) %>%
-  with(set_names(data, group))
+  }))
 ```
 
 Plot heatmaps
 ```{r}
-expand.grid(x=c('Group1','Group2','Group3'), y=c('Group1','Group2','Group3','Input'), stringsAsFactors = FALSE) %>%
-  filter(x!=y) %>%
-  pwalk(function(x,y){
-    (inner_join(rate_tables[[x]], rate_tables[[y]], by=c('abbreviation', 'met')) %>%
-       mutate(diff = rate.x-rate.y) %>%
-       mutate(diff = diff/sd(diff)) %>%
-       ggplot(aes(x=abbreviation, y=met, fill=diff)) + 
-       geom_tile() +
-       scale_fill_gradient2(midpoint=0, low='blue', high='red') + 
-       labs(x='Reaction', y='Metabolite', fill='Flux difference') +
-       ggtitle(str_c(x, ' vs ', y)) +
-       theme_bw() + 
-       theme(axis.text.x = element_text(angle = 45, hjust = 1))
-    ) %>%
-      ggsave(paste0('../publication_images/heatmap_',x,'_vs_',y,'.png'),.)
-  }
-  )
+rates %>%
+  unnest() %>%
+  select(group, abbreviation, met, rate) %>%
+  inner_join(.,.,by=c('abbreviation', 'met')) %>%
+  mutate(contrast = str_c(group.x,' vs ',group.y), 
+         diff=rate.x-rate.y,
+         diff=diff/sd(diff)
+         ) %>%
+  filter(group.x!=group.y, 
+         group.x!='Input',
+         (group.y %in% c('Input', 'Group1') | group.x=='Group2')) %>%
+  group_by(againstInput = group.y=='Input') %>%
+  nest() %>%
+  mutate(plot = map(data, function(data){
+    ggplot(data, aes(x=met, y=abbreviation, fill=diff)) + 
+    geom_tile() +
+    scale_fill_gradient2(midpoint=0, low='blue', high='red', mid='grey95', trans=scales::trans_new('cbrt', function(x){sign(x)*abs(x)^(1/3)}, function(x){x^3})) + 
+    labs(y='Reaction', x='Metabolite', fill='Raw Flux difference') +
+    facet_grid(contrast~.) +
+    theme_bw() + 
+    theme(axis.text = element_text(angle = 45, hjust = 1))
+  })) %>%
+  mutate(filename = str_c('../publication_images/heatmap_',c('vsInput','intragroup')[againstInput+1],'.png')) %>%
+  select(filename, plot) %>%
+  pwalk(ggsave, height=12, width=9)
 ```
+
+Supplementary tables
+```{r}
+reaction_details <- results_analysed_3 %>%
+  group_by(abbreviation, name) %>%
+  summarise() %>%
+  write_tsv('../publication_images/reaction_details.tsv')
+
+metabolite_details <- left_join(
+  results_analysed_3 %>%
+    filter(group=='Input') %>%
+  reactiontbl_to_expanded() %$%
+    mets,
+  read_tsv('../data/LT2_metab.tsv'),
+by=c('met'='Metabolite name')
+    ) %>%
+  group_by(`Metabolite id` = met, `Metabolite description`) %>%
+  summarise() %>%
+  arrange(`Metabolite id`)%>%
+  write_tsv('../publication_images/metabolite_details.tsv')
+```
+
 
 Output table
 ```{r}
 results_analysed_3 %>%
-  filter(stable_1, stable_2, !boring) %>% top_n(30*4, interest) %>%
   select(abbreviation, group, flux, name, equation, Subsystem, geneAssociation) %>%
   spread(group, flux) %>%
   select(abbreviation, Input, starts_with('Group'), everything()) %>%
