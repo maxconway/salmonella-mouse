@@ -239,7 +239,7 @@ rates <- results_analysed_3 %>%
   group_by(group) %>%
   nest() %>%
   mutate(data=map(data,function(x){
-    inner_join(x, expand_reactions(x), by = "abbreviation") %>%
+    inner_join(x, reactiontbl_to_expanded(x)$stoich, by = "abbreviation") %>%
       mutate(rate = flux * stoich / abs(stoich))
   }))
 ```
